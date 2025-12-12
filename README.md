@@ -1,0 +1,3 @@
+This repo contains raw data, plus inputs and outputs to experiments performed while refining the Syntelos taxonomy and its associated paper.
+
+Logical phases of research are implied by a prefix on a filename. For example, prompts/1-research-asst-scrape-categories.md describes a task that I gave to 3 different AIs. Their individual outputs are captured in analysis/1-*-categories.md -- and a simple union of their outputs is captured in data/1-categories-union.csv.

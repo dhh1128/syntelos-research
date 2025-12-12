@@ -1,0 +1,11 @@
+1. analyze gaps (are there parts of the taxonomy that weren't touched?)
+1. eliminate bogus values
+1. filter for uninteresting stuff or too much coverage in one part of the taxonomy (smaller subset) (is this an indicator of ratio of interactions that are likely to occur?)
+1. rename some parts of the hierarchy
+1. ask AI to analyze hierarchy and improve it (review feedback from each of the AIs from the scrape experiment)
+1. figure out how to run the experiment 5-10 times per AI with temp as input
+1. resolve questions AI raised about ambiguity
+1. get a human prompt
+1. figure out the statistical measure AI recommended
+1. do the human check
+1. get reference for MECE
