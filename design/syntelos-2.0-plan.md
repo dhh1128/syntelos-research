@@ -390,10 +390,32 @@ global partition cannot see.**
 `representing` did not reappear in any of the 15 batches or in the consolidation, so the
 ultimate-purpose and standing-relation screens [F-2HXB] held.
 
-Roughly against v1: `/care` → `care`; `/share` splits into `knowledge` + `communication`; `/align`
-→ `coordination`; `/trade` → `exchange`; `/serve` and `/operate` merge into `provision`; `/govern`
-splits into `justice` + `conformity` + `protection`; `/relate` splits into `union` + `participation`.
-Genuinely new and absent from v1: `protection`, `conformity`, `persuasion`, `ecology`.
+**The labels above are provisional handles, not results.** The derivation established each root's
+*extension* — which acts group together — and its *discriminating question*. It established nothing
+about names: `care`, `provision`, `conformity` and the rest are words the seats happened to emit
+while describing groups. Naming is a separate design pass against stated criteria, set out in
+`design/naming-criteria.md`. Two problems visible already: v1 §4.1 requires category names to be
+**verbs** and almost every derived label is a noun, and the thirteen labels collide on initials —
+five `c`, four `p`, two `e` — which is unusable for a vocabulary people will abbreviate.
+
+So the comparison against v1 has to be stated **extensionally**, about where acts land rather than
+about which word survived:
+
+- The acts v1 filed under `/govern` distribute across **three** derived groups, separated by whether
+  a contested question is authoritatively resolved, whether conduct is tested against an existing
+  standard, or whether harm is prevented.
+- The acts under `/share` split in **two**, on whether success is a justified state of understanding
+  or receipt by an audience.
+- `/serve` and `/operate` acts **merge** into one group whose terminal outcome is that something
+  usable is available.
+- `/relate` acts split in **two**: durable pairing of particular parties, and belonging or
+  recognised presence in a community.
+- `/care`, `/align`, and `/trade` each map to a single derived group with closely similar extension.
+- **Four derived groups have no v1 antecedent at all** — harm prevention, standard-conformance,
+  changing preference or support, and ecosystem condition.
+
+Whether any derived group should inherit a v1 name is a naming question, and reusing one where the
+extension has shifted is worse than coining a new word, because implementers will assume continuity.
 
 Weak roots are flagged rather than hidden: `ecology` at ~3/15 is the thinnest retained, `union` at
 ~5/15 is sparse but sharply defined. Neither should be presented with the same confidence as the
