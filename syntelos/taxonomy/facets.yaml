@@ -81,7 +81,8 @@ facets:
     kind: open
     multi: true
     hierarchical: false
-    status: draft
+    status: populated
+    groups: [execution, registration, publicity, attestation]
     note: >
       The other half of form. Individually portable predicates; WHICH ones a given act needs is
       jurisdictional, which is why this facet is open and instrument names live in profiles rather

@@ -1,0 +1,37 @@
+id: requisite/signature
+facet: requisite
+label: signature
+group: execution
+status: draft
+definition: >
+  The act must bear a mark by which it is attributed to its author, and by which that author
+  manifests assent to what it says. Absent the mark, the instrument is not the author's act.
+elaboration: >
+  Electronic signature regimes graduate this — simple, advanced, and qualified under eIDAS, with
+  different evidentiary consequences — and a profile that needs the distinction should register
+  narrower values rather than overloading this one. French CC art. 1366 admits electronic form on
+  conditions.
+discriminators:
+  requisite/writing: >
+    Attribution versus text. They fail independently: an unsigned writing and an oral promise
+    nobody signed are different defects with different cures.
+  requisite/witnessed: >
+    A signature is the actor's own mark; a witness's attestation is somebody else's. CCQ art. 2819
+    requires both for a notarial act, which is why they cannot be one value.
+  requisite/notarized: >
+    Notarization is an officer attesting that the signature is genuine. The signature is the thing
+    attested, not the attestation.
+  requisite/authenticated: >
+    An authentic act is received by the officer, who vouches for what was done before them.
+    Signature alone vouches for nothing beyond authorship.
+examples:
+  - text: Sign a notarial act as a party to it.
+    source: CCQ art. 2819 ("a notarial act shall be signed by all the parties")
+  - text: Sign and file a criminal information.
+    source: Utah Code §77-2-2.2 ("Signing and filing of information")
+counter_examples:
+  - text: Have two witnesses attest the execution of a will.
+    reason: >
+      The witnesses' marks are attestations by non-parties, serving a different function from the
+      testator's own signature — they evidence the circumstances of execution rather than authorship.
+    correct: requisite/witnessed

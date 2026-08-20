@@ -1,0 +1,51 @@
+id: requisite/authenticated
+facet: requisite
+label: authenticated
+group: execution
+status: draft
+definition: >
+  The act is received or attested by a competent public officer with the formalities the law
+  requires, so that what the officer states they personally did or observed stands as proof against
+  all persons unless overturned by a dedicated judicial proceeding.
+elaboration: >
+  Verified against primary text 2026-08-20. French CC art. 1369: an authentic act is one "reçu, avec
+  les solennités requises, par un officier public ayant compétence et qualité pour instrumenter."
+  Art. 1371: it "fait foi jusqu'à inscription de faux." CCQ art. 2818: the officer's recital "makes
+  proof against all persons"; art. 2821 requires *improbation* to contradict it.
+
+  Two things the plan got wrong before checking, recorded so they are not repeated. This does **not**
+  carry executory force under the Code civil — 1369 defines and 1371 gives probative force, while
+  `force exécutoire` lives in the Code des procédures civiles d'exécution. And failure is graded, not
+  binary: art. 1370 provides that an act failing for the officer's incompetence or a defect of form
+  "vaut comme écrit sous signature privée."
+
+  Note also that authenticity cuts across the `channel` facet rather than implying one. CCQ art. 2814
+  lists as authentic: parliamentary documents, government letters patent and orders, court records,
+  municipal documents, public registers, **notarial acts**, and boundary-marking minutes.
+discriminators:
+  requisite/notarized: >
+    Evidentiary force, differing in kind rather than degree. Ordinary rebuttable evidence versus
+    proof against all persons defeasible only by inscription de faux or improbation. Treating a
+    common-law notarization as authentic overstates it; treating an acte authentique as ordinary
+    notarization understates it.
+  requisite/certified: >
+    An officer receiving an act, versus an authority attesting a fact or quality about something
+    already existing. Certification does not make the underlying instrument authentic.
+  requisite/signature: >
+    Signature is the party's own mark. Authentication is the officer's reception of the act.
+  requisite/witnessed: >
+    Official capacity versus private attestation, and the two can be required together.
+  requisite/writing: >
+    An authentic act is invariably written, so recording `writing` alongside it adds nothing. Record
+    `writing` alone where text is all the law demands; the authentic form subsumes it.
+examples:
+  - text: Execute an acte authentique before a competent public officer.
+    source: French Code civil art. 1369
+  - text: Draw up a notarial act signed by all the parties.
+    source: CCQ art. 2819
+counter_examples:
+  - text: Have a signature notarized in a U.S. state.
+    reason: >
+      The document remains ordinary evidence, rebuttable without any special proceeding. The whole
+      reason these are separate values is that the common-law form does not confer this force.
+    correct: requisite/notarized

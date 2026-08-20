@@ -1,0 +1,38 @@
+id: requisite/recorded-priority
+facet: requisite
+label: recorded-priority
+group: registration
+status: draft
+definition: >
+  Entry in a public register fixes the right's rank against competing claims over the same property.
+  Where two claims conflict and both are otherwise valid, the register decides which prevails.
+elaboration: >
+  This function is the one neither the civil-law audit nor the first triage named, and it was
+  recovered from CCQ art. 2941 — publication "determines their rank." It is genuinely separate from
+  opposability: two registered mortgages are both opposable to the world and still have to be
+  ordered against each other, and the ordering is what the borrower's second lender cares about.
+
+  Ranking rules can also depend on prior entries rather than on the entry alone. CCQ art. 2943.1
+  provides that a registration "takes effect only from the registration of the title of the grantor
+  or last holder of the right."
+discriminators:
+  requisite/recorded-notice: >
+    Ordering versus assertability. Opposability makes a right good against strangers; priority
+    decides which of several such rights wins. A system can confer one without the other.
+  requisite/recorded-constitutive: >
+    Ranking an existing right versus bringing one into being. Priority presupposes that competing
+    rights exist to be ordered.
+  requisite/filed: >
+    Deposit does not rank anything, though a filing date is frequently the fact the ranking rule
+    consults.
+examples:
+  - text: Publish a right so that its rank against competing claims is determined.
+    source: CCQ art. 2941
+  - text: Perfect a security interest so it takes priority over later claims.
+    source: Utah Code §70A-9a-314 ("Perfection by control"); §70A-9a-302
+counter_examples:
+  - text: Record a right so that third persons are deemed to know of it.
+    reason: >
+      Deeming the world to know is opposability. It says nothing about which of two equally
+      opposable claims prevails, which is the separate question this value answers.
+    correct: requisite/recorded-notice

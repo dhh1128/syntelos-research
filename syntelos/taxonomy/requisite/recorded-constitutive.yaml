@@ -1,0 +1,43 @@
+id: requisite/recorded-constitutive
+facet: requisite
+label: recorded-constitutive
+group: registration
+status: draft
+definition: >
+  Entry in a public register is what brings the right into existence. Before the entry the right
+  does not exist to be asserted, ranked, or transferred, however complete the parties' agreement.
+elaboration: >
+  BGB § 873(1) is the clearest statement: transfer of land ownership, and encumbrance of land,
+  "require agreement between the person entitled and the other person on the occurrence of the change
+  of rights **and** the entry of the change of rights in the Land Register." The agreement alone
+  moves nothing.
+
+  Systems differ, and this is the axis on which they differ most consequentially. French law transfers
+  by consent (`solo consensu`); Québec's default is that "rights produce their effects between the
+  parties even if they are not published," with constitutive effect reserved to cases where "the law
+  so provides" (CCQ art. 2941). So the same act name carries different requisites by jurisdiction —
+  which is why instrument names live in profiles rather than in this facet.
+
+  *BGB citations here rest on a 2021 Internet Archive snapshot of the official English translation;
+  see the plan's source caveat. §§ 873 and 925 are long-standing provisions, but re-verify before the
+  paper relies on them.*
+discriminators:
+  requisite/recorded-notice: >
+    Whether the right exists without the entry. Constitutive recording creates; notice recording
+    makes an already-existing right assertable against strangers.
+  requisite/recorded-priority: >
+    Creation versus ordering. There is nothing to rank until the right exists.
+  requisite/filed: >
+    Lodgement is not creation. Handing the papers over does not move the title; the register entry
+    does.
+examples:
+  - text: Enter a change of land rights in the Land Register.
+    source: BGB § 873(1)
+  - text: Publish a right in a case where the law provides that publication gives it effect.
+    source: CCQ art. 2941
+counter_examples:
+  - text: Transfer ownership of goods by the parties' consent alone.
+    reason: >
+      Under solo consensu the right passes on agreement with no register involved, so no registration
+      requisite attaches at all. This is the jurisdictional fork the value exists to mark.
+    correct: requisite/filed

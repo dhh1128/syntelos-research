@@ -1,0 +1,35 @@
+id: requisite/filed
+facet: requisite
+label: filed
+group: registration
+status: draft
+definition: >
+  The act must be lodged with an institution that receives and holds it. Filing establishes that the
+  instrument reached the office and when; what legal consequence follows is the business of the three
+  `recorded-*` values, and filing alone claims none of them.
+elaboration: >
+  Kept distinct from the recording values because many filings are pure deposit — an annual
+  certificate, a return, a report — where nothing is made opposable, ranked, or created. Where a
+  filing does one of those things, record both.
+discriminators:
+  requisite/recorded-notice: >
+    Lodgement versus opposability. A filing tells the office; a notice-recording deems third parties
+    to know. Utah §70A-9a-516 governs "what constitutes filing" precisely because reaching the office
+    is a separate question from what the filing then does.
+  requisite/recorded-priority: >
+    Filing does not by itself rank competing claims. Where the filing's date sets rank, that is the
+    priority value doing the work.
+  requisite/recorded-constitutive: >
+    Filing lodges; constitutive recording creates the right. BGB § 873 requires the Land Register
+    entry for the transfer to occur at all, which deposit alone would not achieve.
+examples:
+  - text: File an annual certificate with the registry.
+    source: Utah Code §16-11-14 ("Annual certificate -- Filing")
+  - text: File a financing statement.
+    source: Utah Code §70A-9a-516 ("What constitutes filing")
+counter_examples:
+  - text: Enter a transfer of land in the Grundbuch.
+    reason: >
+      Lodging the papers is not what moves the title; the entry is. BGB § 873(1) makes the register
+      entry a constituent of the transfer rather than a record of it.
+    correct: requisite/recorded-constitutive

@@ -1,0 +1,39 @@
+id: requisite/recorded-notice
+facet: requisite
+label: recorded-notice
+group: registration
+status: draft
+definition: >
+  Entry in a public register makes the right opposable to third persons — they are deemed to know
+  it whether or not they looked. Between the parties the right holds regardless; recording is about
+  everyone else.
+elaboration: >
+  CCQ art. 2941 states the whole triple in one sentence: publication "allows them to be set up
+  against third persons, determines their rank and, where the law so provides, gives them effect,"
+  and "rights produce their effects between the parties even if they are not published." That the
+  three functions are separable is finding F-9GKT in the plan; a boolean `recorded` cannot say which
+  a given filing buys.
+
+  The deeming is strict. CCQ art. 2943 provides that someone who fails to consult the register "may
+  not invoke good faith to rebut the presumption."
+discriminators:
+  requisite/recorded-priority: >
+    Being assertable against outsiders, versus being ordered among them. Two competing claims may
+    both be opposable and still need ranking; opposability alone does not say who wins.
+  requisite/recorded-constitutive: >
+    Whether the right exists without the entry. Under notice recording it does and merely cannot be
+    asserted against strangers; under constitutive recording there is no right until entry.
+  requisite/filed: >
+    Reaching the office versus binding the world. Many filings are pure deposit and confer no
+    opposability at all.
+examples:
+  - text: Publish an immovable real right so it may be set up against third persons.
+    source: CCQ arts. 2938, 2941
+  - text: Record a lien against real property.
+    source: Utah Code §38-9-203 ("Civil liability for recording wrongful lien")
+counter_examples:
+  - text: Register a transfer of land where registration is what passes title.
+    reason: >
+      Nothing exists to be made opposable until the entry is made, so opposability is a consequence
+      rather than the function. BGB § 873(1) is the case in point.
+    correct: requisite/recorded-constitutive

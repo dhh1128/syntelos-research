@@ -1,0 +1,38 @@
+id: requisite/writing
+facet: requisite
+label: writing
+group: execution
+status: draft
+definition: >
+  The act must be embodied in durable text to be effective. Bare oral agreement will not do,
+  whatever the parties intended and however clearly it can be proved.
+elaboration: >
+  **False friend warning.** `writing` here means text alone. German `Schriftform` (BGB § 126)
+  additionally requires a handwritten signature, and `Textform` (BGB § 126b) permits electronic text
+  with no signature at all. So `Schriftform` is `writing` + `signature`, not `writing`. A profile
+  that maps `Schriftform` to this single value understates the requirement.
+discriminators:
+  requisite/signature: >
+    Text versus attribution. Writing fixes the terms; signature ties them to a person. Many statutes
+    of frauds demand both, and they fail independently — an unsigned written contract and an oral
+    one signed by nobody are different defects.
+  requisite/witnessed: >
+    Witnessing adds a third party who attests to execution. Writing needs no one present.
+  requisite/notarized: >
+    Notarization is an officer's attestation layered on top of a signed writing, not a stronger
+    kind of writing.
+  requisite/authenticated: >
+    Authentication is received by a public officer and carries heightened evidentiary force. Writing
+    carries none by itself.
+examples:
+  - text: Execute a contract for the sale of land in writing.
+    source: BGB § 311b (real-estate contracts); Utah statute-of-frauds provisions
+  - text: Record a juridical act in a form the law prescribes.
+    source: CCQ art. 1385 (contract formed by exchange of consents, subject to prescribed form)
+counter_examples:
+  - text: Sign a document that the law does not require to be written.
+    reason: >
+      The signature is doing the work of attribution here, and the writing is incidental to it.
+      Recording `writing` for every signed document would make the value meaningless, since almost
+      everything signed is also written.
+    correct: requisite/signature

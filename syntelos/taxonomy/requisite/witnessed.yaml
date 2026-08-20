@@ -1,0 +1,36 @@
+id: requisite/witnessed
+facet: requisite
+label: witnessed
+group: execution
+status: draft
+definition: >
+  One or more persons who are not parties must be present at execution and attest to it. Their
+  function is to evidence the circumstances — that this person signed, freely, on this occasion —
+  rather than the content.
+elaboration: >
+  Eligibility rules are part of the requirement and vary: CCQ art. 2819 disqualifies minors, persons
+  unable to consent, and anyone with an interest in the act. A profile that records `witnessed`
+  without the eligibility constraint has recorded half of it.
+discriminators:
+  requisite/signature: >
+    Whose mark, and vouching for what. The party's signature claims authorship; the witness's
+    attests to the occasion. A will can be validly signed and invalidly witnessed.
+  requisite/writing: >
+    Witnessing presupposes an instrument to witness but adds a person, not text.
+  requisite/notarized: >
+    A notary is an officer whose attestation carries official character; a lay witness has none, and
+    contradicting a witness needs no special procedure.
+  requisite/authenticated: >
+    Authentication is an officer receiving the act. Witnesses may be required alongside it — CCQ
+    art. 2819 requires a witness where a party cannot sign — so the two coexist rather than nest.
+examples:
+  - text: Attest a party's declaration where that party cannot sign.
+    source: CCQ art. 2819 (declaration "given before a witness who signs")
+  - text: Witness the execution of a will.
+    source: Utah Code Title 75 (execution of wills)
+counter_examples:
+  - text: Have a notary take receipt of a declaration of conveyance.
+    reason: >
+      The notary is a competent public officer acting in that capacity, not a bystander attesting.
+      BGB § 925 names the officer's competence as the operative fact.
+    correct: requisite/notarized

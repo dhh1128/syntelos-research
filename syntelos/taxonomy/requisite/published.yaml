@@ -1,0 +1,30 @@
+id: requisite/published
+facet: requisite
+label: published
+group: publicity
+status: draft
+definition: >
+  The act must be made generally available to an undifferentiated public — in an official gazette, a
+  newspaper of record, or an equivalent open channel. Nobody in particular is addressed; availability
+  to anyone is the requirement.
+elaboration: >
+  Publication in this sense is distinct from register recording even though both are public. A
+  register is consulted about a specific thing by someone with a reason to look; publication is
+  broadcast. French `publicité foncière` blurs the line, which is a good reason to record both values
+  where a jurisdiction demands both rather than choosing one.
+discriminators:
+  requisite/noticed: >
+    Audience. Publication addresses the world; notice addresses identified persons who must actually
+    be reached. An act can require both, and satisfying one never satisfies the other.
+examples:
+  - text: Publish a notice of intent to sell property before completing the sale.
+    source: Utah Code §17B-1-1307 ("Notice ... of dissolution")
+  - text: Publish a meeting agenda on a public notice website.
+    source: Utah Judicial Council Rule 2-103 (public notice of meetings)
+counter_examples:
+  - text: Serve process on a named defendant.
+    reason: >
+      Service must reach a particular person and is not discharged by making the document available
+      to the public. Publication is only a substitute where a statute expressly allows it for a
+      party who cannot be found.
+    correct: requisite/noticed

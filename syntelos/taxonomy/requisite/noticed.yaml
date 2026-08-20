@@ -1,0 +1,28 @@
+id: requisite/noticed
+facet: requisite
+label: noticed
+group: publicity
+status: draft
+definition: >
+  Identified persons must actually be informed, within any prescribed time and manner, for the act to
+  be effective against them. The obligation runs to named or determinable individuals rather than to
+  the public.
+elaboration: >
+  The manner is usually part of the requirement rather than incidental to it — CCQ art. 2941's
+  opposability by publication and a statute's service rules answer different questions, and a notice
+  given in the wrong manner commonly fails even where the person in fact learned of the act.
+discriminators:
+  requisite/published: >
+    Addressee. Notice must reach determinate persons; publication addresses anyone. Publishing where
+    the law demands notice leaves the act ineffective against the person entitled to be told.
+examples:
+  - text: Notify the supervisory authority of a personal-data breach within the prescribed period.
+    source: tefa research/archetypes/data-privacy-dpo/raw/00-starter-outline.md
+  - text: Serve process on a party to an action.
+    source: Utah Code §31A-2-310 ("Procedure for service of process")
+counter_examples:
+  - text: Publish a dissolution notice in a newspaper of record.
+    reason: >
+      Broadcasting to an undifferentiated audience discharges a publicity requirement, not a duty
+      owed to a determinate person who is entitled to be told directly.
+    correct: requisite/published

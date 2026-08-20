@@ -155,12 +155,23 @@ def check_completeness(lint: Lint, nodes: dict[str, dict]) -> None:
                 )
 
 
-def check_discriminators(lint: Lint, nodes: dict[str, dict]) -> None:
-    """C4: for a flat closed facet, every node must say how it differs from every sibling.
+def check_discriminators(lint: Lint, nodes: dict[str, dict], facets: dict) -> None:
+    """C4: a node must say how it differs from the siblings it could be confused with.
 
     This is the check that would have caught the ambiguities E1 found in GCD: `create info` vs
     `create record` was unresolvable precisely because no source stated the discrimination.
+
+    Scope of "sibling" depends on the facet. For a small CLOSED facet, it is every other member —
+    five effects mean four discriminators each, which is the right burden for a set whose whole
+    claim is to be MECE. For a larger OPEN facet the same rule produces mostly vacuous text
+    (`writing` versus `recorded-priority` needs no disambiguation) and buries the four or five
+    pairs that genuinely confuse. So an open facet's nodes may declare a `group`, and the
+    requirement then binds within the group, which is where confusion actually lives. A node in an
+    open facet with no group still owes discriminators against everything — declaring a group is
+    how you narrow the obligation, and it is visible in the file.
     """
+    kinds = {f.get("id"): f.get("kind") for f in (facets.get("facets") or [])}
+
     by_facet: dict[str, list[str]] = {}
     for node_id, node in nodes.items():
         by_facet.setdefault(node["facet"], []).append(node_id)
@@ -172,11 +183,31 @@ def check_discriminators(lint: Lint, nodes: dict[str, dict]) -> None:
             disc = node.get("discriminators") or {}
             siblings = {m for m in members if m != node_id}
 
+            group = node.get("group")
+            if kinds.get(facet) == "open" and group:
+                siblings = {
+                    m for m in siblings if nodes[m].get("group") == group
+                }
+                if not siblings:
+                    lint.notice(
+                        f"{node_id}: sole member of group {group!r}; no discriminators required"
+                    )
+
+            # A discriminator against a node OUTSIDE the required set is welcome — `authenticated`
+            # versus `certified` crosses groups and is one of the more useful boundaries in the
+            # facet. Only membership of the same facet is enforced; the required set below governs
+            # what must be present, not what may be.
+            facet_members = set(members)
             for named in disc:
                 if named not in nodes:
                     lint.fail(where, f"discriminator names unknown node {named!r}")
-                elif named not in siblings:
-                    lint.fail(where, f"discriminator names {named!r}, which is not a sibling")
+                elif named == node_id:
+                    lint.fail(where, "discriminator names the node itself")
+                elif named not in facet_members:
+                    lint.fail(
+                        where,
+                        f"discriminator names {named!r}, which is in a different facet",
+                    )
 
             for missing in sorted(siblings - set(disc)):
                 lint.fail(where, f"no discriminator against sibling {missing!r}")
@@ -290,7 +321,7 @@ def main() -> int:
 
     if nodes:
         check_completeness(lint, nodes)
-        check_discriminators(lint, nodes)
+        check_discriminators(lint, nodes, facets)
         check_gcd_alignment(lint, nodes)
     check_cardinality(lint, facets, nodes)
 

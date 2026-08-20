@@ -1,0 +1,37 @@
+id: requisite/notarized
+facet: requisite
+label: notarized
+group: execution
+status: draft
+definition: >
+  A notary attests that a signature is genuine and that the signer appeared and was identified. The
+  resulting document is ordinary evidence: a party disputing it may do so in the normal way, without
+  any special proceeding.
+elaboration: >
+  **This is the common-law sense, and it is deliberately narrow.** It is separated from
+  `authenticated` because conflating them is a live error — see that node. Where a jurisdiction's
+  notarization does carry heightened force, record `authenticated`, not this.
+discriminators:
+  requisite/authenticated: >
+    Evidentiary consequence, and it is a difference in kind. A notarized document is rebuttable
+    normally; an authentic act stands until a dedicated proceeding overturns it. This pair is the
+    reason the facet needs two values, and getting it backwards misstates what a document proves.
+  requisite/signature: >
+    Notarization attests to the signature; the signature is what is attested.
+  requisite/witnessed: >
+    An officer acting officially, versus a private person attesting. Their attestations have
+    different standing and different challenge routes.
+  requisite/writing: >
+    Notarization presupposes an instrument; it is not a property of the text.
+examples:
+  - text: Notarize a power of attorney before filing it.
+    source: Utah Code §75-13-206 ("Notarization and acknowledgment")
+  - text: Acknowledge a deed before a notary public.
+    source: Utah recording practice; Utah Code §57-1 (conveyances)
+counter_examples:
+  - text: Execute a French acte authentique before a notaire.
+    reason: >
+      The notaire is a public officer whose act carries force "jusqu'à inscription de faux" —
+      contradicting it requires that dedicated proceeding. Recording this as ordinary notarization
+      understates what the document proves.
+    correct: requisite/authenticated

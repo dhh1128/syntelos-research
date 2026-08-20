@@ -1,0 +1,30 @@
+id: requisite/certified
+facet: requisite
+label: certified
+group: attestation
+status: draft
+definition: >
+  A competent authority must attest to a fact or quality about something that already exists — that a
+  copy conforms to its original, that a person holds a qualification, that goods meet a standard. The
+  certificate speaks about the thing; it does not constitute it.
+elaboration: >
+  Sole member of its group at present, so it carries no within-group discriminators. Its nearest
+  neighbours sit in `execution`, and the boundary worth stating is against `authenticated`: CCQ
+  art. 2815 makes a copy of an authentic act itself authentic when attested by the officer who holds
+  the original, which shows certification and authentication meeting without merging.
+
+  If a profile needs conformity assessment, professional licensure, and copy certification kept
+  apart, register narrower values rather than overloading this one.
+discriminators: {}
+examples:
+  - text: Certify a copy of an original record as conforming.
+    source: CCQ art. 2815; Utah Code §59-1-209 ("Authenticated copies of records as evidence")
+  - text: Certify that a professional meets a state standard.
+    source: Utah Code §58-74-301 ("State certification required")
+counter_examples:
+  - text: Receive an act before a public officer with the required solemnities.
+    reason: >
+      Authentication constitutes how the instrument was made and gives it force against all persons.
+      Certification attests something about an instrument that already exists, and confers no such
+      force on the underlying act.
+    correct: requisite/authenticated
