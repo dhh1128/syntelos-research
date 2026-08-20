@@ -1,0 +1,45 @@
+name: taxonomy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      # v6 verified node24 on 2026-08-19; @v4 is still node20 and warns on every run.
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Lint taxonomy registry
+        run: python3 syntelos/tools/lint.py
+
+      # The cross-repo GCD check (C7) can only run where bakobo/schema is checked out, so in CI it
+      # reports as a skip. That is deliberate and visible in the log rather than silently absent.
+
+      - name: Re-verify the P5 corpus against primary source
+        # The corpus is only trustworthy while its quotes still resolve. If the tefa archetype
+        # files move or change, this fails loudly rather than leaving 176 acts silently unanchored.
+        # Skipped with a notice when the tefa repo is absent, as in a clean CI checkout.
+        run: |
+          if [ -d "$HOME/code/bakobo/tefa" ]; then
+            python3 syntelos/tools/verify_quotes.py \
+              syntelos/eval/corpora/p5-steward-acts.jsonl --root "$HOME"
+          else
+            echo "notice: tefa repo not present; P5 quote re-verification skipped"
+          fi
+
+      - name: Emit contamination disqualification list
+        # Not a gate yet — no evaluation corpus exists to screen. Run it anyway so the tool cannot
+        # rot unnoticed between now and V1, when it becomes the check that keeps the spec's own
+        # worked examples out of its test set.
+        run: python3 syntelos/tools/disqualified.py
