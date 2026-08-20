@@ -71,7 +71,7 @@ Over-draw accordingly. To land 135 acts from a population screening at ~40%, dra
 | P7 | Utina demo acts | `bakobo/utina` demo strings | 6 | Whole population |
 | P8 | DIDComm protocols + MCP tool definitions | `bakobo/interaction-acts/corpus/acts.jsonl` | 445 acts | Digital interaction — v1's home turf |
 | P9 | O*NET Work Activities | `bakobo/work-activities/corpus/acts.jsonl` | 19,898 acts | Whole-economy work — care, physical service, teaching, trade |
-| P10 | Relational and social acts | `bakobo/relational-acts/` | acquiring | ActivityStreams 2.0, schema.org, social APIs, and delegated relational practice |
+| P10 | Relational and social acts | `bakobo/relational-acts/corpus/*.jsonl` | 481 acts | ActivityStreams 2.0, schema.org, social APIs, iCalendar, and 120 delegated relational acts |
 
 P8 is load-bearing for the telos re-derivation (plan §1, guard 2): the v1 roots were built for
 exactly this domain, and re-deriving them against only legal and agentic corpora would replace one
@@ -115,6 +115,16 @@ Two caveats that bind on how it may be sampled.
   partition, and admitting them into a corpus whose purpose is bottom-up derivation would seed that
   derivation with another taxonomy's categories. Reversible via `--include-gwa` if ever wanted for a
   comparison rather than a derivation.
+
+**Every population must state what its selection principle omits.** Added 2026-08-20 after the
+third occasion this bit. A corpus is not neutral about what it contains: the v1 simulated scrape
+measured a model's priors; protocols, statutes, steward roles and O\*NET all miss social bonding
+because all four are inventories of instrumental activity; and the social APIs miss mourning and
+condolence because an API holds the relational acts someone found it profitable to build a button
+for. Agreement between corpora that share a selection principle is not independent corroboration,
+and it reads exactly like a finding until someone names the principle. So each population's entry
+carries an omission note, and any cross-population agreement claim must first establish that the
+populations do not share a selection rule.
 
 ## 3. Allocation
 

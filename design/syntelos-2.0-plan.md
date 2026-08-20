@@ -253,13 +253,53 @@ themselves. That is a real refinement to §3 and it came from the counter-exampl
   which is a good reminder that replication across sources sharing a *selection principle* is not
   independent replication at all.
 
-P10 acquisition is under way: the W3C ActivityStreams 2.0 Activity Vocabulary (a standards body's
-own enumeration of social acts), schema.org's `InteractAction` branch, open social-platform APIs,
-life-event and ceremony acts, and — the valuable and least enumerable part — a quote-anchored list
-of relational acts performed *on a principal's behalf*, drawn from described practice rather than
-invention.
+**P10 acquired 2026-08-20.** 481 acts at `bakobo/relational-acts/`: 361 from W3C ActivityStreams
+2.0/ActivityPub, schema.org's Action hierarchy, five social platforms pinned to commit shas, and the
+iCalendar RFCs — plus 120 **delegated relational** acts across 16 roles, held in a separate file
+because their provenance discipline differs. Contamination: 0 hits. 874 screen-outs recorded.
 
-Attempt 2 waits on that, and is otherwise unblocked.
+The delegated subset is the half that justifies [D-8MRC], and it came back better sourced than I
+expected: IMBRA (8 U.S.C. § 1375a), Korea's marriage-brokerage act, four US state dating-service
+statutes, UGCOPAA and Utah Title 75 all enumerate an agent's relational acts one by one, several
+consent-gated on a *named* counterparty. The cultural roles are thinner — the *nakōdo* rests on one
+journalistic article and the *shadchan* on a 1906 encyclopedia — and the caveat in the corpus notes
+is the right one: a statute says what an agent *must* do, which is adjacent to, not identical with,
+what a principal *permits*.
+
+Coverage after artefact correction: bonding 26, boundary 28, delegated 23, ceremony 17, play 5. The
+raw `play` count of 16 was inflated threefold by `party` matching "third party" and `join a` matching
+every membership call — the same substring trap that made the earlier `/relate` count look like 47
+when it was 1.
+
+  [ F-7CDW ]  **Mourning and condolence are zero across every corpus assembled.** Not thin — absent.
+  `condolence` and `congratulate` occur zero times in all 18,796 O\*NET task statements, and the 39
+  `funeral` hits are funeral-*services* trade rather than consoling. Play stands at 5 acts.
+
+The acquiring agent's own explanation is the right one and generalises: *an API holds the relational
+acts someone found it profitable to build a button for.* That is the third time this session a
+corpus's **selection principle** turned out to be the thing that mattered — the v1 simulated scrape
+measured a model's priors, the four instrumental corpora agreed about `/relate` because they were all
+inventories of instrumental activity, and now the social corpora are inventories of monetisable
+interaction. Every population in the frame should carry an explicit statement of what its selection
+principle systematically omits, not just what it contains.
+
+### Licensing constraint on the derivation
+
+The P10 sources do not share a licence: W3C permissive, schema.org **CC BY-SA 3.0** (share-alike),
+Mastodon **GFDL-1.3**, Discord CC BY-SA 4.0, Slack MIT, Matrix Apache-2.0, Bluesky MIT/Apache-2.0,
+IETF BCP 78. GFDL-1.3 and CC BY-SA are mutually awkward in a combined work.
+
+  [ R-4XNP ]  Two rules, and they are cheap to follow if adopted now rather than discovered later.
+  **Derive, do not copy.** A taxonomy category inferred from studying a corpus is not a derivative
+  work of the source texts — systems and facts are not copyrightable — but reproducing schema.org's
+  or Mastodon's *definitions verbatim* in the spec would be, and would drag a share-alike obligation
+  onto a standard meant to be freely implementable. Every definition in `taxonomy/` must be written
+  fresh. **And quarantine the GFDL material**: Mastodon's 60 acts overlap heavily with Discord,
+  Slack, Matrix and Bluesky, so dropping them costs little coverage and removes the one genuinely
+  incompatible licence from the pipeline.
+
+Attempt 2 is unblocked. `/relate` support is real but thin, and the honest report will say the root
+rests on 26 bonding acts and 23 delegated ones rather than on the thousands backing `/serve`.
 
 ---
 
