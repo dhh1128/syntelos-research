@@ -70,7 +70,7 @@ Over-draw accordingly. To land 135 acts from a population screening at ~40%, dra
 | P6 | GCD examples and invalid cases | `bakobo/schema/gcd/{examples,invalid}/` | 18 files | Whole population |
 | P7 | Utina demo acts | `bakobo/utina` demo strings | 6 | Whole population |
 | P8 | DIDComm protocols + MCP tool definitions | `bakobo/interaction-acts/corpus/acts.jsonl` | 445 acts | Digital interaction — v1's home turf |
-| P9 | O*NET Work Activities | onetcenter.org content model | TBD | **Required** — the only population reaching care, physical service, teaching, and trade |
+| P9 | O*NET Work Activities | `bakobo/work-activities/corpus/acts.jsonl` | 19,898 acts | Whole-economy work — care, physical service, teaching, trade |
 
 P8 is load-bearing for the telos re-derivation (plan §1, guard 2): the v1 roots were built for
 exactly this domain, and re-deriving them against only legal and agentic corpora would replace one
@@ -97,6 +97,23 @@ quietly absorbed:
   request, while `mediate-grant` / `mediate-deny` were kept as discretionary decisions. That line
   was drawn by hand. The rule it implies — *a reply that a protocol obliges is not a separate act; a
   reply that embodies a choice is* — should be stated and tested, not left as an extractor's habit.
+
+**P9 acquired 2026-08-20** — O\*NET 30.3 (May 2026), CC BY 4.0 with USDOL/ETA attribution and
+trademark conditions recorded in the corpus repo. 332 IWA, 2,034 DWA, 17,532 task statements across
+923 SOC occupations. Contamination screen: 0 hits. It closes five of the six domains that halted the
+telos re-derivation — care 1,269 acts, physical service 1,829, teaching 627, market exchange 292,
+civic 39 — and drops read-operations from a third of the pool to 8%.
+
+Two caveats that bind on how it may be sampled.
+
+- **P9 is not 19,898 independent observations.** The expected collapse between the DWA layer and the
+  task layer did not happen — only 7 texts deduped — which means the two layers largely describe the
+  same work at two granularities rather than covering different work. **Sample stratified by
+  `level`, and never treat a DWA and its cognate tasks as independent evidence about coverage.**
+- **The 41 Generalized Work Activities were deliberately excluded.** They are O\*NET's own top-level
+  partition, and admitting them into a corpus whose purpose is bottom-up derivation would seed that
+  derivation with another taxonomy's categories. Reversible via `--include-gwa` if ever wanted for a
+  comparison rather than a derivation.
 
 ## 3. Allocation
 
