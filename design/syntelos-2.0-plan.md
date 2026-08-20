@@ -347,6 +347,58 @@ and `representing`, which is defensible — introducing two people genuinely is 
 corpus cannot settle is whether matchmaking's telos is *aligning parties* or *forming a bond*; that
 is a theory question, and per [D-8MRC] the root stays on the author's judgment.
 
+### Telos attempt 3 — chunked, 2026-08-20
+
+Map-reduce instead of one heroic call. The 1,076-act sample split into 8 batches of ~135; each
+batch clustered independently by two seats, blind to every other batch and to each other; the 15
+surviving cluster sets then consolidated into one partition. Every batch output passed
+`tools/degenerate.py` before use, and the runner
+(`tools/run_batches.sh`) retries once on a failed gate — which recovered `ds-07` on attempt 2.
+15 of 16 batches produced usable output.
+
+This is better methodology than a single global partition, not merely a workaround for timeouts.
+**Because the batches are independent and blind, the number of passes that independently recover a
+root is evidence about that root** — something no single-call derivation can produce. Recurrence,
+before consolidation: `care` 10, `communication` 9, `coordination` 8, `knowledge`/`compliance`/
+`commerce` 7 each, `justice` 6, `safety`/`production`/`maintenance` 5 each.
+
+Consolidated partition, with the count of passes independently finding each:
+
+| root | passes | root | passes |
+|---|---|---|---|
+| `care` | ~14/15 | `coordination` | ~14/15 |
+| `protection` | ~14/15 | `participation` | ~9/15 |
+| `knowledge` | ~14/15 | `persuasion` | ~6/15 |
+| `communication` | ~14/15 | `union` | ~5/15 |
+| `provision` | ~14/15 | `ecology` | ~3/15 |
+| `conformity` | ~13/15 | `justice` | ~10/15 |
+| `exchange` | ~12/15 | | |
+
+  [ F-4KDM ]  **`union` emerged — and it is `/relate`.** *"Bring particular parties into a durable
+  pairing or alliance, especially marriage or kinship. It is narrower than generic matching: the
+  relationship formed is itself the terminal outcome."* Its discriminating question is exactly the
+  one attempt 2 could not settle: *is a continuing bond the end, rather than selection for a role,
+  which serves the role's further purpose?* Five of fifteen independent passes isolated it.
+
+That vindicates [D-8MRC] on evidence rather than on authority, and it says something about method.
+Attempts 1 and 2 asked one model to partition a thousand acts at once, and in that setting a root
+supported by ~3% of the corpus is invisible — it gets absorbed into whatever large neighbour it most
+resembles. Splitting the corpus into slices where relational acts are locally salient let the root
+surface in the passes that contained it. **A small root is not weak evidence; it is evidence that a
+global partition cannot see.**
+
+`representing` did not reappear in any of the 15 batches or in the consolidation, so the
+ultimate-purpose and standing-relation screens [F-2HXB] held.
+
+Roughly against v1: `/care` → `care`; `/share` splits into `knowledge` + `communication`; `/align`
+→ `coordination`; `/trade` → `exchange`; `/serve` and `/operate` merge into `provision`; `/govern`
+splits into `justice` + `conformity` + `protection`; `/relate` splits into `union` + `participation`.
+Genuinely new and absent from v1: `protection`, `conformity`, `persuasion`, `ecology`.
+
+Weak roots are flagged rather than hidden: `ecology` at ~3/15 is the thinnest retained, `union` at
+~5/15 is sparse but sharply defined. Neither should be presented with the same confidence as the
+~14/15 roots, and the paper must carry the recurrence counts.
+
 ---
 
 ## 3. Replacing the refusal test
