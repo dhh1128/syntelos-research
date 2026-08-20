@@ -1,0 +1,621 @@
+{"id": "p8-mcp-0101", "text": "get file contents", "pop": "p8", "pool_id": "T0001"}
+{"id": "p8-mcp-0241", "text": "get internet services timeseries", "pop": "p8", "pool_id": "T0002"}
+{"id": "p8-mcp-0066", "text": "create a directory", "pop": "p8", "pool_id": "T0003"}
+{"id": "p8-dc-0021", "text": "query a keylist", "pop": "p8", "pool_id": "T0004"}
+{"id": "p8-mcp-0023", "text": "scrape url elements", "pop": "p8", "pool_id": "T0005"}
+{"id": "p5-0211", "text": "post stakeholder updates", "pop": "p5", "pool_id": "T0006"}
+{"id": "p5-0082", "text": "flag ambiguity", "pop": "p5", "pool_id": "T0007"}
+{"id": "p8-mcp-0159", "text": "publish a message to a redis channel", "pop": "p8", "pool_id": "T0008"}
+{"id": "p5-0002", "text": "apply cash", "pop": "p5", "pool_id": "T0009"}
+{"id": "p5-0245", "text": "get a fact confirmed by an SME", "pop": "p5", "pool_id": "T0010"}
+{"id": "p5-0092", "text": "refuse to wave through a missing cap", "pop": "p5", "pool_id": "T0011"}
+{"id": "p8-mcp-0219", "text": "get a bgp rpki aspa snapshot", "pop": "p8", "pool_id": "T0012"}
+{"id": "p5-0173", "text": "refuse to manipulate a forecast toward a predetermined answer", "pop": "p5", "pool_id": "T0013"}
+{"id": "p5-0243", "text": "escalate ambiguous facts to an SME", "pop": "p5", "pool_id": "T0014"}
+{"id": "p5-0055", "text": "scope and map controls to requirements", "pop": "p5", "pool_id": "T0015"}
+{"id": "p5-0033", "text": "refuse to file a bug without an oracle", "pop": "p5", "pool_id": "T0016"}
+{"id": "p8-mcp-0008", "text": "search documents using autorag", "pop": "p8", "pool_id": "T0017"}
+{"id": "p8-mcp-0198", "text": "fill out an input field", "pop": "p8", "pool_id": "T0018"}
+{"id": "p8-mcp-0264", "text": "list ct logs", "pop": "p8", "pool_id": "T0019"}
+{"id": "p8-dc-0011", "text": "vote a poll", "pop": "p8", "pool_id": "T0020"}
+{"id": "p8-dc-0068", "text": "request a charge", "pop": "p8", "pool_id": "T0021"}
+{"id": "p5-0116", "text": "verify identity before a sensitive action", "pop": "p5", "pool_id": "T0022"}
+{"id": "p8-mcp-0225", "text": "get bot details", "pop": "p8", "pool_id": "T0023"}
+{"id": "p5-0222", "text": "define the success profile", "pop": "p5", "pool_id": "T0024"}
+{"id": "p8-dc-0112", "text": "request a retrieval", "pop": "p8", "pool_id": "T0025"}
+{"id": "p8-dc-0016", "text": "deny a mediation", "pop": "p8", "pool_id": "T0026"}
+{"id": "p8-mcp-0041", "text": "search posts", "pop": "p8", "pool_id": "T0027"}
+{"id": "p5-0213", "text": "refuse to chase root cause while users bleed", "pop": "p5", "pool_id": "T0028"}
+{"id": "p5-0288", "text": "perform tier-appropriate vendor due diligence", "pop": "p5", "pool_id": "T0029"}
+{"id": "p5-0085", "text": "obtain sign-off for controlled spend", "pop": "p5", "pool_id": "T0030"}
+{"id": "p8-mcp-0185", "text": "remove a member from a redis sorted set", "pop": "p8", "pool_id": "T0031"}
+{"id": "p5-0271", "text": "process an appeal", "pop": "p5", "pool_id": "T0032"}
+{"id": "p8-mcp-0218", "text": "get bgp rpki aspa changes", "pop": "p8", "pool_id": "T0033"}
+{"id": "p8-mcp-0122", "text": "get elevation data for locations on the earth", "pop": "p8", "pool_id": "T0034"}
+{"id": "p8-mcp-0216", "text": "get a bgp routes realtime", "pop": "p8", "pool_id": "T0035"}
+{"id": "p8-dc-0072", "text": "request a handshake", "pop": "p8", "pool_id": "T0036"}
+{"id": "p8-mcp-0297", "text": "convert a time", "pop": "p8", "pool_id": "T0037"}
+{"id": "p8-mcp-0154", "text": "remove and return the first element from a redis list", "pop": "p8", "pool_id": "T0038"}
+{"id": "p8-mcp-0044", "text": "show account dns settings", "pop": "p8", "pool_id": "T0039"}
+{"id": "p8-dc-0113", "text": "decline a storage", "pop": "p8", "pool_id": "T0040"}
+{"id": "p8-mcp-0111", "text": "merge a pull request", "pop": "p8", "pool_id": "T0041"}
+{"id": "p5-0105", "text": "escalate rather than guess", "pop": "p5", "pool_id": "T0042"}
+{"id": "p5-0108", "text": "resolve or route a support ticket", "pop": "p5", "pool_id": "T0043"}
+{"id": "p5-0016", "text": "refuse to post an unbalanced entry", "pop": "p5", "pool_id": "T0044"}
+{"id": "p8-mcp-0004", "text": "list gateways", "pop": "p8", "pool_id": "T0045"}
+{"id": "p8-mcp-0171", "text": "remove a value from a redis set", "pop": "p8", "pool_id": "T0046"}
+{"id": "p5-0227", "text": "refuse to evaluate on protected characteristics", "pop": "p5", "pool_id": "T0047"}
+{"id": "p8-mcp-0082", "text": "list git branches", "pop": "p8", "pool_id": "T0048"}
+{"id": "p8-mcp-0074", "text": "read a file", "pop": "p8", "pool_id": "T0049"}
+{"id": "p5-0049", "text": "monitor controls for drift", "pop": "p5", "pool_id": "T0050"}
+{"id": "p5-0171", "text": "reconcile actuals to the source ledger", "pop": "p5", "pool_id": "T0051"}
+{"id": "p8-dc-0105", "text": "request a signing", "pop": "p8", "pool_id": "T0052"}
+{"id": "p8-mcp-0307", "text": "list r2 buckets in your cloudflare account", "pop": "p8", "pool_id": "T0053"}
+{"id": "p5-0287", "text": "offboard a vendor", "pop": "p5", "pool_id": "T0054"}
+{"id": "p5-0214", "text": "run a blameless postmortem", "pop": "p5", "pool_id": "T0055"}
+{"id": "p5-0120", "text": "ensure an Art. 28 DPA is in place", "pop": "p5", "pool_id": "T0056"}
+{"id": "p8-dc-0003", "text": "accept a calendar", "pop": "p8", "pool_id": "T0057"}
+{"id": "p8-dc-0086", "text": "propose a poe", "pop": "p8", "pool_id": "T0058"}
+{"id": "p8-mcp-0255", "text": "get tld details", "pop": "p8", "pool_id": "T0059"}
+{"id": "p8-mcp-0060", "text": "trigger an elicitation request async", "pop": "p8", "pool_id": "T0060"}
+{"id": "p8-dc-0081", "text": "propose a presentation", "pop": "p8", "pool_id": "T0061"}
+{"id": "p8-mcp-0143", "text": "delete a field from a redis hash", "pop": "p8", "pool_id": "T0062"}
+{"id": "p5-0152", "text": "refuse to commit beyond delegated authority", "pop": "p5", "pool_id": "T0063"}
+{"id": "p8-mcp-0274", "text": "delete a file in the working directory", "pop": "p8", "pool_id": "T0064"}
+{"id": "p8-mcp-0267", "text": "list tlds", "pop": "p8", "pool_id": "T0065"}
+{"id": "p8-mcp-0173", "text": "return the string representation of the type of the value stored at", "pop": "p8", "pool_id": "T0066"}
+{"id": "p8-mcp-0133", "text": "get a list of connected clients to the redis server", "pop": "p8", "pool_id": "T0067"}
+{"id": "p5-0221", "text": "define a role success profile", "pop": "p5", "pool_id": "T0068"}
+{"id": "p5-0231", "text": "run intake with the hiring manager", "pop": "p5", "pool_id": "T0069"}
+{"id": "p8-mcp-0172", "text": "subscribe to a redis channel and return a reusable subscription handle", "pop": "p8", "pool_id": "T0070"}
+{"id": "p5-0269", "text": "log a specific reason for an enforcement decision", "pop": "p5", "pool_id": "T0071"}
+{"id": "p8-mcp-0311", "text": "find keys in the workers observability data ## best practices", "pop": "p8", "pool_id": "T0072"}
+{"id": "p8-mcp-0265", "text": "list geolocations", "pop": "p8", "pool_id": "T0073"}
+{"id": "p8-mcp-0093", "text": "show the working tree status", "pop": "p8", "pool_id": "T0074"}
+{"id": "p8-mcp-0242", "text": "get internet speed data", "pop": "p8", "pool_id": "T0075"}
+{"id": "p8-mcp-0296", "text": "search a dev stack", "pop": "p8", "pool_id": "T0076"}
+{"id": "p5-0138", "text": "capture and chase meeting action items", "pop": "p5", "pool_id": "T0077"}
+{"id": "p8-dc-0046", "text": "confirm a settlement", "pop": "p8", "pool_id": "T0078"}
+{"id": "p8-mcp-0027", "text": "delete a collection", "pop": "p8", "pool_id": "T0079"}
+{"id": "p8-mcp-0016", "text": "get url links", "pop": "p8", "pool_id": "T0080"}
+{"id": "p5-0043", "text": "escalate deficiencies according to severity", "pop": "p5", "pool_id": "T0081"}
+{"id": "p5-0012", "text": "reconcile bank and sub-ledgers", "pop": "p5", "pool_id": "T0082"}
+{"id": "p8-dc-0031", "text": "request a publication", "pop": "p8", "pool_id": "T0083"}
+{"id": "p8-mcp-0300", "text": "delete a d1 database in your cloudflare account", "pop": "p8", "pool_id": "T0084"}
+{"id": "p8-mcp-0227", "text": "get bots data", "pop": "p8", "pool_id": "T0085"}
+{"id": "p8-dc-0025", "text": "accept a data agreement negotiation", "pop": "p8", "pool_id": "T0086"}
+{"id": "p8-mcp-0059", "text": "trigger an elicitation request", "pop": "p8", "pool_id": "T0087"}
+{"id": "p8-mcp-0144", "text": "check if a field exists in a redis hash", "pop": "p8", "pool_id": "T0088"}
+{"id": "p5-0239", "text": "audit documentation for accuracy", "pop": "p5", "pool_id": "T0089"}
+{"id": "p5-0155", "text": "triage the principal's inbox", "pop": "p5", "pool_id": "T0090"}
+{"id": "p8-mcp-0269", "text": "delete one or more keys from redis", "pop": "p8", "pool_id": "T0091"}
+{"id": "p8-dc-0120", "text": "propose a vault", "pop": "p8", "pool_id": "T0092"}
+{"id": "p8-mcp-0271", "text": "list redis keys matching a pattern", "pop": "p8", "pool_id": "T0093"}
+{"id": "p5-0135", "text": "verify requester identity before disclosing personal data", "pop": "p5", "pool_id": "T0094"}
+{"id": "p8-mcp-0084", "text": "record changes to the repository", "pop": "p8", "pool_id": "T0095"}
+{"id": "p8-dc-0008", "text": "decline a delegate", "pop": "p8", "pool_id": "T0096"}
+{"id": "p8-dc-0035", "text": "preview a credential", "pop": "p8", "pool_id": "T0097"}
+{"id": "p8-mcp-0299", "text": "create a new d1 database in your cloudflare account", "pop": "p8", "pool_id": "T0098"}
+{"id": "p5-0065", "text": "perform editorial self-qa on content", "pop": "p5", "pool_id": "T0099"}
+{"id": "p8-dc-0127", "text": "discover a workflow", "pop": "p8", "pool_id": "T0100"}
+{"id": "p5-0248", "text": "perform self-qa on documentation", "pop": "p5", "pool_id": "T0101"}
+{"id": "p8-mcp-0290", "text": "create a table", "pop": "p8", "pool_id": "T0102"}
+{"id": "p8-dc-0094", "text": "join a room", "pop": "p8", "pool_id": "T0103"}
+{"id": "p5-0189", "text": "reconcile the identity store against target systems", "pop": "p5", "pool_id": "T0104"}
+{"id": "p8-mcp-0070", "text": "list allowed directories", "pop": "p8", "pool_id": "T0105"}
+{"id": "p8-mcp-0046", "text": "generate an image", "pop": "p8", "pool_id": "T0106"}
+{"id": "p8-mcp-0107", "text": "get pull request status", "pop": "p8", "pool_id": "T0107"}
+{"id": "p8-mcp-0081", "text": "add file contents to the staging area", "pop": "p8", "pool_id": "T0108"}
+{"id": "p8-mcp-0193", "text": "read a graph", "pop": "p8", "pool_id": "T0109"}
+{"id": "p8-dc-0121", "text": "invite a url", "pop": "p8", "pool_id": "T0110"}
+{"id": "p8-mcp-0258", "text": "get a url scan", "pop": "p8", "pool_id": "T0111"}
+{"id": "p8-mcp-0205", "text": "get annotations", "pop": "p8", "pool_id": "T0112"}
+{"id": "p8-mcp-0049", "text": "get an env", "pop": "p8", "pool_id": "T0113"}
+{"id": "p8-mcp-0253", "text": "get a speed histogram", "pop": "p8", "pool_id": "T0114"}
+{"id": "p8-mcp-0125", "text": "convert coordinates into an address", "pop": "p8", "pool_id": "T0115"}
+{"id": "p5-0036", "text": "route a bug to an owner", "pop": "p5", "pool_id": "T0116"}
+{"id": "p8-dc-0004", "text": "cancel a calendar", "pop": "p8", "pool_id": "T0117"}
+{"id": "p5-0149", "text": "prepare an agenda and pre-read", "pop": "p5", "pool_id": "T0118"}
+{"id": "p8-mcp-0164", "text": "add a value to a redis set with an optional expiration time", "pop": "p8", "pool_id": "T0119"}
+{"id": "p8-dc-0039", "text": "request a credential", "pop": "p8", "pool_id": "T0120"}
+{"id": "p8-mcp-0190", "text": "delete observations", "pop": "p8", "pool_id": "T0121"}
+{"id": "p8-mcp-0231", "text": "get dns queries data", "pop": "p8", "pool_id": "T0122"}
+{"id": "p8-mcp-0024", "text": "start a crawl", "pop": "p8", "pool_id": "T0123"}
+{"id": "p5-0218", "text": "watch SLOs", "pop": "p5", "pool_id": "T0124"}
+{"id": "p5-0147", "text": "prepare a briefing note for the principal", "pop": "p5", "pool_id": "T0125"}
+{"id": "p5-0260", "text": "apply a proportionate content-enforcement action", "pop": "p5", "pool_id": "T0126"}
+{"id": "p8-mcp-0283", "text": "get thread replies", "pop": "p8", "pool_id": "T0127"}
+{"id": "p5-0123", "text": "hold a dsar disclosure until identity is verified", "pop": "p5", "pool_id": "T0128"}
+{"id": "p8-dc-0114", "text": "store a receipt", "pop": "p8", "pool_id": "T0129"}
+{"id": "p8-mcp-0158", "text": "subscribe to redis channels using a pattern", "pop": "p8", "pool_id": "T0130"}
+{"id": "p8-mcp-0215", "text": "get bgp route stats", "pop": "p8", "pool_id": "T0131"}
+{"id": "p8-mcp-0069", "text": "get file info", "pop": "p8", "pool_id": "T0132"}
+{"id": "p5-0017", "text": "route an invoice for approval", "pop": "p5", "pool_id": "T0133"}
+{"id": "p5-0070", "text": "refuse to publish unsubstantiated claims", "pop": "p5", "pool_id": "T0134"}
+{"id": "p8-mcp-0100", "text": "fork a repository", "pop": "p8", "pool_id": "T0135"}
+{"id": "p8-dc-0047", "text": "request a synchronisation", "pop": "p8", "pool_id": "T0136"}
+{"id": "p5-0004", "text": "enforce controls", "pop": "p5", "pool_id": "T0137"}
+{"id": "p8-mcp-0065", "text": "fetch a url from the internet and optionally extracts its contents as", "pop": "p8", "pool_id": "T0138"}
+{"id": "p8-dc-0084", "text": "accept a poe", "pop": "p8", "pool_id": "T0139"}
+{"id": "p8-mcp-0042", "text": "get information about cloudflare's mcp demo day", "pop": "p8", "pool_id": "T0140"}
+{"id": "p5-0154", "text": "represent the principal faithfully", "pop": "p5", "pool_id": "T0141"}
+{"id": "p8-mcp-0031", "text": "get collection info", "pop": "p8", "pool_id": "T0142"}
+{"id": "p8-mcp-0096", "text": "create or update file", "pop": "p8", "pool_id": "T0143"}
+{"id": "p8-mcp-0086", "text": "show differences between branches or commits", "pop": "p8", "pool_id": "T0144"}
+{"id": "p5-0170", "text": "produce a financial recommendation", "pop": "p5", "pool_id": "T0145"}
+{"id": "p8-mcp-0189", "text": "delete entities", "pop": "p8", "pool_id": "T0146"}
+{"id": "p5-0129", "text": "notify the authority within 72 hours", "pop": "p5", "pool_id": "T0147"}
+{"id": "p8-mcp-0211", "text": "get bgp ip space timeseries", "pop": "p8", "pool_id": "T0148"}
+{"id": "p8-mcp-0238", "text": "get http data", "pop": "p8", "pool_id": "T0149"}
+{"id": "p8-mcp-0136", "text": "delete a redis key", "pop": "p8", "pool_id": "T0150"}
+{"id": "p5-0258", "text": "update documentation to match the current version", "pop": "p5", "pool_id": "T0151"}
+{"id": "p8-mcp-0262", "text": "list bots", "pop": "p8", "pool_id": "T0152"}
+{"id": "p8-mcp-0007", "text": "list rags", "pop": "p8", "pool_id": "T0153"}
+{"id": "p5-0238", "text": "source candidates for a requisition", "pop": "p5", "pool_id": "T0154"}
+{"id": "p8-mcp-0015", "text": "get a url json", "pop": "p8", "pool_id": "T0155"}
+{"id": "p8-dc-0020", "text": "update a recipient", "pop": "p8", "pool_id": "T0156"}
+{"id": "p8-dc-0104", "text": "propose a signing", "pop": "p8", "pool_id": "T0157"}
+{"id": "p5-0072", "text": "route content for brand or legal review", "pop": "p5", "pool_id": "T0158"}
+{"id": "p5-0223", "text": "escalate comp level scope to hiring manager", "pop": "p5", "pool_id": "T0159"}
+{"id": "p8-mcp-0202", "text": "select an element on the page with select tag", "pop": "p8", "pool_id": "T0160"}
+{"id": "p8-mcp-0055", "text": "get a tiny image", "pop": "p8", "pool_id": "T0161"}
+{"id": "p8-mcp-0263", "text": "list ct authorities", "pop": "p8", "pool_id": "T0162"}
+{"id": "p8-mcp-0196", "text": "click an element on the page", "pop": "p8", "pool_id": "T0163"}
+{"id": "p5-0206", "text": "escalate a costly mitigation", "pop": "p5", "pool_id": "T0164"}
+{"id": "p8-mcp-0235", "text": "get email routing data", "pop": "p8", "pool_id": "T0165"}
+{"id": "p8-dc-0076", "text": "offer a mandate", "pop": "p8", "pool_id": "T0166"}
+{"id": "p8-dc-0055", "text": "change a live delivery", "pop": "p8", "pool_id": "T0167"}
+{"id": "p8-mcp-0137", "text": "set an expiration time for a redis key", "pop": "p8", "pool_id": "T0168"}
+{"id": "p5-0224", "text": "evaluate candidates on job-related evidence", "pop": "p5", "pool_id": "T0169"}
+{"id": "p8-dc-0065", "text": "upgrade a proposal", "pop": "p8", "pool_id": "T0170"}
+{"id": "p8-mcp-0286", "text": "list channels", "pop": "p8", "pool_id": "T0171"}
+{"id": "p8-mcp-0129", "text": "execute a graphql query against the cloudflare api important", "pop": "p8", "pool_id": "T0172"}
+{"id": "p8-dc-0009", "text": "invite a calendar", "pop": "p8", "pool_id": "T0173"}
+{"id": "p8-mcp-0002", "text": "get a log request body", "pop": "p8", "pool_id": "T0174"}
+{"id": "p5-0283", "text": "document vendor-risk acceptance", "pop": "p5", "pool_id": "T0175"}
+{"id": "p5-0277", "text": "route a low-confidence case to human review", "pop": "p5", "pool_id": "T0176"}
+{"id": "p8-dc-0095", "text": "leave a room", "pop": "p8", "pool_id": "T0177"}
+{"id": "p8-mcp-0135", "text": "get the number of keys stored in the redis database", "pop": "p8", "pool_id": "T0178"}
+{"id": "p8-dc-0017", "text": "grant a mediation", "pop": "p8", "pool_id": "T0179"}
+{"id": "p8-mcp-0141", "text": "get indexes", "pop": "p8", "pool_id": "T0180"}
+{"id": "p8-dc-0022", "text": "update a keylist", "pop": "p8", "pool_id": "T0181"}
+{"id": "p8-dc-0087", "text": "request a poe", "pop": "p8", "pool_id": "T0182"}
+{"id": "p8-dc-0100", "text": "combine a signing", "pop": "p8", "pool_id": "T0183"}
+{"id": "p8-mcp-0094", "text": "add an issue comment", "pop": "p8", "pool_id": "T0184"}
+{"id": "p8-mcp-0203", "text": "create a url scan", "pop": "p8", "pool_id": "T0185"}
+{"id": "p8-mcp-0243", "text": "get ip details", "pop": "p8", "pool_id": "T0186"}
+{"id": "p8-mcp-0123", "text": "convert an address into geographic coordinates", "pop": "p8", "pool_id": "T0187"}
+{"id": "p8-mcp-0011", "text": "perform a web search using the brave search api, ideal for general", "pop": "p8", "pool_id": "T0188"}
+{"id": "p8-mcp-0295", "text": "list libraries", "pop": "p8", "pool_id": "T0189"}
+{"id": "p5-0056", "text": "test control design and operating effectiveness", "pop": "p5", "pool_id": "T0190"}
+{"id": "p8-mcp-0284", "text": "get a user profile", "pop": "p8", "pool_id": "T0191"}
+{"id": "p8-dc-0106", "text": "request a survey", "pop": "p8", "pool_id": "T0192"}
+{"id": "p8-dc-0023", "text": "complete a didexchange", "pop": "p8", "pool_id": "T0193"}
+{"id": "p8-mcp-0166", "text": "scan keys", "pop": "p8", "pool_id": "T0194"}
+{"id": "p5-0263", "text": "decide an enforcement action", "pop": "p5", "pool_id": "T0195"}
+{"id": "p8-mcp-0047", "text": "echo back the input string", "pop": "p8", "pool_id": "T0196"}
+{"id": "p8-dc-0038", "text": "propose a credential", "pop": "p8", "pool_id": "T0197"}
+{"id": "p8-mcp-0050", "text": "get resource links", "pop": "p8", "pool_id": "T0198"}
+{"id": "p5-0210", "text": "post incident stakeholder updates", "pop": "p5", "pool_id": "T0199"}
+{"id": "p8-mcp-0152", "text": "set a json value in redis at a given path with an", "pop": "p8", "pool_id": "T0200"}
+{"id": "p8-mcp-0178", "text": "delete an entry from a redis stream", "pop": "p8", "pool_id": "T0201"}
+{"id": "p5-0020", "text": "validate an invoice", "pop": "p5", "pool_id": "T0202"}
+{"id": "p5-0009", "text": "pay an invoice", "pop": "p5", "pool_id": "T0203"}
+{"id": "p8-dc-0026", "text": "offer a data agreement negotiation", "pop": "p8", "pool_id": "T0204"}
+{"id": "p8-mcp-0032", "text": "get documents", "pop": "p8", "pool_id": "T0205"}
+{"id": "p5-0087", "text": "produce a contract redline", "pop": "p5", "pool_id": "T0206"}
+{"id": "p8-dc-0078", "text": "revoke a method", "pop": "p8", "pool_id": "T0207"}
+{"id": "p8-mcp-0083", "text": "switch branches", "pop": "p8", "pool_id": "T0208"}
+{"id": "p5-0077", "text": "construe terms", "pop": "p5", "pool_id": "T0209"}
+{"id": "p5-0233", "text": "score a candidate before group discussion", "pop": "p5", "pool_id": "T0210"}
+{"id": "p8-mcp-0245", "text": "get l7 attack data", "pop": "p8", "pool_id": "T0211"}
+{"id": "p8-mcp-0217", "text": "get bgp routing table ases", "pop": "p8", "pool_id": "T0212"}
+{"id": "p5-0021", "text": "assign severity per the rubric", "pop": "p5", "pool_id": "T0213"}
+{"id": "p8-dc-0122", "text": "announce a key", "pop": "p8", "pool_id": "T0214"}
+{"id": "p8-dc-0103", "text": "issue a token", "pop": "p8", "pool_id": "T0215"}
+{"id": "p8-mcp-0204", "text": "get ai data", "pop": "p8", "pool_id": "T0216"}
+{"id": "p8-mcp-0005", "text": "list logs", "pop": "p8", "pool_id": "T0217"}
+{"id": "p8-dc-0056", "text": "request status", "pop": "p8", "pool_id": "T0218"}
+{"id": "p5-0029", "text": "demand reproduction and evidence", "pop": "p5", "pool_id": "T0219"}
+{"id": "p8-dc-0052", "text": "leave a mesh", "pop": "p8", "pool_id": "T0220"}
+{"id": "p8-mcp-0257", "text": "get a traffic anomalies by location", "pop": "p8", "pool_id": "T0221"}
+{"id": "p8-mcp-0068", "text": "edit a file", "pop": "p8", "pool_id": "T0222"}
+{"id": "p8-dc-0077", "text": "update a mandate", "pop": "p8", "pool_id": "T0223"}
+{"id": "p8-mcp-0266", "text": "list origins", "pop": "p8", "pool_id": "T0224"}
+{"id": "p8-mcp-0112", "text": "push files", "pop": "p8", "pool_id": "T0225"}
+{"id": "p8-mcp-0260", "text": "get a url scan screenshot", "pop": "p8", "pool_id": "T0226"}
+{"id": "p8-mcp-0275", "text": "read a file or directory, returning text or a displayable base64 resource", "pop": "p8", "pool_id": "T0227"}
+{"id": "p8-mcp-0067", "text": "get a recursive tree view of files and directories as a json", "pop": "p8", "pool_id": "T0228"}
+{"id": "p8-mcp-0310", "text": "list builds", "pop": "p8", "pool_id": "T0229"}
+{"id": "p8-mcp-0208", "text": "get as relationships", "pop": "p8", "pool_id": "T0230"}
+{"id": "p8-mcp-0009", "text": "retrieve from aws kb", "pop": "p8", "pool_id": "T0231"}
+{"id": "p8-dc-0116", "text": "send a trust ping", "pop": "p8", "pool_id": "T0232"}
+{"id": "p5-0192", "text": "revoke access when in doubt", "pop": "p5", "pool_id": "T0233"}
+{"id": "p8-mcp-0062", "text": "trigger a sampling request", "pop": "p8", "pool_id": "T0234"}
+{"id": "p8-mcp-0057", "text": "toggle a simulated logging", "pop": "p8", "pool_id": "T0235"}
+{"id": "p8-mcp-0183", "text": "add a member to a redis sorted set with an optional expiration", "pop": "p8", "pool_id": "T0236"}
+{"id": "p8-mcp-0124", "text": "get detailed information about a specific place", "pop": "p8", "pool_id": "T0237"}
+{"id": "p5-0259", "text": "apply a proportionate action", "pop": "p5", "pool_id": "T0238"}
+{"id": "p8-mcp-0247", "text": "get netflows data", "pop": "p8", "pool_id": "T0239"}
+{"id": "p5-0128", "text": "notify data subjects of a high-risk breach", "pop": "p5", "pool_id": "T0240"}
+{"id": "p5-0038", "text": "verify a fix", "pop": "p5", "pool_id": "T0241"}
+{"id": "p8-mcp-0138", "text": "get a redis string value", "pop": "p8", "pool_id": "T0242"}
+{"id": "p5-0125", "text": "maintain the ROPA", "pop": "p5", "pool_id": "T0243"}
+{"id": "p8-mcp-0034", "text": "modify a collection", "pop": "p8", "pool_id": "T0244"}
+{"id": "p8-dc-0012", "text": "report a problem", "pop": "p8", "pool_id": "T0245"}
+{"id": "p8-dc-0019", "text": "query a recipient", "pop": "p8", "pool_id": "T0246"}
+{"id": "p5-0122", "text": "handle a DSAR within one month", "pop": "p5", "pool_id": "T0247"}
+{"id": "p8-mcp-0130", "text": "fetch the high-level overview of the cloudflare graphql api schema", "pop": "p8", "pool_id": "T0248"}
+{"id": "p8-mcp-0018", "text": "get a url pdf", "pop": "p8", "pool_id": "T0249"}
+{"id": "p8-mcp-0180", "text": "destroy a consumer group for a redis stream", "pop": "p8", "pool_id": "T0250"}
+{"id": "p8-mcp-0106", "text": "get pull request reviews", "pop": "p8", "pool_id": "T0251"}
+{"id": "p8-mcp-0289", "text": "append an insight", "pop": "p8", "pool_id": "T0252"}
+{"id": "p5-0201", "text": "coordinate incident roles", "pop": "p5", "pool_id": "T0253"}
+{"id": "p8-mcp-0006", "text": "find all audit logs", "pop": "p8", "pool_id": "T0254"}
+{"id": "p5-0112", "text": "set customer expectations", "pop": "p5", "pool_id": "T0255"}
+{"id": "p8-dc-0115", "text": "request a storage", "pop": "p8", "pool_id": "T0256"}
+{"id": "p8-mcp-0277", "text": "list the working-directory file tree", "pop": "p8", "pool_id": "T0257"}
+{"id": "p5-0301", "text": "verify a SOC 2 report scope", "pop": "p5", "pool_id": "T0258"}
+{"id": "p5-0121", "text": "escalate high residual risk", "pop": "p5", "pool_id": "T0259"}
+{"id": "p8-mcp-0197", "text": "execute javascript in the browser console", "pop": "p8", "pool_id": "T0260"}
+{"id": "p5-0297", "text": "tier a new vendor", "pop": "p5", "pool_id": "T0261"}
+{"id": "p8-mcp-0097", "text": "create a pull request", "pop": "p8", "pool_id": "T0262"}
+{"id": "p8-dc-0097", "text": "request a roster", "pop": "p8", "pool_id": "T0263"}
+{"id": "p5-0185", "text": "provision exactly approved access", "pop": "p5", "pool_id": "T0264"}
+{"id": "p8-mcp-0037", "text": "update documents", "pop": "p8", "pool_id": "T0265"}
+{"id": "p5-0031", "text": "escalate business-priority calls", "pop": "p5", "pool_id": "T0266"}
+{"id": "p5-0111", "text": "respond within the SLA", "pop": "p5", "pool_id": "T0267"}
+{"id": "p5-0207", "text": "escalate a costly or irreversible mitigation", "pop": "p5", "pool_id": "T0268"}
+{"id": "p8-mcp-0078", "text": "search files", "pop": "p8", "pool_id": "T0269"}
+{"id": "p5-0215", "text": "track postmortem action items to closure", "pop": "p5", "pool_id": "T0270"}
+{"id": "p8-dc-0063", "text": "upgrade a decline", "pop": "p8", "pool_id": "T0271"}
+{"id": "p8-dc-0006", "text": "delegate a calendar", "pop": "p8", "pool_id": "T0272"}
+{"id": "p5-0184", "text": "provision birthright access", "pop": "p5", "pool_id": "T0273"}
+{"id": "p8-mcp-0139", "text": "get index info", "pop": "p8", "pool_id": "T0274"}
+{"id": "p8-mcp-0282", "text": "get a channel history", "pop": "p8", "pool_id": "T0275"}
+{"id": "p8-dc-0036", "text": "issue a credential", "pop": "p8", "pool_id": "T0276"}
+{"id": "p8-mcp-0163", "text": "push a value onto the right of a redis list and optionally", "pop": "p8", "pool_id": "T0277"}
+{"id": "p8-mcp-0206", "text": "get as112 data", "pop": "p8", "pool_id": "T0278"}
+{"id": "p8-mcp-0040", "text": "list tags", "pop": "p8", "pool_id": "T0279"}
+{"id": "p5-0035", "text": "reproduce a reported bug", "pop": "p5", "pool_id": "T0280"}
+{"id": "p5-0266", "text": "escalate a novel policy case", "pop": "p5", "pool_id": "T0281"}
+{"id": "p8-dc-0096", "text": "moderate a room", "pop": "p8", "pool_id": "T0282"}
+{"id": "p8-mcp-0056", "text": "compress a single file using gzip compression", "pop": "p8", "pool_id": "T0283"}
+{"id": "p8-mcp-0236", "text": "get email security data", "pop": "p8", "pool_id": "T0284"}
+{"id": "p8-dc-0062", "text": "upgrade an accept", "pop": "p8", "pool_id": "T0285"}
+{"id": "p5-0102", "text": "de-escalate a customer conversation", "pop": "p5", "pool_id": "T0286"}
+{"id": "p8-mcp-0116", "text": "search users", "pop": "p8", "pool_id": "T0287"}
+{"id": "p8-dc-0053", "text": "relay a mesh", "pop": "p8", "pool_id": "T0288"}
+{"id": "p8-mcp-0222", "text": "get bgp top ases", "pop": "p8", "pool_id": "T0289"}
+{"id": "p8-mcp-0188", "text": "create relations", "pop": "p8", "pool_id": "T0290"}
+{"id": "p8-mcp-0251", "text": "get an outages by location", "pop": "p8", "pool_id": "T0291"}
+{"id": "p8-mcp-0155", "text": "push a value onto the left of a redis list and optionally", "pop": "p8", "pool_id": "T0292"}
+{"id": "p8-mcp-0287", "text": "post a message", "pop": "p8", "pool_id": "T0293"}
+{"id": "p8-mcp-0121", "text": "calculate travel distance and time for multiple origins and destinations", "pop": "p8", "pool_id": "T0294"}
+{"id": "p8-mcp-0175", "text": "search a hash", "pop": "p8", "pool_id": "T0295"}
+{"id": "p8-dc-0045", "text": "settle a ledger", "pop": "p8", "pool_id": "T0296"}
+{"id": "p5-0023", "text": "check a report for duplicates", "pop": "p5", "pool_id": "T0297"}
+{"id": "p8-dc-0059", "text": "list a pickup", "pop": "p8", "pool_id": "T0298"}
+{"id": "p8-mcp-0168", "text": "set a redis string value with an optional expiration time", "pop": "p8", "pool_id": "T0299"}
+{"id": "p8-mcp-0248", "text": "get origin details", "pop": "p8", "pool_id": "T0300"}
+{"id": "p5-0196", "text": "validate access justification", "pop": "p5", "pool_id": "T0301"}
+{"id": "p5-0022", "text": "assign severity to a bug", "pop": "p5", "pool_id": "T0302"}
+{"id": "p5-0088", "text": "produce a redline", "pop": "p5", "pool_id": "T0303"}
+{"id": "p8-mcp-0064", "text": "trigger a url elicitation", "pop": "p8", "pool_id": "T0304"}
+{"id": "p8-mcp-0020", "text": "get a url snapshot", "pop": "p8", "pool_id": "T0305"}
+{"id": "p8-mcp-0237", "text": "get geolocation details", "pop": "p8", "pool_id": "T0306"}
+{"id": "p8-mcp-0199", "text": "hover an element on the page", "pop": "p8", "pool_id": "T0307"}
+{"id": "p8-mcp-0285", "text": "get users", "pop": "p8", "pool_id": "T0308"}
+{"id": "p8-mcp-0161", "text": "rename a redis key from old_key to new_key", "pop": "p8", "pool_id": "T0309"}
+{"id": "p8-mcp-0280", "text": "get a sentry issue", "pop": "p8", "pool_id": "T0310"}
+{"id": "p8-mcp-0098", "text": "create a pull request review", "pop": "p8", "pool_id": "T0311"}
+{"id": "p8-mcp-0014", "text": "get url html content", "pop": "p8", "pool_id": "T0312"}
+{"id": "p8-mcp-0102", "text": "get an issue", "pop": "p8", "pool_id": "T0313"}
+{"id": "p8-mcp-0092", "text": "show the contents of a commit", "pop": "p8", "pool_id": "T0314"}
+{"id": "p5-0242", "text": "draft to house style", "pop": "p5", "pool_id": "T0315"}
+{"id": "p5-0025", "text": "classify a report as not a bug when no oracle is violated", "pop": "p5", "pool_id": "T0316"}
+{"id": "p8-mcp-0259", "text": "get a url scan har", "pop": "p8", "pool_id": "T0317"}
+{"id": "p5-0161", "text": "escalate an unsupportable assumption", "pop": "p5", "pool_id": "T0318"}
+{"id": "p8-mcp-0003", "text": "get a log response body", "pop": "p8", "pool_id": "T0319"}
+{"id": "p8-mcp-0156", "text": "get elements from a redis list within a specific range", "pop": "p8", "pool_id": "T0320"}
+{"id": "p8-dc-0069", "text": "request a compliance", "pop": "p8", "pool_id": "T0321"}
+{"id": "p5-0131", "text": "redact third-party data from a dsar response", "pop": "p5", "pool_id": "T0322"}
+{"id": "p8-dc-0125", "text": "cancel a workflow", "pop": "p8", "pool_id": "T0323"}
+{"id": "p8-mcp-0001", "text": "get log details", "pop": "p8", "pool_id": "T0324"}
+{"id": "p5-0199", "text": "assume command", "pop": "p5", "pool_id": "T0325"}
+{"id": "p8-dc-0128", "text": "fetch a template", "pop": "p8", "pool_id": "T0326"}
+{"id": "p5-0300", "text": "track remediation", "pop": "p5", "pool_id": "T0327"}
+{"id": "p8-mcp-0128", "text": "complete a schema", "pop": "p8", "pool_id": "T0328"}
+{"id": "p8-dc-0117", "text": "request a profile", "pop": "p8", "pool_id": "T0329"}
+{"id": "p8-mcp-0114", "text": "search issues", "pop": "p8", "pool_id": "T0330"}
+{"id": "p8-dc-0007", "text": "accept a delegate", "pop": "p8", "pool_id": "T0331"}
+{"id": "p8-mcp-0148", "text": "perform a hybrid search combining a redis filter expression with knn vector", "pop": "p8", "pool_id": "T0332"}
+{"id": "p5-0096", "text": "run a structured review pass", "pop": "p5", "pool_id": "T0333"}
+{"id": "p8-mcp-0087", "text": "show changes that are staged for commit", "pop": "p8", "pool_id": "T0334"}
+{"id": "p8-mcp-0075", "text": "read a media file", "pop": "p8", "pool_id": "T0335"}
+{"id": "p8-mcp-0303", "text": "list all of the d1 databases in your cloudflare account", "pop": "p8", "pool_id": "T0336"}
+{"id": "p5-0005", "text": "escalate exceptions", "pop": "p5", "pool_id": "T0337"}
+{"id": "p8-dc-0054", "text": "request a delivery", "pop": "p8", "pool_id": "T0338"}
+{"id": "p5-0280", "text": "corroborate a vendor assertion with evidence", "pop": "p5", "pool_id": "T0339"}
+{"id": "p5-0228", "text": "review adverse-impact metrics", "pop": "p5", "pool_id": "T0340"}
+{"id": "p8-mcp-0053", "text": "get structured content", "pop": "p8", "pool_id": "T0341"}
+{"id": "p8-mcp-0194", "text": "search nodes", "pop": "p8", "pool_id": "T0342"}
+{"id": "p8-dc-0107", "text": "find pledgers", "pop": "p8", "pool_id": "T0343"}
+{"id": "p8-mcp-0273", "text": "run a command in a container and return stdout", "pop": "p8", "pool_id": "T0344"}
+{"id": "p8-mcp-0305", "text": "delete an r2 bucket", "pop": "p8", "pool_id": "T0345"}
+{"id": "p5-0174", "text": "refuse to present an unreconciled number as fact", "pop": "p5", "pool_id": "T0346"}
+{"id": "p5-0146", "text": "prepare a briefing note", "pop": "p5", "pool_id": "T0347"}
+{"id": "p8-mcp-0051", "text": "get a resource reference", "pop": "p8", "pool_id": "T0348"}
+{"id": "p8-mcp-0213", "text": "get bgp moas", "pop": "p8", "pool_id": "T0349"}
+{"id": "p5-0268", "text": "log a specific reason", "pop": "p5", "pool_id": "T0350"}
+{"id": "p8-dc-0033", "text": "query a discover feature", "pop": "p8", "pool_id": "T0351"}
+{"id": "p8-mcp-0298", "text": "get a current time", "pop": "p8", "pool_id": "T0352"}
+{"id": "p8-mcp-0091", "text": "unstage all staged changes", "pop": "p8", "pool_id": "T0353"}
+{"id": "p5-0132", "text": "refuse to determine processing purposes", "pop": "p5", "pool_id": "T0354"}
+{"id": "p8-dc-0032", "text": "disclose a discover feature", "pop": "p8", "pool_id": "T0355"}
+{"id": "p8-mcp-0220", "text": "get bgp rpki aspa timeseries", "pop": "p8", "pool_id": "T0356"}
+{"id": "p5-0040", "text": "assign an owner and remediation date to a gap", "pop": "p5", "pool_id": "T0357"}
+{"id": "p5-0250", "text": "publish reviewed documentation", "pop": "p5", "pool_id": "T0358"}
+{"id": "p8-dc-0060", "text": "fetch a pam", "pop": "p8", "pool_id": "T0359"}
+{"id": "p5-0284", "text": "escalate above-appetite risk", "pop": "p5", "pool_id": "T0360"}
+{"id": "p8-mcp-0146", "text": "get all fields and values from a redis hash", "pop": "p8", "pool_id": "T0361"}
+{"id": "p8-mcp-0200", "text": "navigate to a url", "pop": "p8", "pool_id": "T0362"}
+{"id": "p5-0024", "text": "check whether a bug report is a duplicate", "pop": "p5", "pool_id": "T0363"}
+{"id": "p8-mcp-0095", "text": "create an issue", "pop": "p8", "pool_id": "T0364"}
+{"id": "p8-dc-0082", "text": "request a presentation", "pop": "p8", "pool_id": "T0365"}
+{"id": "p8-mcp-0302", "text": "query a d1 database in your cloudflare account", "pop": "p8", "pool_id": "T0366"}
+{"id": "p8-mcp-0182", "text": "read entries from a redis stream using a consumer group", "pop": "p8", "pool_id": "T0367"}
+{"id": "p8-mcp-0118", "text": "update a pull request branch", "pop": "p8", "pool_id": "T0368"}
+{"id": "p5-0019", "text": "run the three-way match", "pop": "p5", "pool_id": "T0369"}
+{"id": "p8-dc-0070", "text": "confirm a payment", "pop": "p8", "pool_id": "T0370"}
+{"id": "p8-mcp-0085", "text": "create a branch", "pop": "p8", "pool_id": "T0371"}
+{"id": "p8-mcp-0113", "text": "search a code", "pop": "p8", "pool_id": "T0372"}
+{"id": "p8-dc-0126", "text": "complete a workflow", "pop": "p8", "pool_id": "T0373"}
+{"id": "p8-mcp-0167", "text": "search redis documents", "pop": "p8", "pool_id": "T0374"}
+{"id": "p5-0053", "text": "refuse to assert a control is met without evidence", "pop": "p5", "pool_id": "T0375"}
+{"id": "p8-mcp-0301", "text": "get a d1 database in your cloudflare account", "pop": "p8", "pool_id": "T0376"}
+{"id": "p8-mcp-0187", "text": "create entities", "pop": "p8", "pool_id": "T0377"}
+{"id": "p8-mcp-0013", "text": "get a crawl result", "pop": "p8", "pool_id": "T0378"}
+{"id": "p8-mcp-0142", "text": "get a vector from hash", "pop": "p8", "pool_id": "T0379"}
+{"id": "p8-mcp-0207", "text": "get as details", "pop": "p8", "pool_id": "T0380"}
+{"id": "p5-0255", "text": "route documentation for SME review", "pop": "p5", "pool_id": "T0381"}
+{"id": "p5-0168", "text": "maintain model integrity", "pop": "p5", "pool_id": "T0382"}
+{"id": "p8-dc-0110", "text": "list a pledger", "pop": "p8", "pool_id": "T0383"}
+{"id": "p5-0229", "text": "run a structured interview", "pop": "p5", "pool_id": "T0384"}
+{"id": "p8-mcp-0119", "text": "create a merge request", "pop": "p8", "pool_id": "T0385"}
+{"id": "p8-dc-0090", "text": "request receipts", "pop": "p8", "pool_id": "T0386"}
+{"id": "p5-0093", "text": "run a sourcing event", "pop": "p5", "pool_id": "T0387"}
+{"id": "p8-mcp-0254", "text": "get tcp resets timeouts data", "pop": "p8", "pool_id": "T0388"}
+{"id": "p8-mcp-0210", "text": "get bgp hijacks", "pop": "p8", "pool_id": "T0389"}
+{"id": "p8-mcp-0022", "text": "list browser sessions", "pop": "p8", "pool_id": "T0390"}
+{"id": "p8-mcp-0279", "text": "ping the container for liveliness", "pop": "p8", "pool_id": "T0391"}
+{"id": "p8-mcp-0174", "text": "unsubscribe and close an existing pub/sub subscription", "pop": "p8", "pool_id": "T0392"}
+{"id": "p5-0110", "text": "respond to a customer within the sla", "pop": "p5", "pool_id": "T0393"}
+{"id": "p5-0226", "text": "refuse to evaluate a candidate on protected characteristics or gut feel", "pop": "p5", "pool_id": "T0394"}
+{"id": "p8-dc-0073", "text": "accept a mandate", "pop": "p8", "pool_id": "T0395"}
+{"id": "p8-mcp-0201", "text": "take a screenshot of the current page or a specific element", "pop": "p8", "pool_id": "T0396"}
+{"id": "p8-dc-0124", "text": "advance a workflow", "pop": "p8", "pool_id": "T0397"}
+{"id": "p8-mcp-0030", "text": "get a collection count", "pop": "p8", "pool_id": "T0398"}
+{"id": "p5-0066", "text": "plan an editorial calendar against content goals", "pop": "p5", "pool_id": "T0399"}
+{"id": "p8-mcp-0012", "text": "cancel a crawl", "pop": "p8", "pool_id": "T0400"}
+{"id": "p8-mcp-0160", "text": "read messages", "pop": "p8", "pool_id": "T0401"}
+{"id": "p8-dc-0130", "text": "publish a template", "pop": "p8", "pool_id": "T0402"}
+{"id": "p8-mcp-0304", "text": "create a new r2 bucket in your cloudflare account", "pop": "p8", "pool_id": "T0403"}
+{"id": "p8-mcp-0117", "text": "update an issue", "pop": "p8", "pool_id": "T0404"}
+{"id": "p5-0074", "text": "schedule approved content for publication", "pop": "p5", "pool_id": "T0405"}
+{"id": "p5-0244", "text": "fix broken documentation links", "pop": "p5", "pool_id": "T0406"}
+{"id": "p8-dc-0034", "text": "request a group chat", "pop": "p8", "pool_id": "T0407"}
+{"id": "p5-0084", "text": "justify a contractual redline", "pop": "p5", "pool_id": "T0408"}
+{"id": "p8-dc-0014", "text": "query an availability", "pop": "p8", "pool_id": "T0409"}
+{"id": "p8-dc-0027", "text": "reject a data agreement negotiation", "pop": "p8", "pool_id": "T0410"}
+{"id": "p8-mcp-0103", "text": "get a pull request", "pop": "p8", "pool_id": "T0411"}
+{"id": "p5-0059", "text": "define success metrics up front", "pop": "p5", "pool_id": "T0412"}
+{"id": "p8-mcp-0088", "text": "show changes in the working directory that are not yet staged", "pop": "p8", "pool_id": "T0413"}
+{"id": "p8-mcp-0306", "text": "get details about a specific r2 bucket", "pop": "p8", "pool_id": "T0414"}
+{"id": "p8-mcp-0080", "text": "search for files in google drive", "pop": "p8", "pool_id": "T0415"}
+{"id": "p8-mcp-0147", "text": "set a field in a hash stored at key with an optional", "pop": "p8", "pool_id": "T0416"}
+{"id": "p8-mcp-0071", "text": "list a directory", "pop": "p8", "pool_id": "T0417"}
+{"id": "p8-mcp-0228", "text": "get certificate transparency data", "pop": "p8", "pool_id": "T0418"}
+{"id": "p8-mcp-0089", "text": "initialize a new git repository", "pop": "p8", "pool_id": "T0419"}
+{"id": "p5-0099", "text": "answer from the knowledge base", "pop": "p5", "pool_id": "T0420"}
+{"id": "p8-dc-0129", "text": "pause a workflow", "pop": "p8", "pool_id": "T0421"}
+{"id": "p8-dc-0074", "text": "activate a mandate", "pop": "p8", "pool_id": "T0422"}
+{"id": "p5-0133", "text": "run a DPIA", "pop": "p5", "pool_id": "T0423"}
+{"id": "p5-0254", "text": "retire stale documentation", "pop": "p5", "pool_id": "T0424"}
+{"id": "p8-mcp-0026", "text": "create a collection", "pop": "p8", "pool_id": "T0425"}
+{"id": "p8-mcp-0212", "text": "get bgp leaks", "pop": "p8", "pool_id": "T0426"}
+{"id": "p5-0273", "text": "refuse to action a case without a specific clause", "pop": "p5", "pool_id": "T0427"}
+{"id": "p8-dc-0108", "text": "ping a commitment", "pop": "p8", "pool_id": "T0428"}
+{"id": "p8-mcp-0076", "text": "read multiple files", "pop": "p8", "pool_id": "T0429"}
+{"id": "p8-mcp-0278", "text": "start or restart the container", "pop": "p8", "pool_id": "T0430"}
+{"id": "p5-0274", "text": "refuse to enforce without a specific policy clause", "pop": "p5", "pool_id": "T0431"}
+{"id": "p8-mcp-0077", "text": "read a text file", "pop": "p8", "pool_id": "T0432"}
+{"id": "p8-mcp-0309", "text": "get build logs", "pop": "p8", "pool_id": "T0433"}
+{"id": "p8-mcp-0272", "text": "set a redis key-value pair with optional expiration", "pop": "p8", "pool_id": "T0434"}
+{"id": "p8-mcp-0035", "text": "peek a collection", "pop": "p8", "pool_id": "T0435"}
+{"id": "p8-dc-0132", "text": "start a workflow", "pop": "p8", "pool_id": "T0436"}
+{"id": "p8-dc-0131", "text": "resume a workflow", "pop": "p8", "pool_id": "T0437"}
+{"id": "p8-mcp-0294", "text": "write a query", "pop": "p8", "pool_id": "T0438"}
+{"id": "p8-mcp-0224", "text": "get bgp top prefixes", "pop": "p8", "pool_id": "T0439"}
+{"id": "p5-0051", "text": "prepare the evidence package", "pop": "p5", "pool_id": "T0440"}
+{"id": "p8-mcp-0191", "text": "delete relations", "pop": "p8", "pool_id": "T0441"}
+{"id": "p8-mcp-0079", "text": "write a file", "pop": "p8", "pool_id": "T0442"}
+{"id": "p8-dc-0049", "text": "share a media", "pop": "p8", "pool_id": "T0443"}
+{"id": "p5-0172", "text": "reforecast", "pop": "p5", "pool_id": "T0444"}
+{"id": "p8-mcp-0153", "text": "get the length of a redis list", "pop": "p8", "pool_id": "T0445"}
+{"id": "p5-0151", "text": "protect the principal's focus time", "pop": "p5", "pool_id": "T0446"}
+{"id": "p8-dc-0061", "text": "publish a pam", "pop": "p8", "pool_id": "T0447"}
+{"id": "p5-0186", "text": "provision exactly the access that was approved", "pop": "p5", "pool_id": "T0448"}
+{"id": "p8-mcp-0312", "text": "find values in the workers observability data", "pop": "p8", "pool_id": "T0449"}
+{"id": "p8-mcp-0054", "text": "get a sum", "pop": "p8", "pool_id": "T0450"}
+{"id": "p8-dc-0098", "text": "forward a routing", "pop": "p8", "pool_id": "T0451"}
+{"id": "p8-mcp-0061", "text": "trigger a long running operation", "pop": "p8", "pool_id": "T0452"}
+{"id": "p8-dc-0099", "text": "request a shortened url", "pop": "p8", "pool_id": "T0453"}
+{"id": "p8-mcp-0246", "text": "get leaked credentials data", "pop": "p8", "pool_id": "T0454"}
+{"id": "p8-mcp-0028", "text": "delete documents", "pop": "p8", "pool_id": "T0455"}
+{"id": "p8-mcp-0268", "text": "search url scans", "pop": "p8", "pool_id": "T0456"}
+{"id": "p8-mcp-0043", "text": "fetch the dns report for a given zone since a date", "pop": "p8", "pool_id": "T0457"}
+{"id": "p5-0236", "text": "screen against job-related criteria", "pop": "p5", "pool_id": "T0458"}
+{"id": "p5-0115", "text": "verify identity before a sensitive account action", "pop": "p5", "pool_id": "T0459"}
+{"id": "p8-mcp-0233", "text": "get a domains ranking", "pop": "p8", "pool_id": "T0460"}
+{"id": "p8-mcp-0157", "text": "remove elements from a redis list", "pop": "p8", "pool_id": "T0461"}
+{"id": "p5-0198", "text": "assign an incident severity level", "pop": "p5", "pool_id": "T0462"}
+{"id": "p5-0181", "text": "escalate elevated access requests", "pop": "p5", "pool_id": "T0463"}
+{"id": "p8-dc-0119", "text": "offer a vault", "pop": "p8", "pool_id": "T0464"}
+{"id": "p8-dc-0030", "text": "propose terms", "pop": "p8", "pool_id": "T0465"}
+{"id": "p5-0193", "text": "route an access request for approval", "pop": "p5", "pool_id": "T0466"}
+{"id": "p8-dc-0037", "text": "offer a credential", "pop": "p8", "pool_id": "T0467"}
+{"id": "p8-mcp-0108", "text": "list commits", "pop": "p8", "pool_id": "T0468"}
+{"id": "p8-mcp-0150", "text": "delete a json value from redis at a given path", "pop": "p8", "pool_id": "T0469"}
+{"id": "p8-dc-0043", "text": "create a ledger", "pop": "p8", "pool_id": "T0470"}
+{"id": "p8-mcp-0140", "text": "get an indexed keys number", "pop": "p8", "pool_id": "T0471"}
+{"id": "p8-mcp-0177", "text": "add an entry to a redis stream with an optional expiration time", "pop": "p8", "pool_id": "T0472"}
+{"id": "p8-mcp-0110", "text": "list pull requests", "pop": "p8", "pool_id": "T0473"}
+{"id": "p5-0013", "text": "record a balanced journal entry", "pop": "p5", "pool_id": "T0474"}
+{"id": "p8-mcp-0214", "text": "get bgp pfx2as", "pop": "p8", "pool_id": "T0475"}
+{"id": "p8-dc-0080", "text": "query methods", "pop": "p8", "pool_id": "T0476"}
+{"id": "p8-dc-0044", "text": "reject a ledger", "pop": "p8", "pool_id": "T0477"}
+{"id": "p8-mcp-0127", "text": "generate a cloudflare graphql api explorer link", "pop": "p8", "pool_id": "T0478"}
+{"id": "p8-mcp-0281", "text": "add a reaction", "pop": "p8", "pool_id": "T0479"}
+{"id": "p8-dc-0028", "text": "request a verify", "pop": "p8", "pool_id": "T0480"}
+{"id": "p5-0292", "text": "refuse to accept a critical vendor control without independent evidence", "pop": "p5", "pool_id": "T0481"}
+{"id": "p8-mcp-0249", "text": "get origins data", "pop": "p8", "pool_id": "T0482"}
+{"id": "p8-dc-0123", "text": "revoke a key", "pop": "p8", "pool_id": "T0483"}
+{"id": "p5-0044", "text": "escalate deficiencies by severity", "pop": "p5", "pool_id": "T0484"}
+{"id": "p8-mcp-0181", "text": "read entries from a redis stream", "pop": "p8", "pool_id": "T0485"}
+{"id": "p8-dc-0083", "text": "preview a presentation", "pop": "p8", "pool_id": "T0486"}
+{"id": "p5-0217", "text": "triage an incident", "pop": "p5", "pool_id": "T0487"}
+{"id": "p8-mcp-0261", "text": "list autonomous systems", "pop": "p8", "pool_id": "T0488"}
+{"id": "p8-dc-0029", "text": "terminate a data agreement termination", "pop": "p8", "pool_id": "T0489"}
+{"id": "p8-mcp-0162", "text": "remove and return the last element from a redis list", "pop": "p8", "pool_id": "T0490"}
+{"id": "p8-mcp-0288", "text": "reply to thread", "pop": "p8", "pool_id": "T0491"}
+{"id": "p5-0264", "text": "escalate a credible threat or csam case", "pop": "p5", "pool_id": "T0492"}
+{"id": "p8-mcp-0169", "text": "set a vector in hash", "pop": "p8", "pool_id": "T0493"}
+{"id": "p5-0275", "text": "review content against policy", "pop": "p5", "pool_id": "T0494"}
+{"id": "p8-mcp-0045", "text": "show zone dns settings", "pop": "p8", "pool_id": "T0495"}
+{"id": "p8-dc-0040", "text": "accept a ledger", "pop": "p8", "pool_id": "T0496"}
+{"id": "p5-0067", "text": "plan the editorial calendar", "pop": "p5", "pool_id": "T0497"}
+{"id": "p5-0089", "text": "reconcile counterparty changes", "pop": "p5", "pool_id": "T0498"}
+{"id": "p8-dc-0005", "text": "decline a calendar", "pop": "p8", "pool_id": "T0499"}
+{"id": "p8-mcp-0252", "text": "get robots txt data", "pop": "p8", "pool_id": "T0500"}
+{"id": "p8-mcp-0240", "text": "get an internet services ranking", "pop": "p8", "pool_id": "T0501"}
+{"id": "p8-mcp-0132", "text": "fetch detailed information about a specific graphql type", "pop": "p8", "pool_id": "T0502"}
+{"id": "p8-mcp-0229", "text": "get ct authority details", "pop": "p8", "pool_id": "T0503"}
+{"id": "p5-0083", "text": "flag contractual ambiguity", "pop": "p5", "pool_id": "T0504"}
+{"id": "p5-0124", "text": "maintain a breach register", "pop": "p5", "pool_id": "T0505"}
+{"id": "p8-mcp-0270", "text": "get value by key from redis", "pop": "p8", "pool_id": "T0506"}
+{"id": "p8-mcp-0176", "text": "acknowledge entries that were processed by a consumer group", "pop": "p8", "pool_id": "T0507"}
+{"id": "p8-mcp-0036", "text": "query documents", "pop": "p8", "pool_id": "T0508"}
+{"id": "p5-0046", "text": "log a gap", "pop": "p5", "pool_id": "T0509"}
+{"id": "p8-mcp-0149", "text": "get redis server information and statistics", "pop": "p8", "pool_id": "T0510"}
+{"id": "p8-dc-0058", "text": "batch a pickup", "pop": "p8", "pool_id": "T0511"}
+{"id": "p5-0279", "text": "treat like cases alike", "pop": "p5", "pool_id": "T0512"}
+{"id": "p8-dc-0013", "text": "propose a calendar", "pop": "p8", "pool_id": "T0513"}
+{"id": "p8-mcp-0104", "text": "get pull request comments", "pop": "p8", "pool_id": "T0514"}
+{"id": "p8-dc-0071", "text": "accept a handshake", "pop": "p8", "pool_id": "T0515"}
+{"id": "p8-mcp-0019", "text": "get a url screenshot", "pop": "p8", "pool_id": "T0516"}
+{"id": "p8-dc-0092", "text": "create a room", "pop": "p8", "pool_id": "T0517"}
+{"id": "p5-0015", "text": "refuse to close with an unreconciled account", "pop": "p5", "pool_id": "T0518"}
+{"id": "p5-0265", "text": "escalate a hard-limit category", "pop": "p5", "pool_id": "T0519"}
+{"id": "p8-mcp-0145", "text": "get the value of a field in a redis hash", "pop": "p8", "pool_id": "T0520"}
+{"id": "p8-dc-0010", "text": "poll a result", "pop": "p8", "pool_id": "T0521"}
+{"id": "p8-mcp-0292", "text": "list tables", "pop": "p8", "pool_id": "T0522"}
+{"id": "p8-mcp-0025", "text": "add documents", "pop": "p8", "pool_id": "T0523"}
+{"id": "p8-mcp-0239", "text": "get internet quality data", "pop": "p8", "pool_id": "T0524"}
+{"id": "p8-dc-0015", "text": "update a calendar", "pop": "p8", "pool_id": "T0525"}
+{"id": "p8-mcp-0151", "text": "retrieve a json value from redis at a given path", "pop": "p8", "pool_id": "T0526"}
+{"id": "p5-0216", "text": "triage a production incident", "pop": "p5", "pool_id": "T0527"}
+{"id": "p5-0160", "text": "build forecasts and budgets", "pop": "p5", "pool_id": "T0528"}
+{"id": "p8-dc-0041", "text": "adjust a ledger", "pop": "p8", "pool_id": "T0529"}
+{"id": "p5-0282", "text": "document a risk acceptance", "pop": "p5", "pool_id": "T0530"}
+{"id": "p8-mcp-0048", "text": "get an annotated message", "pop": "p8", "pool_id": "T0531"}
+{"id": "p8-mcp-0250", "text": "get outages", "pop": "p8", "pool_id": "T0532"}
+{"id": "p8-dc-0111", "text": "release a swarm", "pop": "p8", "pool_id": "T0533"}
+{"id": "p8-dc-0002", "text": "perform an action menu", "pop": "p8", "pool_id": "T0534"}
+{"id": "p8-mcp-0226", "text": "get bots crawlers data", "pop": "p8", "pool_id": "T0535"}
+{"id": "p5-0118", "text": "consult the supervisory authority about high residual risk", "pop": "p5", "pool_id": "T0536"}
+{"id": "p8-mcp-0017", "text": "get a url markdown", "pop": "p8", "pool_id": "T0537"}
+{"id": "p5-0145", "text": "maintain a conflict-free calendar", "pop": "p5", "pool_id": "T0538"}
+{"id": "p8-dc-0093", "text": "invite a room", "pop": "p8", "pool_id": "T0539"}
+{"id": "p8-mcp-0090", "text": "show the commit logs", "pop": "p8", "pool_id": "T0540"}
+{"id": "p8-mcp-0184", "text": "retrieve a range of members from a redis sorted set", "pop": "p8", "pool_id": "T0541"}
+{"id": "p8-mcp-0223", "text": "get bgp top ases by prefixes", "pop": "p8", "pool_id": "T0542"}
+{"id": "p5-0100", "text": "close a ticket with a verified resolution", "pop": "p5", "pool_id": "T0543"}
+{"id": "p8-mcp-0209", "text": "get an as set", "pop": "p8", "pool_id": "T0544"}
+{"id": "p8-dc-0048", "text": "request a media", "pop": "p8", "pool_id": "T0545"}
+{"id": "p8-mcp-0021", "text": "close", "pop": "p8", "pool_id": "T0546"}
+{"id": "p5-0295", "text": "score a vendor's risk", "pop": "p5", "pool_id": "T0547"}
+{"id": "p5-0209", "text": "name a single incident commander", "pop": "p5", "pool_id": "T0548"}
+{"id": "p8-mcp-0109", "text": "list issues", "pop": "p8", "pool_id": "T0549"}
+{"id": "p5-0008", "text": "pay a matched and authorized invoice", "pop": "p5", "pool_id": "T0550"}
+{"id": "p8-dc-0050", "text": "announce a mesh", "pop": "p8", "pool_id": "T0551"}
+{"id": "p8-mcp-0293", "text": "read a query", "pop": "p8", "pool_id": "T0552"}
+{"id": "p5-0294", "text": "run tier-appropriate due diligence", "pop": "p5", "pool_id": "T0553"}
+{"id": "p5-0162", "text": "escalate unreconciled actuals", "pop": "p5", "pool_id": "T0554"}
+{"id": "p8-mcp-0195", "text": "run a read-only sql query", "pop": "p8", "pool_id": "T0555"}
+{"id": "p8-mcp-0033", "text": "list collections", "pop": "p8", "pool_id": "T0556"}
+{"id": "p8-dc-0051", "text": "update a gateway", "pop": "p8", "pool_id": "T0557"}
+{"id": "p8-mcp-0192", "text": "open nodes", "pop": "p8", "pool_id": "T0558"}
+{"id": "p8-mcp-0256", "text": "get traffic anomalies", "pop": "p8", "pool_id": "T0559"}
+{"id": "p8-mcp-0063", "text": "trigger a sampling request async", "pop": "p8", "pool_id": "T0560"}
+{"id": "p8-mcp-0232", "text": "get domain rank details", "pop": "p8", "pool_id": "T0561"}
+{"id": "p5-0139", "text": "coordinate stakeholders", "pop": "p5", "pool_id": "T0562"}
+{"id": "p5-0278", "text": "route a low-confidence moderation case to human review", "pop": "p5", "pool_id": "T0563"}
+{"id": "p8-dc-0042", "text": "close a ledger", "pop": "p8", "pool_id": "T0564"}
+{"id": "p5-0205", "text": "drive to mitigation", "pop": "p5", "pool_id": "T0565"}
+{"id": "p5-0075", "text": "substantiate a claim", "pop": "p5", "pool_id": "T0566"}
+{"id": "p8-mcp-0058", "text": "toggle subscriber updates", "pop": "p8", "pool_id": "T0567"}
+{"id": "p8-mcp-0186", "text": "add observations", "pop": "p8", "pool_id": "T0568"}
+{"id": "p8-dc-0109", "text": "pledge status", "pop": "p8", "pool_id": "T0569"}
+{"id": "p8-dc-0075", "text": "cancel a mandate", "pop": "p8", "pool_id": "T0570"}
+{"id": "p5-0261", "text": "apply the strike escalation ladder", "pop": "p5", "pool_id": "T0571"}
+{"id": "p8-dc-0102", "text": "decline a signing", "pop": "p8", "pool_id": "T0572"}
+{"id": "p5-0291", "text": "refuse to accept a critical self-assertion without evidence", "pop": "p5", "pool_id": "T0573"}
+{"id": "p5-0175", "text": "refuse to present an unsourced number as fact", "pop": "p5", "pool_id": "T0574"}
+{"id": "p8-mcp-0276", "text": "create a file with the provided contents in the working directory, overwriting", "pop": "p8", "pool_id": "T0575"}
+{"id": "p8-dc-0101", "text": "consent a signing", "pop": "p8", "pool_id": "T0576"}
+{"id": "p5-0027", "text": "confirm a report is a real bug", "pop": "p5", "pool_id": "T0577"}
+{"id": "p8-mcp-0308", "text": "get a build", "pop": "p8", "pool_id": "T0578"}
+{"id": "p8-mcp-0221", "text": "get bgp timeseries", "pop": "p8", "pool_id": "T0579"}
+{"id": "p8-mcp-0126", "text": "search places", "pop": "p8", "pool_id": "T0580"}
+{"id": "p8-mcp-0010", "text": "search for local businesses and places using brave's local search api", "pop": "p8", "pool_id": "T0581"}
+{"id": "p5-0114", "text": "triage a ticket", "pop": "p5", "pool_id": "T0582"}
+{"id": "p8-dc-0089", "text": "answer a questionanswer", "pop": "p8", "pool_id": "T0583"}
+{"id": "p8-mcp-0165", "text": "scan all keys", "pop": "p8", "pool_id": "T0584"}
+{"id": "p8-dc-0001", "text": "request a menu", "pop": "p8", "pool_id": "T0585"}
+{"id": "p8-mcp-0230", "text": "get ct log details", "pop": "p8", "pool_id": "T0586"}
+{"id": "p5-0188", "text": "reconcile the identity store", "pop": "p5", "pool_id": "T0587"}
+{"id": "p8-mcp-0234", "text": "get domains ranking timeseries", "pop": "p8", "pool_id": "T0588"}
+{"id": "p8-dc-0057", "text": "batch a messagepickup", "pop": "p8", "pool_id": "T0589"}
+{"id": "p8-dc-0067", "text": "charge a notice", "pop": "p8", "pool_id": "T0590"}
+{"id": "p8-dc-0079", "text": "update a method", "pop": "p8", "pool_id": "T0591"}
+{"id": "p8-dc-0018", "text": "request a mediation", "pop": "p8", "pool_id": "T0592"}
+{"id": "p5-0042", "text": "collect evidence", "pop": "p5", "pool_id": "T0593"}
+{"id": "p8-mcp-0244", "text": "get l3 attack data", "pop": "p8", "pool_id": "T0594"}
+{"id": "p8-mcp-0134", "text": "create a vector index hash", "pop": "p8", "pool_id": "T0595"}
+{"id": "p8-dc-0066", "text": "cancel a payment", "pop": "p8", "pool_id": "T0596"}
+{"id": "p8-mcp-0105", "text": "get pull request files", "pop": "p8", "pool_id": "T0597"}
+{"id": "p5-0030", "text": "document why a report cannot be reproduced", "pop": "p5", "pool_id": "T0598"}
+{"id": "p8-mcp-0115", "text": "search repositories", "pop": "p8", "pool_id": "T0599"}
+{"id": "p8-mcp-0291", "text": "describe a table", "pop": "p8", "pool_id": "T0600"}
+{"id": "p8-mcp-0073", "text": "move a file", "pop": "p8", "pool_id": "T0601"}
+{"id": "p5-0054", "text": "refuse to assert a control without period-spanning evidence", "pop": "p5", "pool_id": "T0602"}
+{"id": "p8-dc-0024", "text": "request a didexchange", "pop": "p8", "pool_id": "T0603"}
+{"id": "p8-mcp-0039", "text": "list posts", "pop": "p8", "pool_id": "T0604"}
+{"id": "p8-mcp-0029", "text": "fork a collection", "pop": "p8", "pool_id": "T0605"}
+{"id": "p8-mcp-0131", "text": "search the cloudflare graphql api schema for types, fields", "pop": "p8", "pool_id": "T0606"}
+{"id": "p8-dc-0118", "text": "grant access", "pop": "p8", "pool_id": "T0607"}
+{"id": "p8-mcp-0072", "text": "list directory with sizes", "pop": "p8", "pool_id": "T0608"}
+{"id": "p5-0256", "text": "route documentation for technical and editorial review", "pop": "p5", "pool_id": "T0609"}
+{"id": "p8-mcp-0052", "text": "get a roots list", "pop": "p8", "pool_id": "T0610"}
+{"id": "p8-dc-0085", "text": "complete a poe", "pop": "p8", "pool_id": "T0611"}
+{"id": "p5-0267", "text": "give notice with a specific reason", "pop": "p5", "pool_id": "T0612"}
+{"id": "p8-mcp-0170", "text": "get all members of a redis set", "pop": "p8", "pool_id": "T0613"}
+{"id": "p8-dc-0088", "text": "submit a poe", "pop": "p8", "pool_id": "T0614"}
+{"id": "p8-mcp-0120", "text": "get directions between two points", "pop": "p8", "pool_id": "T0615"}
+{"id": "p8-mcp-0179", "text": "create a consumer group for a redis stream", "pop": "p8", "pool_id": "T0616"}
+{"id": "p8-mcp-0099", "text": "create a repository", "pop": "p8", "pool_id": "T0617"}
+{"id": "p8-dc-0091", "text": "commit a room", "pop": "p8", "pool_id": "T0618"}
+{"id": "p8-mcp-0038", "text": "get a post", "pop": "p8", "pool_id": "T0619"}
+{"id": "p8-dc-0064", "text": "confirm a kem", "pop": "p8", "pool_id": "T0620"}
+{"id": "p8-mcp-0313", "text": "query a worker observability", "pop": "p8", "pool_id": "T0621"}
