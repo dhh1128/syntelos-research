@@ -204,6 +204,37 @@ facets are unaffected, and the gold standard can be built on them if the telos f
 deferred to a second rating round. That trade (two rating passes) is now worth re-examining against
 [Q-4HKN], which assumed one pass was achievable.
 
+**O\*NET acquired 2026-08-20, and it closes five of the six gaps.** P9 brings 19,898 acts from
+O\*NET 30.3 across 923 occupations. Re-running the probe that condemned the earlier pool, with
+substring artefacts removed by hand: care 1,269, physical service 1,829, teaching 627, market
+exchange 292, civic 39. Read-operations fall from 33% of the pool to 8%. The corpus that could not
+support a derivation now can, for five of the six domains it lacked.
+
+  [ F-5TQD ]  **`/relate` is still empirically unsupported, and it is the only root that is.**
+  One act in 19,898 — *"…teaching, counseling, or befriending them"*, from a caregiving occupation.
+  Not an acquisition failure: O\*NET catalogues paid work, so befriending, celebrating, playing, and
+  mourning are outside its frame by construction. They are equally absent from the protocol corpus,
+  the steward corpus, and — once drawn — the statutes, which regulate marriage and adoption as legal
+  acts without ever naming the bonding they solemnise.
+
+That four independent corpora, assembled for different reasons, all miss the same root is more
+interesting than a sampling gap. A plausible reading is that `/relate` acts fail the governability
+test of §3 on their own terms: no principal writes policy about celebrating a birthday, and nobody
+delegates being someone's friend. If so, `/relate` is not under-sampled but out of scope for a
+taxonomy of governable acts — and v1 included it because v1 was a grammar for *signalling* intent to
+a stranger, where "why is this person contacting me" makes `/relate` entirely real.
+
+  [ Q-8MRC ]  **Is `/relate` in scope for Syntelos 2.0?** Three options, and it is a scoping
+  decision rather than a technical one. (a) Out of scope — governable acts only, and the taxonomy
+  says plainly that it does not cover non-instrumental social action. (b) In scope, and acquire a
+  consumer-interaction corpus to support it — social platform APIs, dating and messaging product
+  surfaces, app-store action inventories. (c) In scope but retained on theory rather than evidence,
+  explicitly flagged as the one root no corpus corroborates. I lean (a), because the governability
+  test was adopted precisely to replace a scope rule that admitted the wrong things — but (a) drops
+  a root v1 had, which is your call and not mine.
+
+Attempt 2 is otherwise unblocked.
+
 ---
 
 ## 3. Replacing the refusal test
