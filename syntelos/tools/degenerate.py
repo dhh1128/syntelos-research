@@ -33,7 +33,11 @@ MIN_WORDS = 40
 def assess(text: str) -> tuple[bool, dict]:
     words = re.findall(r"\w+", text.lower())
     if len(words) < MIN_WORDS:
-        return False, {"words": len(words), "note": "too short to judge"}
+        # Fail, not pass. An empty or stub file is the commonest failure this gate sees — a seat
+        # that timed out having emitted nothing — and reporting it as "ok because there is not
+        # enough to judge" is precisely the silent pass the tool exists to prevent. Too short to
+        # judge is too short to use.
+        return True, {"words": len(words), "note": "empty or too short to be an analysis"}
 
     vocab = len(set(words)) / len(words)
 
