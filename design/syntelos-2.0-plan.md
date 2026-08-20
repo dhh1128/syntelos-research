@@ -301,6 +301,52 @@ IETF BCP 78. GFDL-1.3 and CC BY-SA are mutually awkward in a combined work.
 Attempt 2 is unblocked. `/relate` support is real but thin, and the honest report will say the root
 rests on 26 bonding acts and 23 delegated ones rather than on the thousands backing `/serve`.
 
+### Telos attempt 2 — 2026-08-20
+
+Domain-balanced sample of 1,076 acts (`syntelos/tools/build_telos_sample.py`), blind as before. The
+balancing worked: the largest root took 17% of the sample against attempt 1's 39%, and read-heavy
+`discovering` no longer swallows the partition. Two `panel` seats timed out again even on the
+partition-only task; `codex` completed, on a separate quota. Result at
+`design/sources/telos2-partition-codex.md`.
+
+Eleven roots: `making` 186, `sensemaking` 175, `coordinating` 126, `assuring` 102, `governing` 94,
+`restoring` 84, `authorizing` 69, `caring` 64, `representing` 57, `exchanging` 45, `developing` 40.
+
+**`caring` emerged**, which it did not in attempt 1 — direct payoff from the O\*NET acquisition.
+
+  [ D-3WQP ]  **`representing` is rejected as a root: it is the relation facet leaking into telos.**
+  Daniel's argument, and it turns on the taxonomy's own criteria rather than on taste. `syntelos.md`
+  §3.4 places intents on a proximate–ultimate continuum and §3.5 requires siblings to sit at roughly
+  the same point on it. Representing is always a means: the matchmaker's end is the marriage, the
+  publicist's is reputation, the attorney's is the settlement. Strip representation away and an end
+  remains; strip the end away and representation has nothing to be.
+
+The distinction that makes this sharp — and that saves `coordinating`, `authorizing`, and `assuring`
+from the same objection, since each is arguably a means too — is **phase versus standing relation**.
+Coordination completes on its own terms before whatever the meeting is for begins; it is a
+time-slice with its own telos, which is exactly the decomposition argument of `syntelos.md` §3.11.
+Representation completes never: it is a posture the actor holds across every phase. Standing
+properties belong on facets, phase purposes belong on telos, and `sda.md` §5 already carries
+representation as `relationType`. Admitting it here would encode one fact twice on two axes declared
+orthogonal.
+
+  [ F-2HXB ]  **The prompt, not the model, produced the bad root.** It said "purposes, not
+  mechanisms," which screens the bottom of the continuum and says nothing about the middle.
+  `representing` is neither a mechanism nor an ultimate end. The derivation prompt now carries an
+  explicit proximate/ultimate screen with the strip-it-away test and a standing-relation exclusion
+  (`design/sources/prompts/telos2-partition-only-prompt.md`). Any future attempt inherits it, and
+  attempt 3 should be re-run with it rather than patched after the fact.
+
+`representing`'s 57 acts are not lost — their telos is whatever they represent *toward*, so they
+redistribute across the other roots on re-run rather than needing a home carved for them.
+
+**`/relate` still did not emerge**, even balanced. Section D of the run is explicit: matchmaking and
+introductions are present but facilitative, while "loving, befriending, or sustaining mutual intimacy
+as an actor's own purpose is absent." The partition placed the matchmaking acts under `coordinating`
+and `representing`, which is defensible — introducing two people genuinely is coordination. What the
+corpus cannot settle is whether matchmaking's telos is *aligning parties* or *forming a bond*; that
+is a theory question, and per [D-8MRC] the root stays on the author's judgment.
+
 ---
 
 ## 3. Replacing the refusal test
