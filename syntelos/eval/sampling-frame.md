@@ -70,6 +70,7 @@ Over-draw accordingly. To land 135 acts from a population screening at ~40%, dra
 | P6 | GCD examples and invalid cases | `bakobo/schema/gcd/{examples,invalid}/` | 18 files | Whole population |
 | P7 | Utina demo acts | `bakobo/utina` demo strings | 6 | Whole population |
 | P8 | DIDComm protocols + MCP tool definitions | `bakobo/interaction-acts/corpus/acts.jsonl` | 445 acts | Digital interaction — v1's home turf |
+| P9 | O*NET Work Activities | onetcenter.org content model | TBD | **Required** — the only population reaching care, physical service, teaching, and trade |
 
 P8 is load-bearing for the telos re-derivation (plan §1, guard 2): the v1 roots were built for
 exactly this domain, and re-deriving them against only legal and agentic corpora would replace one

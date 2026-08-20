@@ -148,6 +148,62 @@ The act-is-a-vector rule from SDA §4 carries over unchanged, and it is what mak
 filing a return is `create`-in-`record` *and* `create`-in-`commitment` in one move, and its gate is
 the join.
 
+### Telos re-derivation, attempt 1 — halted 2026-08-20, and why
+
+Guard 2 says re-derive the eight roots rather than grandfathering them. The first attempt was a
+blind bottom-up partition: 621 acts pooled from P5 and P8, shuffled with the pre-registered seed,
+handed to seats with **no sight of v1's taxonomy**, each asked to derive 5–12 purpose roots from the
+acts alone. Blinding was the point — shown the eight roots and asked whether they work, a model
+confirms them.
+
+One seat completed (`design/sources/telos-partition-*`); two hit the 600-second cap on the 621-row
+assignment table. The completed partition returned eleven roots — `discovering` 241, `coordinating`
+91, `transforming` 89, `governing` 47, `assuring` 37, `authorizing` 33, `transacting` 24,
+`publishing` 21, `remediating` 18, `deciding` 10, `staffing` 10.
+
+**The result is not a taxonomy. It is a measurement of the corpus.** `discovering` takes 39% of the
+pool because MCP tool definitions are dominated by reads. And a direct term-probe over the pool —
+not a model's opinion, a regex I can re-run — shows what is absent:
+
+| v1 root | acts in pool | note |
+|---|---|---|
+| `/care` | 1 | false positive — "treat like cases alike" |
+| `/serve` | **0** | no repair, install, clean, construct, manufacture |
+| `/relate` | 2 | both false positives |
+| `/trade` | **0** | no buy, sell, purchase, bid, price |
+| `/govern/vote` | 1 | |
+| `/share/teach` | **0** | |
+| read/observe | 204 (33%) | for contrast |
+
+  [ F-QN7X ]  **The pool cannot re-derive telos, and proceeding would have been worse than not
+  trying.** Four of v1's eight roots have zero support in it and two more have one act each. A
+  partition derived here would have deleted `/relate`, `/care`, `/serve`, and `/trade` on the
+  evidence that a corpus of software tools and office roles does not contain them — replacing v1's
+  interaction skew with a software-and-office skew. That is precisely the failure guard 2 exists to
+  prevent, arrived at by the opposite route.
+
+The completed partition's own section E says the same thing unprompted, which is the one part of it
+worth keeping: it lists physical production, caregiving, learning, experimentation, consumption,
+social bonding, civic representation, market exchange, environmental stewardship, and personal
+self-maintenance as domains the corpus cannot speak to, and concludes that its roots "should not be
+treated as a proven universal taxonomy."
+
+**What the corpus needs before attempt 2.** P1 (Utah) and P2 (CCQ) will supply market exchange,
+family, property, and civic acts once drawn. They will not supply care, physical service, teaching,
+or social bonding, because statutes regulate those activities without enumerating them as acts.
+
+  [ R-2VBH ]  **Acquire O\*NET Work Activities as a population.** It is a public, enumerable,
+  cross-economy catalog of what people actually do at work — including the healthcare, construction,
+  agriculture, personal-service, and education occupations this pool has none of. `sda.md` already
+  cites it (ref [13]) as one of the three traditions that "takes the act surface seriously." It is
+  the cheapest available fix for exactly the gap measured above, and without it the telos facet
+  cannot be re-derived honestly at any level of effort.
+
+Attempt 2 waits on that. Nothing else in the program does — the effect, state-kind, and modality
+facets are unaffected, and the gold standard can be built on them if the telos facet is explicitly
+deferred to a second rating round. That trade (two rating passes) is now worth re-examining against
+[Q-4HKN], which assumed one pass was achievable.
+
 ---
 
 ## 3. Replacing the refusal test
