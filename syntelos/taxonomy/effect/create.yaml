@@ -1,0 +1,49 @@
+id: effect/create
+facet: effect
+label: create
+status: draft
+definition: >
+  The act brings into being something that did not exist before it, and that has its own identity
+  thereafter. The test is identity: after the act there is one more nameable thing of the relevant
+  state-kind than there was before.
+elaboration: >
+  Creation is judged per state-kind, which is why one move is often several coordinates. Filing a
+  tax return creates a `record` and creates a `commitment` in a single act (sda.md §4); the return
+  and the liability are two things, each newly in being.
+discriminators:
+  effect/modify: >
+    `modify` leaves the same thing in being with different content. The question is whether the
+    thing's identity survives: amending a contract modifies the instrument, but the new obligations
+    it introduces are created. Both coordinates may be present.
+  effect/preserve: >
+    `preserve` keeps an existing thing in force. Renewing a license is `preserve` when the licence
+    retains its identifier, and `create` when the renewal issues a new instrument — a distinction
+    supplied by the form facet, not guessable from the act's description.
+  effect/observe: >
+    `observe` adds nothing to the world. Producing an analysis is `create` over the analysis even
+    though its inputs were only observed.
+  effect/destroy: >
+    `destroy` removes. A replacement — destroy the old, create the new — is two coordinates, and
+    collapsing it to one loses whichever half carries the stricter gate.
+examples:
+  - text: Filing a tax return.
+    source: sda.md §4 ("create-in-record AND create-in-commitment in a single move")
+  - text: Signing a new contract.
+    source: bakobo/schema/gcd examples/real-estate-agent.json ("{create, modify} commitment")
+  - text: Incorporating an entity by executing articles of incorporation.
+    source: Utah Code §3-1-5 ("Articles of incorporation")
+counter_examples:
+  - text: Amending an operating agreement.
+    reason: >
+      The agreement existed and retains its identity; what changes is its content. New obligations
+      introduced by the amendment are a separate `create` coordinate over `commitment`.
+    correct: effect/modify
+  - text: Posting an adjusting journal entry that corrects an earlier one.
+    reason: >
+      Ledgers are append-only, so this looks like creation — but the act's operative effect is on
+      the balance the earlier entry established. Classify on what the act changes, not on how the
+      storage layer implements it.
+    correct: effect/modify
+  - text: Reinstating a dissolved entity.
+    reason: The entity is restored to existence rather than newly brought into being.
+    correct: effect/preserve

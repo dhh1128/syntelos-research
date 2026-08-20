@@ -1,0 +1,55 @@
+id: state-kind/relationship
+facet: state-kind
+label: relationship
+status: draft
+definition: >
+  A standing connection to another party, with its own terms and its own duration — an account, a
+  membership, an employment, a vendor arrangement, a channel of communication. The test is
+  persistence: the connection outlives any single exchange conducted through it.
+elaboration: >
+  Relationship is the state-kind that most often travels with another, because forming a connection
+  usually also creates obligations or confers powers. That is expected behaviour for a vector rather
+  than an ambiguity: opening a bank account creates a relationship AND signature authority over it,
+  which is the worked example in plan §5.
+discriminators:
+  state-kind/commitment: >
+    The connection versus the obligations arising under it. A relationship can persist with nothing
+    outstanding — a dormant account, a framework agreement with no order placed — and obligations
+    can exist between parties with no standing relationship, as with a one-off tort settlement.
+    E1 §5.1 found signing a contract unclassifiable between these; usually the answer is both.
+  state-kind/authority: >
+    Adding a counterparty confers no powers by itself. Narrowing an existing agent's scope changes
+    authority with the relationship untouched. Where a delegation creates the connection too, carry
+    both.
+  state-kind/record: >
+    A CRM entry about a counterparty is `record`; the counterparty relationship is `relationship`.
+    Deleting the entry does not end the arrangement.
+  state-kind/resource: >
+    A vendor's running service is `resource`; the contract-bearing arrangement with the vendor is
+    `relationship`. Offboarding and switching off are different acts.
+  state-kind/information: >
+    Notes about a party are `information`. The connection is `relationship`.
+examples:
+  - text: Opening a bank account.
+    source: utina demo act `open-bank-account`; plan §5 worked example
+  - text: Onboarding a supplier after award.
+    source: tefa research/archetypes/contract-negotiator/raw/00-starter-outline.md
+  - text: Establishing a communication channel with a counterparty.
+    source: bakobo/schema/gcd a.constraints.protos (protocol-and-role constraints)
+counter_examples:
+  - text: Placing one order under an existing framework agreement.
+    reason: >
+      The relationship already exists and is unchanged; what the order creates is an obligation.
+    correct: state-kind/commitment
+  - text: Recording meeting notes about a counterparty.
+    reason: >
+      Nothing about the connection itself changes — its terms, parties, and duration are untouched.
+      Notes are content held at the principal's discretion, and deleting them would not end or
+      alter the arrangement they describe.
+    correct: state-kind/information
+near_misses:
+  - text: Offboarding a vendor and confirming data destruction.
+    reason: >
+      Ending the arrangement is `relationship`, so this is offered to mark that the DESTRUCTION of
+      the vendor's copy of data is a separate coordinate on `record` or `resource`. Do not let a
+      single business event collapse to one cell.

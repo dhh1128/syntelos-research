@@ -1,0 +1,52 @@
+id: modality/must-not
+facet: modality
+label: must-not
+status: draft
+definition: >
+  The act is affirmatively forbidden. A `must-not` overrides an otherwise-applicable permission on
+  the same coordinate, and it is a distinct fact from the mere absence of a permission.
+elaboration: >
+  **Prohibition is not invalidity, and this facet does not carry validity.** The V-CIV doctrinal
+  audit (plan §6) pressed hard here and the design holds, but only because the two live on different
+  facets: permission is modality, validity is form. An act can be forbidden yet legally effective —
+  an agent exceeding actual authority may still bind the principal as to a third party who relied —
+  and an act can be permitted yet void for want of a formality nobody prohibited. A spec that let
+  `must-not` mean "void" would produce wrong legal conclusions in both directions.
+
+  Civil systems refine invalidity further, distinguishing `nullité absolue` from `nullité relative`
+  by who may invoke it and whether it can be cured. That refinement belongs with the requisites that
+  produce it, not here. This node exists to say what modality does NOT claim.
+discriminators:
+  modality/may: >
+    Polarity, plus precedence: where a broad `may` and a narrow `must-not` both apply to a
+    coordinate, the prohibition wins. Note also the case that is neither — an act with no permission
+    at all fails closed, and reporting that as a prohibition misstates why it was refused.
+  modality/must: >
+    Polarity. A `must-not` can be enforced at the gate by refusing the act; a `must` cannot be
+    enforced by any gate, only detected afterward. The enforcement asymmetry is why the two are not
+    mirror images.
+examples:
+  - text: A steward forbidden to execute an agreement binding the principal.
+    source: tefa research/archetypes/clusters/money-and-commitment.md (the unfloorable binding acts)
+  - text: A pentester forbidden to probe targets outside its scope credential.
+    source: tefa docs/design.md (pentester archetype, effectful sensing as commission)
+  - text: An orchestrator with authority to authorize and an empty act surface — forbidden to act directly.
+    source: sda.md §5 (containment by construction)
+counter_examples:
+  - text: An agent whose grant simply does not mention wire transfers.
+    reason: >
+      Fail-closed, not forbidden. The verifier refuses for want of authorization, and conflating
+      that with prohibition destroys the ability to report why an act was refused — which
+      custos-4.2.md §8.5 makes a normative requirement, since a refusal must name what is missing.
+    correct: modality/may
+  - text: An obligation to escalate any risk above appetite rather than accepting it.
+    reason: >
+      Usually written as a prohibition on accepting, but the operative content is the compelled
+      escalation. Model the duty; a bare prohibition leaves the inaction column unwatched.
+    correct: modality/must
+near_misses:
+  - text: An agent forbidden to sign, who signs anyway, and the counterparty relies.
+    reason: >
+      The act was prohibited AND may be legally effective. This is the case that proves modality and
+      validity are separate facets; recording it as "invalid" because it was forbidden would be
+      wrong on the law.

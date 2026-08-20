@@ -1,0 +1,52 @@
+id: effect/preserve
+facet: effect
+label: preserve
+status: draft
+definition: >
+  The act keeps something in existence or in force that would otherwise lapse, decay, or remain
+  outstanding — by maintaining it, renewing it, or discharging it so that it ends satisfied rather
+  than broken. The test is counterfactual: absent the act, the thing would have degraded, expired,
+  or fallen due.
+elaboration: >
+  This is the least intuitive of the five effects and the one most often mislabelled, because its
+  mechanism usually looks like `modify` and its outcome sometimes looks like `destroy`. Discharge
+  belongs here rather than under `destroy`: paying an invoice ends the obligation, but it ends it by
+  performance, and the gate a system owes a performed obligation is not the gate it owes a
+  repudiated one.
+discriminators:
+  effect/modify: >
+    Ask what the act is FOR. Upkeep that returns a thing to its supported or current condition is
+    `preserve`; changing what the thing says or does is `modify`. A patch that also adds a feature
+    carries both coordinates.
+  effect/destroy: >
+    Discharge versus termination. Paying a debt to extinguish it by performance is `preserve` over
+    `commitment`; repudiating or cancelling the same debt is `destroy`. Both leave no obligation
+    outstanding, and conflating them erases the distinction that matters most to the counterparty.
+  effect/create: >
+    Renewal is `preserve` when the thing keeps its identifier and `create` when the renewal issues a
+    new instrument. The form facet supplies the answer; it is not inferable from the act alone.
+  effect/observe: >
+    Monitoring for decay is `observe`; intervening to arrest it is `preserve`.
+examples:
+  - text: Renewing a licence that retains its identifier.
+    source: Utah Code §53-3-506 ("License expiration and renewal")
+  - text: Paying an invoice, discharging the obligation by performance.
+    source: sda.md §4 ("preserve (actively maintain, renew, or discharge)")
+  - text: Running scheduled maintenance that keeps a service in its supported condition.
+    source: tefa research/archetypes (incident-commander, steady-state reliability duties)
+counter_examples:
+  - text: Cancelling a subscription so no further obligation accrues.
+    reason: >
+      The obligation ends, but by termination rather than performance. The counterparty's position
+      is materially different, and the gate should be too.
+    correct: effect/destroy
+  - text: Upgrading a system to a new major version with breaking changes.
+    reason: >
+      Presented as maintenance, but it changes what the thing does. Where upkeep and change are
+      genuinely both present, carry both coordinates rather than choosing.
+    correct: effect/modify
+  - text: Taking a backup.
+    reason: >
+      It serves preservation as a goal, but the act itself brings a new artifact into being. Telos
+      is `preserve`-flavoured; the effect coordinate is not.
+    correct: effect/create

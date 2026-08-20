@@ -1,0 +1,55 @@
+id: state-kind/record
+facet: state-kind
+label: record
+status: draft
+definition: >
+  An entry that others are entitled to rely on — a posted transaction, a published page, a filed
+  return, an issued credential. The test is the mirror of `information`: a third party who acted on
+  it and was harmed would have a claim arising from its being wrong.
+elaboration: >
+  Reliance entitlement is conferred by an act of publication, filing, recording, or issuance, and
+  what confers it varies by jurisdiction. That variation belongs on the form facet, not here — and
+  the V-CIV audit (plan §6) sharpened the point: a Grundbuch entry is CONSTITUTIVE of title while a
+  Utah recording gives notice. Both produce a `record`; they differ in what the recording act does,
+  which is a requisite distinction.
+discriminators:
+  state-kind/information: >
+    Entitlement to rely, conferred rather than intrinsic. The same bytes cross the line when
+    published, filed, or issued.
+  state-kind/commitment: >
+    A record states that something is so; a commitment binds someone to do something. Filing a tax
+    return is both — the filing is a record and the liability is a commitment — which sda.md §4 uses
+    as the canonical two-coordinate act.
+  state-kind/resource: >
+    Content versus container. Deleting the rows of a ledger operates on `record`; decommissioning
+    the database server operates on `resource`. E1 §5.4 found this triple unresolvable from the GCD
+    source; the rule adopted here is to classify by what the act operates on, not by what the thing
+    is made of.
+  state-kind/authority: >
+    A record of who holds a power is not the power. An audit log naming an approver is `record`;
+    the approver's grant is `authority`.
+  state-kind/relationship: >
+    A record of a connection is not the connection. A CRM entry is `record`; the standing
+    counterparty relationship is `relationship`.
+examples:
+  - text: Posting a journal entry to the general ledger.
+    source: tefa research/archetypes/bookkeeper/raw/00-starter-outline.md
+  - text: Filing a financing statement.
+    source: Utah Code §70A-9a-516 ("What constitutes filing")
+  - text: Publishing documentation to the public site.
+    source: tefa research/archetypes/technical-writer/raw/00-starter-outline.md
+counter_examples:
+  - text: Drafting the same documentation before review.
+    reason: No one is entitled to rely on it yet.
+    correct: state-kind/information
+  - text: Wiping a database cluster to reclaim hardware.
+    reason: >
+      The act operates on the system, not on the entries. If the same act also destroys the entries,
+      carry both coordinates rather than choosing — the gate is the join.
+    correct: state-kind/resource
+  - text: Signing a contract.
+    reason: >
+      A contract is recorded, but what makes it consequential is the obligation it creates. E1 §5.1
+      flagged this pair; the rule is that binding force decides, and a contract typically occupies
+      `commitment` and `relationship` as well.
+    correct: state-kind/commitment

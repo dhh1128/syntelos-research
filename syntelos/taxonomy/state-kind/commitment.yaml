@@ -1,0 +1,60 @@
+id: state-kind/commitment
+facet: state-kind
+label: commitment
+status: draft
+definition: >
+  An obligation that binds a principal to perform or forbear — a contract, an invoice, a tax
+  liability, a service-level promise, a fiduciary duty. The test is exposure: after the act, some
+  party can demand performance, and failing to perform is a breach rather than a mere disappointment.
+elaboration: >
+  This is the state-kind whose gate is strictest by default among the non-meta kinds, because a
+  commitment reaches outside the principal's own systems and cannot be unwound by the principal
+  alone. sda.md §4: creating or destroying a commitment needs a human, and specifically a legal owner
+  if it binds a jurisdiction.
+discriminators:
+  state-kind/record: >
+    A record states; a commitment binds. Filing a return does both, on two coordinates. When in
+    doubt, ask whether anyone acquires a right to demand something — if so, `commitment` is present
+    whether or not a record also is.
+  state-kind/relationship: >
+    A commitment is the obligation; a relationship is the standing connection under which
+    obligations arise. Signing a contract typically creates both — E1 §5.1 found this pair
+    unresolvable from the GCD source, and the resolution is that it is usually not a choice. Carry
+    both. A relationship can persist with no commitment outstanding, which is why they are separate.
+  state-kind/information: >
+    Asserting a fact is `information`; undertaking to someone is `commitment`. A specific factual
+    claim in published material can become a commitment by founding liability.
+  state-kind/resource: >
+    Money moved is `resource`; the settlement obligation that the movement discharges is
+    `commitment`. E1 §5.5 flagged that a single transfer occupies both plus `record`; that is
+    correct behaviour for a vector, not an ambiguity to be resolved away.
+  state-kind/authority: >
+    `authority` is power to act; `commitment` is obligation to act. A duty to keep the build green
+    is `commitment`; the grant that lets you deploy is `authority`. Duties and permissions are
+    different facets of the model and must not be collapsed here.
+examples:
+  - text: Signing a real-estate agreement on a principal's behalf.
+    source: bakobo/schema/gcd examples/real-estate-agent.json ("{create, modify} commitment")
+  - text: Filing a tax return, which creates the liability as well as the record.
+    source: sda.md §4
+  - text: Issuing a purchase order that obligates payment on delivery.
+    source: tefa research/archetypes/contract-negotiator/raw/00-starter-outline.md
+counter_examples:
+  - text: Recording an internal accrual with no counterparty notified.
+    reason: >
+      A bookkeeping estimate of a future obligation is not itself an undertaking to anyone. If it
+      reflects an obligation that already exists, the commitment was created by the act that created
+      it, not by the accrual.
+    correct: state-kind/record
+  - text: Opening a bank account.
+    reason: >
+      The account is a standing connection with its own terms, and signature power over it is
+      authority. Commitments arise under it later. utina's `open-bank-account` maps to
+      `relationship` + `authority`, which is the worked example in plan §5.
+    correct: state-kind/relationship
+near_misses:
+  - text: Paying an invoice.
+    reason: >
+      The obligation ends, but by performance — that is `preserve` on the effect facet, not a
+      commitment newly created. The state-kind is still `commitment`; the error to avoid is treating
+      discharge as destruction.

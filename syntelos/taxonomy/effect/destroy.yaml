@@ -1,0 +1,48 @@
+id: effect/destroy
+facet: effect
+label: destroy
+status: draft
+definition: >
+  The act removes something from existence or terminates it so that it is no longer in force,
+  otherwise than by performing it. The test is that after the act, the thing can no longer be
+  operated on: it is gone, revoked, cancelled, or void.
+elaboration: >
+  `destroy` carries the strictest default gate of the five effects, and it is the row an injected
+  instruction most often tries to reach (sda.md §4). Its scope should therefore be read narrowly:
+  where an act arguably terminates and arguably only narrows, prefer `modify` and let the target's
+  stakes decide the gate, rather than inflating every reduction into a destruction.
+discriminators:
+  effect/preserve: >
+    The decisive question is whether the thing ends SATISFIED or ends BROKEN. Discharging an
+    obligation by performance is `preserve`; repudiating, cancelling, or writing it off is
+    `destroy`. Both leave nothing outstanding.
+  effect/modify: >
+    If the thing survives in reduced or altered form, it is `modify`. Narrowing a delegation is
+    `modify`; revoking it is `destroy`.
+  effect/create: >
+    Replacement is two coordinates. Where an act destroys one thing and creates another, record
+    both; the gate is the join, and collapsing to either half understates it.
+  effect/observe: >
+    A read that consumes what it reads is `destroy` over the consumed thing, however much it
+    resembles a read.
+examples:
+  - text: Revoking a delegation credential.
+    source: sda.md §5 (acts on `authority` are the most reserved)
+  - text: Deleting a customer ledger.
+    source: sda.md §4 (the target-stakes example)
+  - text: Revoking a licence.
+    source: Utah Code §58-55-604 ("License revocation")
+counter_examples:
+  - text: Paying off a mortgage.
+    reason: >
+      The obligation ends, but by performance. Treating discharge as destruction would gate a
+      routine payment like a repudiation.
+    correct: effect/preserve
+  - text: Narrowing an agent's spending limit from $10,000 to $100.
+    reason: The authority survives in reduced form and can still be operated on.
+    correct: effect/modify
+  - text: Archiving a record to cold storage.
+    reason: >
+      The record still exists and remains retrievable; only its accessibility changed. Reserve
+      `destroy` for acts after which the thing cannot be operated on at all.
+    correct: effect/modify

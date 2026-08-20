@@ -1,0 +1,137 @@
+# The facet registry: the top-level architecture of Syntelos 2.0, in machine-readable form.
+#
+# An act is a COORDINATE over these facets, not a path through one of them. Nothing here is a
+# parent of anything else. See design/syntelos-2.0-plan.md §2 [D-K2M9].
+#
+# closed: the value set is normative and enumerated in taxonomy/<facet>/. Adding a value is a
+#         breaking change to the standard.
+# open:   the value set is a registered vocabulary that may grow without a breaking change.
+# multi:  an act may carry more than one value on this facet simultaneously.
+
+version: 0.1.0-draft
+
+facets:
+  - id: telos
+    question: Why was the act done?
+    kind: closed
+    multi: false
+    hierarchical: true
+    status: provisional
+    note: >
+      Inherited from Syntelos v1, where the tree was derived under the refusal test for two-party
+      interactions. Under the governability test it is a HYPOTHESIS TO TEST, not a given, and the
+      root set is expected to change. Deliberately not populated yet, so that porting v1's eight
+      roots cannot entrench them by default. See plan §1, guard 2.
+
+  - id: effect
+    question: What transformation does the act work?
+    kind: closed
+    multi: true
+    hierarchical: false
+    cardinality: 5
+    status: draft
+    note: >
+      From sda.md §4 and bakobo/schema/gcd. Paired with state-kind: neither axis is meaningful
+      alone. An act may occupy several (effect, state-kind) cells at once; its gate is the join.
+
+  - id: state-kind
+    question: Over what kind of state does the effect operate?
+    kind: closed
+    multi: true
+    hierarchical: false
+    cardinality: 6
+    status: draft
+    note: >
+      From sda.md §4 and bakobo/schema/gcd. NOTE the spelling drift being resolved here: sda.md
+      writes `information`, gcd writes `info`. Syntelos 2.0 is the normative source; the CI
+      cross-repo check makes gcd conform.
+
+  - id: modality
+    question: With what deontic force?
+    kind: closed
+    multi: false
+    hierarchical: false
+    cardinality: 3
+    status: draft
+    note: >
+      New in 2.0. v1 had no modality; every category was implicitly a permission. Omission is a
+      first-class act on this facet, not the absence of one. Distinct from validity, which lives on
+      form — an act can be forbidden yet valid, or permitted yet void.
+
+  - id: channel
+    question: Through what kind of institution does the act operate?
+    kind: open
+    multi: false
+    hierarchical: false
+    status: needs-rederivation
+    note: >
+      Half of the form facet. DEMOTED from closed on 2026-08-19 by the V-CIV doctrinal audit (plan
+      §6). The proposed five values — private, registry, agency, tribunal, assembly — were derived
+      from a single common-law jurisdiction (the Utah Code) and do not survive contact with civil
+      law. VERIFIED against primary text 2026-08-19: both codes make the notary a public officer
+      (French CC 1369; CCQ 2813), and CCQ 2814's own enumeration of authentic documents spans four
+      of the five proposed channels — Parliament, government orders, court records, public
+      registers — while carrying "notarial acts" as a co-ordinate seventh category beside them. A
+      legislature's own taxonomy therefore contradicts the partition. The fix is re-derivation
+      against both traditions, not a sixth value bolted onto a common-law partition. Do not
+      populate until re-derived; closed status must be re-earned.
+
+  - id: requisite
+    question: What makes the act effective?
+    kind: open
+    multi: true
+    hierarchical: false
+    status: draft
+    note: >
+      The other half of form. Individually portable predicates; WHICH ones a given act needs is
+      jurisdictional, which is why this facet is open and instrument names live in profiles rather
+      than here. Expected to be the least reliable facet in the spec; measure it before gating it.
+      Two corrections owed when populated, both now VERIFIED against primary text rather than
+      model recall (plan §6, "Doctrinal verification against the corpus"):
+
+      (1) `notarized` must split. Civil-law authentic form is not procedurally fancier
+      notarization — it is evidentiarily different in kind. An authentic act stands as proof
+      against all persons until contradicted by a dedicated judicial proceeding (French CC 1371,
+      "fait foi jusqu'à inscription de faux"; CCQ 2818, 2821, "improbation"). A common-law
+      notarized document is ordinary rebuttable evidence. NOTE the correction: it does NOT carry
+      executory force under the Code civil; 1369 defines and 1371 gives probative force, and
+      force exécutoire lives in the Code des procédures civiles d'exécution.
+
+      (2) Registration is THREE functions, not two, per CCQ 2941: publication "allows them to be
+      set up against third persons" (opposability), "determines their rank" (priority), "and,
+      where the law so provides, gives them effect" (constitutive — cf. BGB 873(1), where land
+      transfer requires the Land Register entry). Rights bind the parties whether published or
+      not. A boolean `recorded` cannot express which of the three a filing buys.
+
+      Also note, from CCQ 2814: authenticity cuts ACROSS channels — parliamentary documents, court
+      records, public register entries, and notarial acts are all authentic. That is why requisite
+      and channel are separate facets and not one compound `form`.
+
+# Open questions that must be answered in normative text rather than by a facet value.
+open_questions:
+  - id: F-N4RB
+    question: What individuates one act from two?
+    note: >
+      Nothing in the spec says whether a transaction emits one coordinate or two. Under the German
+      Abstraktionsprinzip a sale is two juridical acts with independent validity; under French
+      solo consensu it is one. An individuation RULE lets both jurisdictions follow the same spec;
+      a facet naming obligation/disposition would burn German doctrine into a supposedly invariant
+      core. See plan §6.
+  - id: telos-is-not-causa
+    question: How does the spec prevent telos being read as causa?
+    note: >
+      A purpose facet beside legal acts invites implementers to treat telos as a validity
+      condition. It is not: German abstract transfers are valid with no causa at all. Requires
+      explicit normative text.
+  - id: acts-not-facts
+    question: Where is the boundary against juridical FACTS?
+    note: >
+      A tort, a birth, a death produce legal effects nobody performed (acte juridique vs. fait
+      juridique). Syntelos taxonomizes acts; the spec should say so rather than leave it to be
+      discovered.
+
+# Jurisdiction-specific instrument names (financing-statement, eidas-qes, ...) are NOT facet
+# values. They are profile-registered bundles of a channel plus a requisite set. See plan §5.
+profiles:
+  registry: profiles/
+  status: not-yet-populated

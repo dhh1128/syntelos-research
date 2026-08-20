@@ -1,0 +1,55 @@
+id: state-kind/information
+facet: state-kind
+label: information
+status: draft
+definition: >
+  Content that carries meaning but on which no one is yet entitled to rely. Drafts, analyses,
+  working notes, proposals, internal correspondence. The test is entitlement: if a third party acted
+  on this and was harmed, they would have no claim arising from its being wrong.
+elaboration: >
+  Note the spelling this facet normatively fixes. sda.md §4 writes `information`; bakobo/schema/gcd
+  writes `info`. Syntelos 2.0 is the normative source and the cross-repo CI check (C7) enforces the
+  correspondence rather than letting the drift persist unremarked.
+discriminators:
+  state-kind/record: >
+    Reliance entitlement is the whole distinction, and it is CONFERRED — by publication, filing,
+    posting, or issuance — not intrinsic to the content. The same bytes are `information` in a draft
+    and `record` once published. What confers the entitlement is a form question, which is why form
+    is a separate facet and not folded in here.
+  state-kind/commitment: >
+    `commitment` binds someone to do something. A document that merely asserts a fact is
+    `information`; a document by which a principal undertakes an obligation is `commitment` — and a
+    marketing draft containing a specific factual claim can be both, on two coordinates.
+  state-kind/resource: >
+    `resource` has value or capability apart from what it means. A design document is `information`;
+    the code it describes is `resource`.
+  state-kind/authority: >
+    `authority` is the power to act or to authorize. A memo describing who may approve expenses is
+    `information`; the grant that makes it so is `authority`.
+  state-kind/relationship: >
+    `relationship` is a standing connection to a party. Notes about a counterparty are
+    `information`; the connection itself is `relationship`.
+examples:
+  - text: Drafting an internal analysis of a vendor's security posture.
+    source: tefa research/archetypes/vendor-risk (collect independent evidence, score risk)
+  - text: Preparing a marketing draft before review.
+    source: sda.md §4 ("a marketing draft is information")
+  - text: Producing a variance analysis for internal discussion.
+    source: tefa research/archetypes/financial-analyst/raw/00-starter-outline.md
+counter_examples:
+  - text: Publishing that same marketing draft to the website.
+    reason: >
+      Publication confers the entitlement to rely. The content did not change; its state-kind did.
+      This is the transition sda.md §4 uses to explain why state-kind is named rather than inferred.
+    correct: state-kind/record
+  - text: A specific factual claim inside the published draft — "40% faster than the competitor."
+    reason: >
+      It can found liability, which makes it an undertaking rather than an assertion. sda.md §4 uses
+      exactly this case to show one line of work crossing state-kinds.
+    correct: state-kind/commitment
+  - text: A signed message whose signature is what gives it effect.
+    reason: >
+      E1 §5.3 flagged `create info` vs `create record` on signed messages as unresolvable from the
+      GCD source. Resolved here by the entitlement test: if the signature exists so others may rely,
+      it is a record.
+    correct: state-kind/record

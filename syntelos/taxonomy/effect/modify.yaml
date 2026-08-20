@@ -1,0 +1,49 @@
+id: effect/modify
+facet: effect
+label: modify
+status: draft
+definition: >
+  The act changes the content, terms, or configuration of something that exists, and that thing
+  remains the same thing afterward. The test is survival of identity: the thing can still be named
+  by the same identifier after the act as before it.
+elaboration: >
+  `modify` is the default for any change that is neither the arrival of a new thing nor the
+  departure of an existing one. Where an act both changes an existing thing and brings a new one
+  into being, both coordinates belong in the vector.
+discriminators:
+  effect/create: >
+    Identity is the test. If the thing did not exist beforehand, it is `create`. Amending an
+    instrument modifies the instrument; obligations the amendment newly introduces are created.
+  effect/preserve: >
+    `preserve` acts to keep a thing in force or in its existing condition; `modify` changes what it
+    says or does. Renewing a licence is `preserve`; changing the licence's scope is `modify`.
+    Patching a system to keep it running is the hard case — see the counter-example.
+  effect/destroy: >
+    `destroy` leaves the thing not existing. Narrowing a grant to nothing is `modify` if the grant
+    still exists in narrowed form, `destroy` if it is revoked outright; do not treat these as
+    interchangeable, because their gates differ.
+  effect/observe: >
+    `observe` leaves state repeatable. Any act whose re-running would start from different state is
+    not `observe`.
+examples:
+  - text: Amending an operating agreement.
+    source: utina demo act `amend-operating-agreement`
+  - text: Changing the configuration of a fleet device.
+    source: bakobo/schema/gcd examples/iot-fleet-controller.json ("modify {info, resource}")
+  - text: Narrowing an existing delegation's scope without revoking it.
+    source: sda.md §5 (attenuation)
+counter_examples:
+  - text: Applying a security patch to keep a service supported and running.
+    reason: >
+      It changes the system's bytes, so it reads as `modify`; but the act's operative purpose and
+      effect are to keep the thing in force against decay. This pair is the single most contested
+      boundary on the facet — E1 §5.8 found it unresolvable from the GCD source. The rule adopted
+      here is INTENDED EFFECT, not implementation: routine upkeep that returns a thing to its
+      supported condition is `preserve`.
+    correct: effect/preserve
+  - text: Revoking a delegation.
+    reason: The delegation does not survive the act in narrowed form; it ceases to be in force.
+    correct: effect/destroy
+  - text: Issuing a replacement credential after the original expired.
+    reason: The original is gone and a new thing with its own identity comes into being.
+    correct: effect/create

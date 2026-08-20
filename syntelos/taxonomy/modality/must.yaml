@@ -1,0 +1,58 @@
+id: modality/must
+facet: modality
+label: must
+status: draft
+definition: >
+  The act is obligatory. Failing to perform it is itself a violation, independent of whether any
+  forbidden act was performed. A `must` may carry a cadence, in which case the obligation recurs and
+  each missed occurrence is its own failure.
+elaboration: >
+  This is where omission becomes a first-class act rather than the absence of one. tefa states the
+  asymmetry that makes it necessary
+  (`research/archetypes/clusters/access-and-privileged-data.md`, X-7): "Floors forbid ACTS. They
+  cannot compel TIMELY ONES. Every archetype here has its most damaging failure in the inaction
+  column." A model with only permissions and prohibitions cannot see that column at all.
+
+  bakobo/schema/gcd carries the structure already: `r.duties[]` with `{bearer, effect, goal,
+  cadence, priority}`, where `priority` exists for "fail-loud conflict resolution: a higher-priority
+  duty outranks a lower one; ties escalate rather than being silently dropped." Two principals can
+  impose conflicting musts, and the model must surface the conflict rather than silently picking one
+  (sda.md §5).
+discriminators:
+  modality/may: >
+    Discretion. Not acting under a `may` is unremarkable; not acting under a `must` is the
+    violation. This is the whole distinction and it is what makes duties mechanical rather than
+    aspirational.
+  modality/must-not: >
+    Polarity. A `must` compels; a `must-not` forbids. They are not mirror images in enforcement: a
+    prohibition can be enforced by refusing the act at the gate, while an obligation cannot be
+    enforced by any gate — only detected after the fact, which is why a `must` needs a detector and
+    a cadence rather than a check.
+examples:
+  - text: Notifying the supervisory authority of a personal-data breach within 72 hours.
+    source: tefa research/archetypes/data-privacy-dpo/raw/00-starter-outline.md
+  - text: A steward's standing duty to keep the build green.
+    source: sda.md §5 ("obligatory pairings of effect and telos ... optionally with a cadence")
+  - text: An issuer's baseline duty of timely review and revocation.
+    source: bakobo/schema/gcd rules.json ("timelyReviewAndRevoke")
+counter_examples:
+  - text: An agent permitted to publish within its brand guidelines.
+    reason: Nothing compels publication; declining is not a breach.
+    correct: modality/may
+  - text: Binding the principal to a third party without countersignature.
+    reason: >
+      Affirmatively forbidden rather than compelled, and the difference is enforceable: a
+      prohibition can be refused at the gate, whereas an obligation can only be detected after the
+      fact. Modelling this as a duty would put it in the column no gate can watch.
+    correct: modality/must-not
+near_misses:
+  - text: Failing to declare an incident that met the severity threshold.
+    reason: >
+      An omission, and therefore an act on this facet rather than a non-event. It is the archetypal
+      case tefa's X-7 finding describes: no gate can catch it, so a `must` must be paired with an
+      independent detector that writes an undeletable trigger.
+  - text: A functional manager requiring a green build while a product manager requires a Friday ship.
+    reason: >
+      Two conflicting musts from two principals. The model resolves by `priority` where the duties
+      carry it and otherwise escalates to the nearest authority presiding over both domains; what it
+      must never do is silently pick one.

@@ -1,0 +1,46 @@
+id: effect/observe
+facet: effect
+label: observe
+status: draft
+definition: >
+  The act reads or measures state without changing it. The test is repeatability: if the act were
+  performed twice in succession, the state it operates on would be identical both times.
+elaboration: >
+  Observation frequently causes a side effect elsewhere — an access log entry, a rate-limit
+  decrement, a notification to the subject. Those are separate coordinates in the act's vector, on
+  their own state-kind. They do not make the observation itself anything other than `observe`.
+discriminators:
+  effect/modify: >
+    `modify` changes the content of the thing operated on. If re-running the act would yield a
+    different starting state, it is not `observe`.
+  effect/create: >
+    `create` brings something into being. Deriving a report FROM observed data is `observe` over
+    the source and `create` over the report — two coordinates, not one.
+  effect/preserve: >
+    `preserve` acts to keep something in existence or in force. Watching a thing decay is
+    `observe`; intervening to stop the decay is `preserve`.
+  effect/destroy: >
+    `destroy` removes or terminates. Reading a record before deleting it is a two-coordinate
+    vector, not a single `destroy`.
+examples:
+  - text: Reading a ledger balance.
+    source: sda.md §4 ("observe (read, no change)")
+  - text: A read-only monitoring persona polling a metrics endpoint.
+    source: sda.md §4 (the defense-in-depth example)
+  - text: Retrieving a credential to verify it, without recording the verification.
+    source: bakobo/schema/gcd examples/ai-deploy-agent.json ("observe {info, record}")
+counter_examples:
+  - text: Running an access-recertification campaign.
+    reason: >
+      It reads entitlements, but its purpose and its effect are to change them; the review
+      terminates in grants and revocations.
+    correct: effect/modify
+  - text: Taking a database snapshot for disaster recovery.
+    reason: >
+      Reading the source is `observe`, but the act as a whole exists to bring the snapshot into
+      being, which is a second coordinate. Classifying it as `observe` alone loses the cell that
+      actually carries the risk.
+    correct: effect/create
+  - text: A destructive read that consumes a one-time token.
+    reason: The token does not survive the read, so the repeatability test fails.
+    correct: effect/destroy

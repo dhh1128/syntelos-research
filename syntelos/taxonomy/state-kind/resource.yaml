@@ -1,0 +1,52 @@
+id: state-kind/resource
+facet: state-kind
+label: resource
+status: draft
+definition: >
+  Things with value or capability independent of what they mean — systems, code, infrastructure,
+  money, secrets, physical goods, compute. The test is that the thing would still be worth something
+  to someone who did not know what it said.
+elaboration: >
+  `resource` is the state-kind most likely to be over-applied, because almost everything is
+  implemented on top of some resource. The discipline is to classify by what the act operates on,
+  not by what the target is built from: rows in a ledger are `record` even though they live in a
+  database, and the database is `resource` only when the act is about the database.
+discriminators:
+  state-kind/record: >
+    Content versus container. Deleting entries operates on `record`; decommissioning the store
+    operates on `resource`. Where an act genuinely does both, carry both — E1 §5.4 showed annotators
+    splitting three ways on "delete a database" with nothing in the source to guide them.
+  state-kind/commitment: >
+    Moving money is `resource`; the obligation the movement discharges or creates is `commitment`.
+    A payment is routinely both, plus `record`.
+  state-kind/authority: >
+    A key is both a secret and a power. Rotating it for hygiene is `resource`; conferring it on a
+    new holder is `authority`. Ask whether the act changes who may do what.
+  state-kind/information: >
+    Meaning versus capability. A design document is `information`; the running system is `resource`.
+  state-kind/relationship: >
+    A vendor's service is `resource`; the standing arrangement with the vendor is `relationship`.
+    Terminating the arrangement and switching off the service are different acts with different
+    counterparty consequences.
+examples:
+  - text: Modifying the configuration of fleet devices.
+    source: bakobo/schema/gcd examples/iot-fleet-controller.json ("modify {info, resource}")
+  - text: Deploying code to production.
+    source: sda.md §3 (the tool-manipulation acts the v1 refusal test excluded)
+  - text: Transferring funds between accounts.
+    source: bakobo/schema/gcd a.constraints.monetaryLimit (money acts gate on value)
+counter_examples:
+  - text: Posting a journal entry that records a transfer.
+    reason: The act operates on the ledger entry, not on the funds.
+    correct: state-kind/record
+  - text: Granting a colleague access to the production cluster.
+    reason: >
+      The cluster is a resource, but the act changes who may operate on it. Acts that change the
+      permission surface are `authority` however infrastructural the target sounds.
+    correct: state-kind/authority
+near_misses:
+  - text: Wiping a scratch cache.
+    reason: >
+      Correctly `resource` — offered because sda.md §4 uses exactly this against "wiping the
+      customer ledger" to show that coordinates alone do not fix stakes. Same cell, wildly different
+      gate; only the target tells them apart.

@@ -1,0 +1,50 @@
+id: modality/may
+facet: modality
+label: may
+status: draft
+definition: >
+  The act is permitted but not required. Performing it is within the actor's discretion, and
+  declining to perform it is not a failure. This is the enabling grant — the allow-list dimension a
+  stranger-verifier gates on.
+elaboration: >
+  `may` is the only modality Syntelos v1 could express, which is why v1 could not describe a steward
+  at all. bakobo/schema/gcd calls `a.constraints` "the enabling 'may'" and holds it structurally
+  apart from `r.duties[]`, "the 'must'"; Syntelos 2.0 adopts that separation as a facet.
+
+  The critical negative: **the absence of a `may` is not a `must-not`.** An act with no permission
+  simply fails closed — the verifier refuses because nothing authorized it. An act carrying
+  `must-not` is affirmatively forbidden, which is a different fact with different consequences,
+  and gcd's rule that an unrecognized constraint key "must fail closed" depends on the distinction.
+discriminators:
+  modality/must: >
+    Discretion. Under `may`, not acting is unremarkable; under `must`, not acting is itself the
+    violation. An agent that may publish and does not has done nothing wrong; an agent that must
+    file by a deadline and does not has breached.
+  modality/must-not: >
+    Polarity, and they can coexist in a rule set: a broad `may` over a telos can be overridden by a
+    narrow `must-not` on a specific coordinate. When both apply, the prohibition wins — this is the
+    one precedence rule that must not be left to implementers.
+examples:
+  - text: An agent permitted to observe information and records but not required to.
+    source: bakobo/schema/gcd examples/ai-deploy-agent.json ("observe {info, record}")
+  - text: A negotiator permitted to accept terms within a fallback ladder.
+    source: tefa research/archetypes/contract-negotiator/raw/00-starter-outline.md
+  - text: A support agent permitted to offer a refund within policy limits.
+    source: tefa research/archetypes/customer-support/raw/00-starter-outline.md
+counter_examples:
+  - text: Notifying the supervisory authority of a personal-data breach within 72 hours.
+    reason: >
+      A statutory deadline with a legal consequence for silence. Modelling it as a permission loses
+      the only thing about it that matters — that not doing it is the violation.
+    correct: modality/must
+  - text: Executing an agreement that binds the principal, for an agent whose grant excludes it.
+    reason: >
+      This is the FAIL-CLOSED case, not a prohibition: the agent lacks a `may`, so the act is
+      refused. Reserve `must-not` for acts affirmatively forbidden, or the two collapse and the
+      refusal reason becomes unreportable.
+    correct: modality/must-not
+near_misses:
+  - text: An agent that may publish, choosing not to publish today.
+    reason: >
+      Declining under a permission is not an omission in the deontic sense and carries no
+      consequence. Only a `must` makes not-acting into an act.

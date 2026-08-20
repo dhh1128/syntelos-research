@@ -1,0 +1,55 @@
+id: state-kind/authority
+facet: state-kind
+label: authority
+status: draft
+definition: >
+  The power to act, or the power to authorize others to act — delegations, grants, roles, keys,
+  seats, licences to operate. The test is reflexivity: this is state that governs what acts are
+  possible or permitted, rather than state acted upon in the ordinary course.
+elaboration: >
+  This is the meta-level, and sda.md §4 makes any act on it "the most reserved act of all." The
+  reason is containment rather than distrust: an agent that can widen its own authority has no
+  effective bound, so `authority` is the row that must gate hardest even for a fully trusted
+  steward. It also carries the distinction sda.md §5 draws between authority to ACT and authority to
+  AUTHORIZE, which are independent — a board can authorize a merger it could not execute, and a pure
+  orchestrator can hold broad authority to authorize with an empty act surface.
+discriminators:
+  state-kind/record: >
+    A record OF a power is not the power. An audit log naming who approved is `record`; the approval
+    right is `authority`. E1 §5.6 found delegating onward unclassifiable from the GCD source; the
+    rule is that if the act changes what someone may do, it is `authority`, whatever else it writes.
+  state-kind/commitment: >
+    Power to act versus obligation to act. A grant to deploy is `authority`; a duty to keep the
+    build green is `commitment`. The may/must split lives on the modality facet, but the state being
+    operated on differs too.
+  state-kind/relationship: >
+    A delegation presupposes a relationship and usually creates one, so both coordinates are common.
+    They separate cleanly when one changes without the other: narrowing an existing agent's scope is
+    `authority` alone; adding a counterparty with no powers conferred is `relationship` alone.
+  state-kind/resource: >
+    A key is a resource in the sense that it is a secret to protect, and an authority in the sense
+    that holding it confers power. Classify by what the act does: rotating a key for hygiene is
+    `resource`; issuing a key to a new holder is `authority`.
+  state-kind/information: >
+    A description of the authorization model is `information`. The grants themselves are `authority`.
+examples:
+  - text: Issuing, narrowing, or revoking a delegation credential.
+    source: sda.md §4 ("any act on authority ... is the most reserved act of all")
+  - text: Seating a board member.
+    source: utina demo act `seat-the-board`; custos-4.2.md §5 (seating)
+  - text: Granting an entitlement in an identity-provisioning system.
+    source: tefa research/archetypes/iam-provisioning/raw/00-starter-outline.md
+counter_examples:
+  - text: Rotating a signing key on schedule with no change to who holds it.
+    reason: Hygiene on a secret, with the authority surface unchanged.
+    correct: state-kind/resource
+near_misses:
+  - text: Reading the current entitlement list to prepare a recertification report.
+    reason: >
+      The effect facet carries this — it is `observe`. The state-kind is still `authority`; do not
+      let a read be reclassified as `information` merely because it produces a document.
+  - text: Amending an operating agreement so that a different officer may bind the company.
+    reason: >
+      This IS authority — offered as a counter-example to the instinct that a document amendment is
+      about the document. It changes the rules constituting who may bind, which is Hart's
+      secondary-rule case and the distinction E2 §4 rates strongest in the Custos corpus.
