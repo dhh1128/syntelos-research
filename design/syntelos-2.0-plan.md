@@ -983,18 +983,38 @@ Phase 0 is the only one with a hard dependency: [Q-7VXK] absorb/federate/layer a
 form facet's reach both change the registry's shape, so nothing durable should be built before
 they're settled.
 
-| Phase | Work | Who |
+| Phase | Work | Who | State |
+|---|---|---|---|
+| 0 | Settle architecture: absorb, faceted, narrow form scope | — | done 2026-08-18 |
+| 1 | Registry, linter, CI harness | me | done — 26 nodes, green |
+| 2 | Define the 11 SDA/GCD tokens; add modality; add requisite | me | done |
+| 2.5 | V-CIV doctrinal audit, then corpus verification of its claims | seats + me | done |
+| 3a | Corpus acquisition (P1–P10) | agents | done — 10 populations |
+| 3b | Sampling frame + rating protocol, seed pre-registered | me | done |
+| **T** | **Telos derivation** — not in the original plan; became necessary once guard 2 forbade grandfathering v1's roots | me + seats | **partition derived, not frozen** |
+| 3c | Draw the P1/P2 samples and the 600-act gold subsample | me | **blocked on T** |
+| 4 | V1 gold standard | Daniel | not started |
+| 5 | V2/V3 reliability + calibration, both traditions | seats | not started |
+| 6 | V4 definition-repair loop | me + seats | not started |
+| 7 | V5 human ceiling, V6 comparative | Daniel + seats | not started |
+| 8 | Paper generated from registry; worked examples; cross-repo CI | me | not started |
+
+**Phase T decomposes, and only the first step is done:**
+
+| T-step | Work | State |
 |---|---|---|
-| 0 | Settle [Q-7VXK] and [Q-QW4D] | ✅ done 2026-08-18 |
-| 1 | Registry skeleton, generator, CI harness; port v1's tree in; fix the v1 defects | me |
-| 2 | Define the 11 SDA/GCD tokens properly — the "NOT IN SOURCE" gap; counter-examples per pair from E1 §5 | me, adversarially reviewed by seats |
-| 2.5 | **V-CIV doctrinal audit** — gates the closed facets before they harden | seats + me |
-| 3 | V0 sampling frame + corpus assembly; acquire a civil-code corpus | scripts + seats |
-| 4 | V1 gold standard | you, irreducibly |
-| 5 | V2/V3 reliability + calibration, on **both** traditions | seats |
-| 6 | V4 repair loop until α plateaus | me + seats |
-| 7 | V5 human ceiling, V6 comparative | you + seats |
-| 8 | Paper rewrite from registry; worked examples; cross-repo CI into `bakobo/schema` | me |
+| T1 | Derive a partition, blind and bottom-up | done — three independent consolidations |
+| T2 | Verbing pass as a semantic check; redraw any root that resists | **next** |
+| T3 | Resolve the contested boundaries the three consolidations disagree on | after T2 |
+| T4 | Freeze the partition | after T3 |
+| T5 | Name the roots against `design/naming-criteria.md` | after T4 — premature before it |
+| T6 | Write the roots into `taxonomy/telos/` as registry nodes with discriminators | after T5 |
+
+**Outstanding and unscheduled:** the three v1 paper defects (`syntelos.md:134` garbled paragraph,
+`:251` stale `/gov/Identity.Verify` notation, `:274` sentence truncated mid-clause) are still
+present. Phase 1 listed "fix the v1 defects" and it did not happen, because the registry-generates-
+the-paper approach means they get fixed at phase 8 by construction rather than by hand now. That is
+defensible but it should be a decision rather than an omission.
 
 Phase 2.5 is placed before the corpus work deliberately. The doctrinal audit is cheap and can
 falsify a closed facet on its own; discovering in phase 5 that `channel` is a common-law artifact
