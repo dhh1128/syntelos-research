@@ -71,6 +71,7 @@ Over-draw accordingly. To land 135 acts from a population screening at ~40%, dra
 | P7 | Utina demo acts | `bakobo/utina` demo strings | 6 | Whole population |
 | P8 | DIDComm protocols + MCP tool definitions | `bakobo/interaction-acts/corpus/acts.jsonl` | 445 acts | Digital interaction — v1's home turf |
 | P9 | O*NET Work Activities | `bakobo/work-activities/corpus/acts.jsonl` | 19,898 acts | Whole-economy work — care, physical service, teaching, trade |
+| P10 | Relational and social acts | `bakobo/relational-acts/` | acquiring | ActivityStreams 2.0, schema.org, social APIs, and delegated relational practice |
 
 P8 is load-bearing for the telos re-derivation (plan §1, guard 2): the v1 roots were built for
 exactly this domain, and re-deriving them against only legal and agentic corpora would replace one

@@ -224,16 +224,42 @@ delegates being someone's friend. If so, `/relate` is not under-sampled but out 
 taxonomy of governable acts — and v1 included it because v1 was a grammar for *signalling* intent to
 a stranger, where "why is this person contacting me" makes `/relate` entirely real.
 
-  [ Q-8MRC ]  **Is `/relate` in scope for Syntelos 2.0?** Three options, and it is a scoping
-  decision rather than a technical one. (a) Out of scope — governable acts only, and the taxonomy
-  says plainly that it does not cover non-instrumental social action. (b) In scope, and acquire a
-  consumer-interaction corpus to support it — social platform APIs, dating and messaging product
-  surfaces, app-store action inventories. (c) In scope but retained on theory rather than evidence,
-  explicitly flagged as the one root no corpus corroborates. I lean (a), because the governability
-  test was adopted precisely to replace a scope rule that admitted the wrong things — but (a) drops
-  a root v1 had, which is your call and not mine.
+  [ D-8MRC ]  **`/relate` stays in scope, and a corpus gets acquired for it. Settled 2026-08-20,
+  against my recommendation, and the argument that settled it is worth recording because I had it
+  wrong.**
 
-Attempt 2 is otherwise unblocked.
+I had reasoned that `/relate` fails the governability test: nobody writes policy about celebrating a
+birthday, nobody delegates being a friend. Daniel's counter-example is professional matchmaking —
+Indian matchmaking, the Jewish *shadchan*, the marriage broker — and it is decisive.
+
+The error was conflating **the act** with **authority over the domain**. You cannot delegate *being*
+someone's friend. You can, and people routinely do, delegate *negotiating a marriage*, *screening
+suitors*, *issuing invitations*, *representing someone socially*, and *managing a public persona*.
+Matchmakers, publicists, social secretaries, agents, guardians arranging a ward's contacts, and
+diplomatic protocol officers all exercise delegated relational authority, and some of it — an
+arranged marriage negotiation — carries stakes at the very top of the range this taxonomy exists to
+gate. v1's `/relate/seek`, "find new connections," is exactly the matchmaking node.
+
+Note what this says about the governability test itself. Applied to an act *in isolation*, it
+produced the wrong answer, because "celebrate a birthday" looks ungovernable while "arrange my
+daughter's marriage" plainly is not, and they sit under the same root. The test is sound but has to
+be applied to the act as a delegate might perform it, not to the act as a principal performs it for
+themselves. That is a real refinement to §3 and it came from the counter-example, not from theory.
+
+  [ F-6BKW ]  The absence of `/relate` from four corpora is therefore **a property of the corpora,
+  not of the domain**. Protocols, statutes, steward roles, and paid-work catalogues are all
+  inventories of instrumental activity; O\*NET catalogues occupations and there is no SOC code for
+  matchmaker. That the gap replicated across four independent sources made it look like a finding,
+  which is a good reminder that replication across sources sharing a *selection principle* is not
+  independent replication at all.
+
+P10 acquisition is under way: the W3C ActivityStreams 2.0 Activity Vocabulary (a standards body's
+own enumeration of social acts), schema.org's `InteractAction` branch, open social-platform APIs,
+life-event and ceremony acts, and — the valuable and least enumerable part — a quote-anchored list
+of relational acts performed *on a principal's behalf*, drawn from described practice rather than
+invention.
+
+Attempt 2 waits on that, and is otherwise unblocked.
 
 ---
 
