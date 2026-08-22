@@ -103,3 +103,72 @@ Adversarial probe per surviving boundary: *produce two acts a competent observer
 between these two nodes using only observable features.* A boundary that falls to it is not
 checkable in practice whatever the table above claims, and the probe's output doubles as the
 counter-examples and near-misses the linter requires on every node.
+
+---
+
+## Revision of D-6PVH, 2026-08-22
+
+Daniel's counter-example: a poisoner serves a meal; the victims die days later. Under the rule as
+written, only features present at the time of the act count, and the act is "serving food." That is
+plainly wrong about the telos, and the rule needs repair rather than defence.
+
+The repair is not to admit outcomes generally. It is to distinguish **outcomes the act determines**
+from **outcomes the act merely contributes to.**
+
+  [ D-6PVH, rev.2 ]  **The outward test may appeal to a later outcome where the act causally
+  determines it and the intervening chain is mechanism. It may not appeal to outcomes that require
+  further acts, another party's uptake, or repetition to come about.**
+
+Applied to the two cases:
+
+*Poisoning determines its outcome.* The meal contains death cap; nothing further need be done by
+anyone. The intervening days are physiology running, not agency. And crucially the determining
+feature — what is in the food — **is present at the time of the act and is inspectable**. So the
+outcome is admissible, and the telos is killing rather than feeding.
+
+*Instruction does not determine character.* At the time of a lecture there is no feature that makes
+it character-forming. The outcome requires the learner's uptake, repetition, and a hundred other
+acts by other people. The chain passes through further agency, so the outcome is inadmissible and
+`instruct` must still be defined by its structure — curriculum, sequencing, assessment.
+
+This is the law's own distinction and it is worth borrowing the vocabulary: an intervening free human
+act (*novus actus interveniens*) breaks the chain; a natural process does not. Digestion does not
+break it; the learner's decision to study does.
+
+The revised rule also settles the middle cases consistently with what T2 had already concluded on
+other grounds. Persuasion requires the hearer's uptake → outcome inadmissible → the node survives
+only as structurally-defined `promote`. Protection's non-event is not determined either → still
+defined by the barrier. A marriage registration constitutes the bond rather than causing it later →
+no horizon question arises.
+
+## What the counter-example exposes about the facets
+
+Following it through produced something larger than the rule fix.
+
+  [ F-3XNM ]  **The state-kind facet cannot express an act on a person.** Its six values are
+  `information`, `record`, `commitment`, `authority`, `resource`, `relationship`. A poisoning is
+  `destroy` over — what? A patient is not a `resource`; that is both wrong and dehumanising. Neither
+  is a person `information` or a `commitment`. **There is no state-kind for a human being.**
+
+This is not a corner case. It means the entire `care` root — the most strongly evidenced concept in
+the whole derivation, 14–15 of 15 passes, thousands of acts — has no coordinate on the state-kind
+axis. Treating a patient, feeding someone, safeguarding a dependant: none of them can be located.
+
+The explanation is provenance, and it fits everything else we have found. `sda.md`'s six state-kinds
+were derived from *delegated organisational authority*, where acts fall on systems, records, and
+grants. That corpus contains no medicine, no bodily care, no violence. Once P9 brought in the whole
+economy, the facet ran out — the same way v1's roots ran out once the corpus stopped being
+interaction protocols.
+
+Consequences:
+
+- A seventh state-kind is probably required — `person`, or `subject`, or `body` — and naming it is
+  delicate for the same reasons `resource` is wrong.
+- The closed sets in `taxonomy/state-kind/` are `status: draft` and would need reopening, with the
+  cross-repo GCD check following.
+- This is also where the delegation model is most consequential and least developed: acts on persons
+  are exactly where the affordance constraints of §7.2 and the subject-as-verifier idea apply, and
+  the model currently cannot even name their object.
+
+Recorded here rather than acted on. It is a change to a facet the T-phase was not chartered to
+touch, and it wants Daniel's decision before anything moves.
