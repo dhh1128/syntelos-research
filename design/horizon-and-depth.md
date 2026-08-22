@@ -123,3 +123,87 @@ Two corollaries worth recording:
   carry higher stakes, the gate function of `sda.md` §4 should read telos depth as an input, and at
   present it reads only effect, state-kind, and target. That is a real extension to the gate model,
   not a taxonomy detail.
+
+---
+
+## 7. The verification asymmetry — Daniel's objection, and it is fatal to §5 as written
+
+§5 said the persuade/inform boundary is checkable in the grant rather than the transcript. That is
+true and insufficient. A stranger reading the credential learns what was **authorised**. Open-loop
+verification (`sda.md` §7) requires more than that: a stranger must be able to judge whether an act
+falls inside the remit, from the credential and the act alone. For `/inform/instruct` versus
+`/inform/instruct/form`, they cannot. Nothing in a tutoring session's outward behaviour distinguishes
+instruction from character formation.
+
+  [ F-8JQV ]  **Some branches of the telos tree are behaviourally unverifiable, and depth-on-persons
+  is the worst case.** This is an asymmetry the tree does not currently acknowledge. Membership in
+  `create`-a-`record` is checkable: the record exists. Membership in `/trade/swap` is checkable:
+  value moved. Membership in `/inform/instruct/form` is not checkable at all, and — worse — the
+  deeper the node, the less checkable it gets, so the tree's verifiability *decreases* exactly where
+  its stakes *increase*.
+
+That inverts the hierarchy's value proposition. v1 §3.2 sells hierarchy as confident generalisation
+for policy, which presumes category membership is decidable. On this branch it is not.
+
+### 7.1 What such a node actually is
+
+If a stranger cannot check membership, the node is not an authorisation category. Continuing to
+treat it as one is the error. It is a **disclosure-and-liability** category: it records what the
+principal consented to, and it places liability if the delegate turns out to have gone deeper. Its
+violation is discovered ex post — by the subject, by outcome, by complaint — not prevented ex ante by
+a gate.
+
+That is not a retreat; it is `sda.md` §1's own bound applied honestly. *Name the category, gate the
+boundary, audit the remainder, and do not pretend to check the heart.* Character formation belongs
+in the audited remainder. What was wrong was implying a gate could hold it.
+
+### 7.2 Gate the affordances, not the influence
+
+The compensating move is `sda.md` §7's containment-by-construction: do not check whether the
+orchestrator is faithful, give it an empty act surface. Applied here — do not try to detect moulding,
+**withhold the conditions that make moulding possible**, all of which are checkable:
+
+- **persistence** — does the delegate retain memory of this subject across sessions? A one-off
+  explanation cannot form character; a daily companion can.
+- **curation** — does the delegate choose what the subject sees, or only answer what is asked?
+- **exit** — can the subject leave, and is leaving costly?
+- **metric-on-subject** — is the delegate optimising anything measured *on this person*? This is the
+  sharpest one, and it is a property of the grant.
+- **asymmetry** — is the subject a minor, a patient, a dependant, or otherwise unable to appraise
+  the influence?
+
+None of these *is* character formation. Together they are its enabling conditions, and each is
+verifiable from the credential and the deployment rather than from the transcript. A tutor with no
+persistent subject memory, no sequencing control, and no metric on the student cannot mould much,
+whatever its intent — which is the point.
+
+### 7.3 For acts on persons, the subject is the natural verifier
+
+Where a stranger cannot judge, someone inside can. For acts *on a person*, that someone is the person
+acted upon, and the model already has the machinery: proof requests, consent-gating, and the
+`noticed` requisite.
+
+The relational statutes independently arrived at exactly this. IMBRA gates a broker's acts on
+disclosure to, and consent from, a **named** counterparty — not on any external assessment of the
+broker's intentions. That is the shape this analysis predicts for a deep grant on a person, arrived
+at by legislatures with the same problem and no taxonomy.
+
+So the verification story for this branch is: **stranger checks the affordances; subject checks the
+conduct; the record carries the liability.**
+
+### 7.4 Consequence for the registry
+
+  [ R-5MTN ]  **Telos nodes must carry a verifiability property**, and it must be honest.
+  Something like `externally-checkable` / `subject-attestable` / `audit-only`, stated per node. An
+  implementer needs to know which grants can be enforced at a gate and which can only be disclosed
+  and audited, and today nothing in the model tells them apart. This is a new node field, and it
+  probably generalises beyond telos — but telos is where it first becomes unavoidable.
+
+### 7.5 The honest limit
+
+None of this eliminates the problem. A delegate holding every legitimate affordance — persistent
+memory, curation, a captive subject — can mould while sincerely reporting instruction, and no
+verifier will catch it from outside. The claim is narrowing, not closure: make the deep act require
+affordances that must be granted explicitly, make the subject a verifier where one exists, and let
+the record place liability when it surfaces. A model that claimed more would be lying, which is the
+standard `sda.md` §8 sets for itself.
