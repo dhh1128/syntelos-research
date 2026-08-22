@@ -1,0 +1,105 @@
+# T2 — rewriting the discriminators as outward tests
+
+Working document, 2026-08-22. Applies [D-2CFX] (every telos node must be externally checkable) to
+each candidate root from T1. Each entry: the discriminator the derivation produced, an attempt to
+restate it as an outward test, and a verdict.
+
+## The rule that emerged from doing this
+
+Restating a handful of these surfaced a sharper form of the requirement, and it does more work than
+the original:
+
+  [ D-6PVH ]  **The outward test must turn on features present at the time of the act, not on
+  outcomes that unfold afterwards.**
+
+Two reasons, and they are the same two failures we have already hit.
+
+*Horizon.* A test that appeals to a later outcome is a horizon test wearing observational clothes.
+"Did the learner become capable" is not checkable *now* — and by the time it is, the act is long
+over and the verifier has gone.
+
+*Counterfactual success conditions.* Several candidate purposes succeed by something **not**
+happening. Protection succeeds when harm does not occur; you cannot observe a non-event. So
+protection cannot be defined by its success condition at all, and must be defined by the act's
+observable structure — *does it install, monitor, or enforce a barrier against an identified
+hazard?* That is present-tense and inspectable.
+
+This turns out to be the general repair. Where a purpose resisted an outward test, defining it by
+**what the act does** rather than **what the act achieves** rescued it — and where even that failed,
+the node dies.
+
+## The rewrites
+
+| # | candidate | derived discriminator (intent-phrased) | outward test (present-tense, structural) | verdict |
+|---|---|---|---|---|
+| C1 | care | "the beneficiary's condition is the end" | Does the act operate on the body, mind, or living conditions of a person or animal? | **survives** — the patient is the act's object, observable |
+| C2 | protect | "the end is a hazard that never materialises" | Does the act install, monitor, or enforce a barrier against an identified hazard? | **survives, redefined** — by barrier, not by non-event |
+| C2b | secure vs protect | "the threat is an adversary's intent, not accident" | Does the act's structure presuppose an agent to be defeated — authentication, authorisation, intrusion detection — rather than a hazard to be contained? | **marginal** — often visible, but may be a *target* property rather than a purpose. See below. |
+| C3 | know | "something true becomes known" | Does the act acquire, verify, or produce a representation of some state of affairs? | **survives** — there is an inquiry and a result |
+| C4 | educate | "the end is a changed person, not a produced fact" | Does the act involve curriculum, sequencing, practice, or assessment directed at a learner? | **survives, redefined** — by pedagogical structure, which is an artifact you can point at |
+| C5 | communicate | "success is receipt and shared awareness" | Does the act transmit content to an identified audience? | **survives** |
+| C6 | persuade | "the audience becomes more favourable" | Is there a sponsor with an interest in the outcome, consideration paid for placement, or a call to action? | **survives, much narrowed** — becomes *sponsored advocacy*, not *persuasion*. See below. |
+| C7 | coordinate | "the end is synchronised action" | Does the act fix a time, place, sequence, or role assignment among two or more parties? | **survives** |
+| C8 | produce / maintain | "create something new vs keep an existing thing functional" | Both observable — but the effect facet already carries `create` vs `preserve` | **merge at telos** — the distinction is real and belongs on the other axis |
+| C9 | exchange | "reciprocal value is transferred" | Does consideration pass between parties? | **survives** — the strongest node in the set |
+| C10 | conform | "conduct kept within a normative boundary" | Is the act a test, audit, attestation, or filing against a *stated external standard*? | **survives** — the standard is a document the act references |
+| C11 | adjudicate | "authoritatively resolve a contested question" | Does the act resolve a contested claim through a procedure whose determination binds the parties? | **survives** — forum, parties, determination all observable |
+| C12 | belong | "who may belong and interact" | Does the act change who may enter, act, or be recognised within a bounded group? | **survives** — rolls, roles, bans |
+| C13 | unite | "a continuing bond is the end" | Does the act establish a formal, registered, or publicly recognised bond between named parties? | **survives, redefined and narrowed** — see below |
+| C14 | ecology | "the ecological system is the beneficiary" | Is the object of the act a natural system? | **dies** — passes checkability, fails the verb test; it is a subject area |
+| C15 | move | "the end is change of location" | Does the act change the physical location of something? | **survives** — highly observable; whether root or child is a granularity call |
+
+## The four that needed real surgery
+
+**C6 persuade → promote.** The rewrite follows advertising regulation, which has faced exactly this
+problem and does not ask about intent. It asks whether placement was paid and whether it was
+disclosed. So the node survives only as *sponsored advocacy* — narrower than "persuasion" and
+correctly so. Unsponsored argument made in good faith is `communicate`, and that is the right
+answer: a taxonomy should not claim to detect rhetoric.
+
+**C13 unite, and what happens to matchmaking.** Defining the node by *formal, registered, publicly
+recognised bond* makes it checkable — marriage, adoption, partnership are all matters of record. But
+it narrows sharply: the matchmaker's own acts (screening candidates, arranging an introduction,
+negotiating terms) are individually acts of coordination and communication, and fall outside.
+
+That is the right outcome and it does not lose Daniel's case, but it does surface a distinction the
+model has not yet named:
+
+  [ F-9WTC ]  **Telos-of-the-grant is not telos-of-the-act.** A matchmaker delegated to negotiate a
+  marriage is granted authority toward `/unite`, while nearly every act they perform is coordination
+  or communication. GCD already carries these separately — `a.constraints.goals` alongside
+  `a.constraints.acts` — but nothing in the model states the relationship, and the T1 derivation
+  clustered *acts*, so it has been deriving act-telos throughout. Whether the tree serves both, or
+  whether goals need their own vocabulary, is unresolved and load-bearing for delegation.
+
+**C2b secure vs protect.** The outward test mostly works — authentication and intrusion detection
+look different from guards and backups. But the distinction may be a property of the **threat
+model**, which is a target attribute, not of the purpose. Same shape as the `create`/`preserve`
+duplication in C8: a real distinction sitting on the wrong axis. Recommend one `protect` node with
+threat type as a parameter, pending T3.
+
+**C14 ecology dies, and on the verb test rather than the checkability test.** "Is the object a
+natural system" is perfectly observable — but that makes it a *subject area*, which is the UNSPSC
+error v1 §2.2 names. Its acts redistribute: research on pollution is `know`, clearing fallen timber
+is `maintain`/`provide`, sealing abandoned wells is `protect`.
+
+## Where this leaves the count
+
+Thirteen candidates in, ten or eleven out: `care`, `protect`, `know`, `instruct`, `communicate`,
+`promote`, `coordinate`, `provide`, `exchange`, `conform`, `adjudicate`, `belong`, `unite`, `move` —
+minus `ecology` (dissolved), minus `secure` (folded into `protect` pending T3), minus one of
+`produce`/`maintain` (merged). `move` and `instruct` are granularity calls rather than existence
+calls.
+
+Notably **nothing died from the checkability rule alone.** Two nodes were narrowed by it (`promote`,
+`unite`) and one was redefined by it (`protect`); the only outright casualty fell to the verb test.
+That is mild evidence the derivation was sounder than the intent-phrased discriminators made it
+look — the extensions were largely right and the prose describing them was wrong, which is what
+[the T1 layering argument] predicted.
+
+## Next
+
+Adversarial probe per surviving boundary: *produce two acts a competent observer could not assign
+between these two nodes using only observable features.* A boundary that falls to it is not
+checkable in practice whatever the table above claims, and the probe's output doubles as the
+counter-examples and near-misses the linter requires on every node.
