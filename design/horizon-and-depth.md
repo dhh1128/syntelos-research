@@ -207,3 +207,71 @@ verifier will catch it from outside. The claim is narrowing, not closure: make t
 affordances that must be granted explicitly, make the subject a verifier where one exists, and let
 the record place liability when it surfaces. A model that claimed more would be lying, which is the
 standard `sda.md` §8 sets for itself.
+
+---
+
+## 8. Retraction: §3 and §7.4 were wrong. Depth is specialisation, not horizon.
+
+Daniel, 2026-08-22: *"/inform/instruct/form is not the kind of progression this hierarchy models. It
+is a progression, but of time horizons or deeper telos, not of acts. I want telos to get more
+precise as the hierarchy spells out new levels, not deeper."*
+
+That is correct and it retracts §3 entirely.
+
+  [ D-7NKQ ]  **Hierarchy depth means species-of, not further-downstream-from.** A child narrows
+  *what kind of act* its parent is: `/trade/swap`, `/trade/lend`, `/trade/bid` are kinds of value
+  exchange, each independently recognisable. `/inform/instruct/form` are not kinds of informing —
+  they are one act described at three distances along its causal chain. Putting them on the depth
+  axis models a distinction the axis does not carry.
+
+This is the **third** instance of one failure mode, and the pattern is now worth naming outright:
+something that is not telos being expressed on the telos axis. `representing` was a standing
+relation (rejected, [D-3WQP]). Horizon was a causal distance (rejected here). Both looked like
+purposes and both belonged elsewhere. Every future candidate root or child should be tested against
+this directly, because the derivation seats will keep producing them — the corpus is full of acts
+whose descriptions embed relation and horizon, and a model asked for "purposes" will surface both.
+
+## 9. The rule that replaces the verifiability field
+
+  [ D-2CFX ]  **Every telos node must be externally checkable.** If a stranger cannot decide
+  membership from observable features of the act, it is not a node.
+
+This supersedes [R-5MTN], which proposed tagging nodes with how checkable they are. That was the
+wrong repair: it would have admitted unverifiable nodes and then labelled them, when the right move
+is to exclude them. Hierarchy's whole claim — confident generalisation, a policy at `/x/y/*` covering
+`/x/y/z` — presumes membership is decidable. A node that fails the test does not weaken the branch it
+sits on; it falsifies the claim for the entire tree, because a verifier cannot know in advance which
+nodes it can trust.
+
+It also resolves [F-8JQV] by dissolving it. There is no longer an asymmetry where verifiability
+decreases with depth, because unverifiable distinctions never enter.
+
+## 10. So where does "instruct but do not mould" live?
+
+Not on telos. The telos stays whatever the act is — informing, or a checkable species of it. The
+depth-of-influence question is answered by **constraints**, and specifically by the affordances of
+§7.2, every one of which is externally checkable where intent is not: persistent memory of the
+subject, curation power, exit cost, a metric measured on the subject, subject vulnerability.
+
+This is v1 §3.9's own parameterisation principle — do not enumerate the infinite in the tree; put
+what varies into parameters — and it lands in the structure that already exists, `a.constraints.*`
+in the credential. Telos says what is being done. Constraints say how much rope. The ladder is real;
+it was simply never a telos ladder.
+
+## 11. The work this creates for T2 and T3
+
+The derivation's discriminating questions are mostly phrased as intent tests — *"is the end a changed
+person or a produced fact?"*, *"would neutral transmission still count as success?"* Under [D-2CFX]
+those are inadmissible as written. Each must be **restated as an observable test, or the node
+dropped.**
+
+Sometimes that is achievable and the node survives in better shape. Regulation already does this:
+advertising law does not ask whether you intended to persuade, it asks whether there was paid
+placement and whether it was disclosed. A `promote` node defined by *disclosed sponsorship and a call
+to action* is checkable; one defined by *intent to change disposition* is not. Likewise a node for
+instruction defined by *assessment, sequencing, a curriculum* is checkable; one defined by *aiming at
+a changed person* is not.
+
+So T2 gains a third obligation, alongside verbing and the horizon screen: **rewrite every
+discriminator as an outward test, and drop whatever will not survive the rewrite.** Expect that to
+be the step that removes the most candidates — and to be the step that makes the tree worth having.
