@@ -59,6 +59,13 @@ Who may belong, enter, and act in a shared space. Moderation, roles, onboarding,
 
 ## Part 2 — Contested. This is the review.
 
+> **A third answer is available for C4, C6 and C13, added 2026-08-22.** Daniel's reading is that
+> these are one act at two causal horizons rather than two purposes, and I agree — see
+> `design/horizon-and-depth.md`. The resolution is neither merge nor split but **depth**: the further
+> horizon becomes a child of the nearer one, which is what v1's hierarchy is for. So for those three,
+> a verdict of "child" is as available as "merge" or "separate". C2, C8, C10/C11, C14 and C15 are
+> unaffected — they differ in source, effect, termination, or object rather than in horizon.
+
 ### C2 · preventing harm — one root or two?
 
 | | reading | evidence |
