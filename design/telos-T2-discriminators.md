@@ -172,3 +172,53 @@ Consequences:
 
 Recorded here rather than acted on. It is a change to a facet the T-phase was not chartered to
 touch, and it wants Daniel's decision before anything moves.
+
+---
+
+## T3 rulings, 2026-08-23
+
+### Applied — three merges/deaths I am confident in
+
+**C8 `produce` / `maintain` → MERGE.** The effect facet already carries `create` versus `preserve`.
+Splitting at telos would encode one distinction on two axes declared orthogonal, which is precisely
+the objection that killed `representing`. One node; the effect coordinate distinguishes building a
+thing from keeping it working.
+
+**C2b `protect` / `secure` → MERGE.** Accidental versus adversarial is a property of the **threat
+model**, which is an attribute of the target, not of the purpose. Same shape as C8. One `protect`
+node, defined by the barrier it installs; threat type is a parameter. Note this does not lose
+anything a delegation needs — "may guard against intruders but not against fire" is expressible as a
+target constraint.
+
+**C15 `move` → DIES.** Not a granularity call after all: it fails the *purposes-not-mechanisms*
+test. Relocation is **how** you achieve something else — moving a patient serves care, moving freight
+serves availability or exchange, evacuating serves protection. A node that appears under many
+purposes is a mechanism. Its acts redistribute by what the relocation is for.
+
+**C9 → `transfer`, with two species.** Settled by Daniel's case: *a grandmother giving a birthday
+gift isn't reciprocal.* The parent is **transfer of value**; reciprocity is a checkable species
+beneath it — did consideration flow back?
+
+    /transfer            value moves from one party to another
+    /transfer/trade      …with consideration flowing back
+    /transfer/give       …with none
+
+Theft is **not** a third species. It is `/transfer` with the **consent requisite absent** — a
+validity defect, not a kind of transfer — which keeps it consistent with fraud (consent obtained by
+deception) and preserves the finding that adversariality lives on requisite and modality.
+
+### Not applied — two I am genuinely unsure of
+
+**C10/C11 governance — one root or two?** Both outward tests work: *conform* asks whether the act
+tests conduct against a stated external standard; *adjudicate* asks whether it resolves a contested
+claim through a binding procedure. Two of three consolidations split it. But the boundary blurs in
+the middle: a regulatory enforcement action both applies a standard **and** issues a binding
+determination, and much of what a regulator does sits exactly there. I can argue either way and have
+no confident call.
+
+**C13 `unite` / `belong` — separate or one?** Both are now checkable — a formal registered bond
+between named parties, versus a change in who may enter or act within a bounded group. Evidence for
+the split is 5/15, which settles nothing. The case against separating: a marriage could be read as
+membership in a two-person group, making them one concept at different scales. The case for: the
+acts, the instruments and the law are all different, and the relational-delegation statutes regulate
+one and not the other. I lean toward separate, weakly, and would not defend it hard.
