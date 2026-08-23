@@ -214,3 +214,29 @@ So the register of gaps is shorter and sharper than §4 claimed:
 
 "Unauthorised as a deliberate stance" is withdrawn; it described a case the model mislabels rather
 than one it cannot express.
+
+---
+
+## 7. Dispositions, 2026-08-23
+
+Closing these out rather than leaving them as standing questions.
+
+**Inherent authority (F-6VTD) — out of scope.** Daniel: *"not something we're going to model here."*
+Syntelos 2.0 describes acts and the authority a grantor confers over them. Authority an actor holds
+of their own standing is a different subject. The paper should state the boundary in one sentence so
+a reader does not go looking, and nothing further is owed.
+
+**Stakes borne by the actor — no proposal, and none is needed here.** It is a gate-model question,
+not a taxonomy question: whether `sda.md`'s stakes derivation should read risk to the *delegate*
+alongside blast radius outward. There is a real governance case behind it — a principal directing an
+agent into physical danger is a decision someone should have to make deliberately — but nothing in
+this project turns on it. Logged for a future SDA revision; no work here.
+
+**Living subjects — orthogonal to telos, and not a decision Daniel owes.** He is right that it does
+not belong in phase T. It is a `state-kind` facet change, and the facet is not being worked on. It
+goes on a backlog to be taken up when state-kind is next opened, at which point it needs the naming
+care that `resource` shows is warranted, plus the cross-repo GCD check. Presenting it as a blocking
+question was my error; it blocks nothing.
+
+**F-2QLJ (the exchange node is too narrow) is the one that stays live**, because it is a correction
+inside phase T and inside the T2 table. It is carried there, not here.
