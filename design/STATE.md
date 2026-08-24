@@ -40,7 +40,7 @@ Do the next action in "The next action" below. Before you start:
 
 Architecture settled, registry machinery working, ten corpora acquired, and the telos facet derived,
 stress-tested and frozen but **known incomplete**. Nothing has been named yet, and no evaluation has
-been run. Nothing is pushed.
+been run. Most commits are already on the public origin via nightly autopush — see above.
 
 | phase | state |
 |---|---|
