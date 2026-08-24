@@ -307,3 +307,95 @@ touched only glancingly, at 5 play acts and 17 ceremony acts.
 "expression" surfaced as its own cluster in three T1 batches. `/govern/advocate` is `promote` only
 where sponsorship is present, and unsponsored advocacy falls to `communicate`, which may understate
 it.
+
+---
+
+## 9. Six more cases, and a third candidate family
+
+### Classifications
+
+**Logistics — handoffs, shipping to the right place.** `provide`. The kill of `move` [T3] holds, and
+the `provide` test already carries the clause that does the work: *brings an artifact into being, or
+keeps one in a functional **and available** state.* Shipping makes something available at a place.
+Scheduling the shipment is `coordinate`; a handoff that moves title is also `transfer`.
+
+**Ordinary maintenance — a road, a car, teeth, a `/tmp` folder.** Deliberately chosen to span
+domains, and the partition splits it: road, car and `/tmp` are `provide`; teeth are `care`. **The
+object decides**, which is the rule the freeze already states. That is not an embarrassment — a
+principal delegating dental work and a principal delegating road maintenance are authorising things
+that differ in consent, dignity, bodily autonomy and liability, and a taxonomy that filed them
+together would be hiding the distinction that matters most.
+
+**Software QA and six-sigma.** `conform` — testing against a stated specification. QA also touches
+`know` where the question is genuinely open ("does this work?" before any spec exists), and the
+*fixing* that follows a defect report is a separate act under `provide`. Six-sigma is `conform` plus
+`provide` for the process changes it drives.
+
+**Motivational speaking.** `communicate` + `promote`, where paid. The structural test for `promote` —
+sponsor with an interest, consideration paid for placement, a call to action — captures a hired
+motivational speaker exactly as it captures an advertisement. That may look like over-capture, and I
+think it is correct: both are paid speech with a call to action, and a principal forbidding sponsored
+advocacy would reasonably intend to catch both. Note also that *motivate* is uptake-dependent and so
+correctly excluded as a telos — the same treatment persuasion got.
+
+**Campaigning in an election.** `promote` + participation. Not simple promote: a campaign is also the
+exercise of political standing, which is [F-6CTX] arriving for the fourth time from a fourth
+direction. Organising rallies is `coordinate`.
+
+**Decorative artwork and beautification.** No clean home, and it is the interesting one.
+
+### A third candidate family: acts whose point is experience
+
+`provide` covers making a mural as an artifact, and misses the reason for making it. `communicate`
+fits a mural with a message and not a decorative pattern. Following it through, the same gap covers
+several things already flagged separately:
+
+  [ F-7HTQ ]  **Play, ceremony, decoration, and performance are one family, not four gaps.** Each is
+  an act whose point is the experience it produces rather than any function it serves — and the
+  partition has no root for any of them. `/relate/play` and `/relate/celebrate` from the v1 back-test,
+  the mourning absence [F-7CDW], the "expression" cluster that surfaced in three T1 batches, and the
+  marginal `/share/perform` are all this one family.
+
+A checkable test is available, and it works in the negative: **does the act produce no deliverable
+beyond the experience itself?** A game has no product. A ceremony's form *is* its content. A
+decorative pattern alters appearance without altering function. That is observable at act time and
+does not require anyone's uptake — which distinguishes it from *enjoyment*, *reverence*, or *being
+moved*, all of which are horizons and inadmissible for the usual reason.
+
+### The corpus was adequate; the sampling was not
+
+Checked before recommending an acquisition. P9 already contains **798 acts from arts, design,
+entertainment, sports and media occupations (SOC 27), 600 from personal care and service (SOC 39),
+and 291 from community and social service (SOC 21)** — plus 233 acts matching decoration terms, 198
+matching play, 44 matching ceremony.
+
+None of it reached the derivation. `build_telos_sample.py` spreads 400 acts evenly across 23 SOC
+major groups, which gives each about 17. Even-stratification is not neutral: it suppresses a domain
+that is small in the population but *distinct* in kind, in the same way proportional sampling
+suppressed relational acts in attempt 1. The fix in attempt 2 was to balance across populations; the
+same error survived one level down, across strata within a population.
+
+  [ R-4NGP ]  **No new acquisition is needed.** A targeted redraw from P9 — over-weighting SOC 27,
+  39 and 21 — plus a first draw from P1 and P2, feeds a single supplementary pass covering all three
+  missing families at once.
+
+## 10. Recommended way forward
+
+**Supplementary derivation pass first; adversarial review after.** Reviewing a partition already
+known to be incomplete tests the wrong thing — every reviewer would spend their effort rediscovering
+`coerce`, `agree` and the experiential family, which are already known.
+
+The pass reuses machinery that works, and needs three targeted draws:
+
+1. **P1 + P2 legal** — for `coerce` and `agree`, and for the procedural, evidentiary and
+   status-conferring families that statutes carry and work catalogues do not.
+2. **P9 targeted redraw** — SOC 27, 39, 21 over-weighted, for the experiential family.
+3. **P10** — already in the pool, retained for relational coverage.
+
+Same blind batch pipeline, same degeneracy gate, same per-seat effort settings. One change to the
+brief: consolidate **against** the frozen partition rather than from scratch, asking specifically
+what the new corpus contains that the twelve roots cannot express. That is a smaller and better-posed
+question than re-deriving, it preserves the recurrence evidence already collected, and it will not
+disturb the boundaries the stress cases have already validated.
+
+Then adversarial review, on a partition that is at least plausibly complete.
