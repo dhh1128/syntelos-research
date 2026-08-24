@@ -2,6 +2,40 @@
 
 Written 2026-08-25 at the end of the first working session, at a phase boundary. **Read this first.**
 
+## If you are a new session
+
+Do the next action in "The next action" below. Before you start:
+
+- **Do not re-derive the telos partition from scratch.** The recurrence counts (how many of 15 blind
+  passes independently found each concept) are the most expensive artifact here and cannot be
+  regenerated cheaply. The supplementary pass *adds to* the frozen partition; it does not replace it.
+- **Conserve Daniel's tokens.** Delegate analysis to OpenRouter seats and `codex` rather than reading
+  large corpora yourself. Operational notes below — they were learned the hard way.
+- **Autopush is on.** `git-autopush` runs nightly at 02:45 and this repo is **public**
+  (`dhh1128/syntelos-research`). Commits publish without anyone deciding to publish them. The three
+  corpus repos under `~/code/bakobo/` are local-only with no remote; keep them that way.
+
+### Operating the seats — learned by failing
+
+- **Chunk the work.** A 150-act batch clusters in 50–150s; a 1,076-act pool times out. Payload size
+  is the dominant variable.
+- **`PANEL_TIMEOUT` is an env var**, documented at the top of the `panel` wrapper. The 600s default
+  is not a hard limit. Use 900.
+- **Cap `max_tokens` explicitly** (16000 works). OpenRouter *reserves* against `max_tokens`, not
+  actual usage, so a modest request 402s on a balance that could easily afford it. The default is
+  65536.
+- **Tune effort per seat, not globally.** `ds` degenerated at medium and was clean at low; `kimi` was
+  clean at medium.
+- **`codex exec --skip-git-repo-check`** — the flag is required or it refuses. Separate quota from
+  OpenRouter, which is why it kept working when credits ran out.
+- **Never `2>/dev/null` a seat call.** Eleven HTTP 402s were misread as timeouts because stderr was
+  suppressed. Capture it per output.
+- **Gate every output with `tools/degenerate.py`.** Latency and word count are *inverted* quality
+  signals: the fastest, longest run of one experiment was 1,730 words of collapsed repetition. Empty
+  output fails the gate too — that is deliberate.
+- `tools/run_batches.sh` already encodes all of the above, retries once on a failed gate, and skips
+  work already passing.
+
 ## Where the project is
 
 Architecture settled, registry machinery working, ten corpora acquired, and the telos facet derived,
