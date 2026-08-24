@@ -175,3 +175,75 @@ question rather than the one case Daniel happened to raise.
 
 The freeze stands in the meantime, marked incomplete rather than wrong: nothing in it is refuted by
 this, and it is now known not to be collectively exhaustive.
+
+---
+
+## 7. Reykjavík: a second missing root, and why trust-building is not a telos
+
+Daniel, 2026-08-25, from the 1986 Reykjavík summit: strategic moves in the SDI and submarine
+negotiations, then Reagan's request that a defector's sister be allowed to visit her brother, backed
+by his personal word that she would return.
+
+### 7.1 Negotiation has no home, and `agree` is missing
+
+Test the negotiating moves against the frozen ten. Not `transfer` — no value moves, and an arms
+control treaty transfers nothing. Not `coordinate` — nothing about time, place, sequence or role.
+Not `communicate` — that is the medium, not the purpose. Not `conform` — no external standard is
+being tested against. Not `judge` — no third party binds them; they bind themselves. Not `belong` —
+no group membership changes.
+
+  [ F-6WDN ]  **A second act-family is missing: establishing a mutual or unilateral binding
+  undertaking.** Treaties, contracts, promises, covenants, settlements, ceasefires, alliances,
+  pledges, guarantees. v1 had this as `/trade/deal` — *"reach an agreement on malleable terms"* — and
+  the derivation lost it, because `transfer` was drawn around value movement and pure
+  commitment-making moves no value.
+
+The outward test is easy and satisfies [D-2CFX] without strain: *does the act create, modify, or
+discharge an obligation binding its maker?* The obligation is the observable — it is what the effect
+facet already calls `commitment`, and this is the telos that answers *what for*.
+
+Note what this does to `unite`. A marriage is a formal registered bond (`belong/unite`) **and** a
+mutual undertaking (`agree`); a treaty is the second without the first. Under [D-3HBK] that is
+unremarkable — both labels apply — and it is mild evidence the multi-valued decision was right, since
+a single-valued telos would have forced a false choice.
+
+**Strategic moves within a negotiation are not separately modelled, and should not be.** Holding a
+position, linking issues, walking out, making a concession contingent — these are tactics, and
+enumerating them is exactly what `syntelos.md` §3.9 warns against. The telos is `agree`; the tactics
+are parameters of how it is pursued. A refusal is the exception and is already covered: refusal is
+first-class on the modality facet.
+
+### 7.2 The visit, and why "build trust" cannot be the telos
+
+Daniel: *"This is some kind of alignment, but I'm not sure it's 'belong'. It's a move designed to
+show good will and build trust. Not sure where that goes."*
+
+The puzzlement is the horizon rule working, and the answer is the same shape as persuasion. **Trust
+is a mental state in another party, produced by their uptake.** It is not determined by the act, it
+requires Gorbachev to be persuaded, and it is not observable at act time — so under [D-6PVH rev.2] it
+is inadmissible as a telos, exactly as *form character* and *change disposition* were. Trust-building
+is to promising what persuasion is to informing: the downstream effect, not the act.
+
+What is fully expressible is the act itself, and it is `agree` in its unilateral species: **Reagan
+made a specific, costly, publicly verifiable undertaking.** Every element is observable at the time —
+a named commitment, a determinate performance condition (does she return), and a reputational cost to
+defection that both parties could see. Gorbachev's permission is a separate act, `modify` over
+`authority`, granting an exit he had previously withheld.
+
+So the model can name every move and cannot name the point of them, which is right rather than a
+defect. What made the gesture work was not any property the taxonomy should try to encode; it was
+that the undertaking was **small enough to accept and cheap enough to verify.** Low stakes, high
+checkability — and interestingly those are the two variables `sda.md`'s gate function already reads,
+used here in the opposite direction. A gate uses low stakes to avoid asking a human; Reagan used low
+stakes so that a human could say yes.
+
+### 7.3 Two missing roots, one cause
+
+`coerce` [F-9BKW] and `agree` [F-6WDN] were both found by a case rather than by the corpus, and both
+are governance-central: the state's monopoly on force, and the power to bind. Contract formation is
+everywhere in statute and treaty law, and arrest and prosecution are everywhere in criminal
+procedure — and P1 and P2 were never drawn into the telos pool.
+
+Two independent confirmations of the same diagnosis raise the prior considerably that the
+supplementary legal pass will surface more. It should run before T5, not after: naming a partition
+that is about to gain two or more roots is the waste the phase ordering exists to avoid.
