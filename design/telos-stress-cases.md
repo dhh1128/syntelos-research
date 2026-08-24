@@ -399,3 +399,57 @@ question than re-deriving, it preserves the recurrence evidence already collecte
 disturb the boundaries the stress cases have already validated.
 
 Then adversarial review, on a partition that is at least plausibly complete.
+
+---
+
+## 11. Military and scientific corpora — acquire, but hold out
+
+Daniel, 2026-08-25: *should we acquire a military and/or scientific actions corpus?*
+
+### The methodological problem the question exposes
+
+Every corpus so far has been acquired **reactively**, when a gap appeared, and then fed straight into
+derivation. P9 came in because `/relate` was missing; P10 because social bonding was; P1/P2 are about
+to come in because coercion is. That is fine for coverage and it has left a real weakness:
+
+  [ F-8VKD ]  **There is no held-out corpus.** A partition derived from everything available cannot
+  be validated against anything. Every coverage check so far has been run on data the derivation
+  either saw or is about to see, which measures fit rather than generalisation.
+
+So the answer is not whether to acquire, but what to do with what is acquired.
+
+  [ R-9TXM ]  **Acquire a military task corpus and hold it OUT of derivation entirely.** Use it once,
+  after the partition is complete, to ask a question nothing else can answer: does a partition
+  derived from work, law, protocols and relationships classify a domain it never saw?
+
+### Why military, specifically
+
+The **Universal Joint Task List** and its service equivalents are public, unclassified, enumerated,
+hierarchically organised task catalogues — thousands of tasks, already at act granularity. Three
+properties make it the right held-out set:
+
+- **It is a domain nothing in the current pool touches.** Not paid civilian work, not statute, not
+  protocol, not social.
+- **It is act-shaped already**, so extraction adds little noise of its own.
+- **It is a rival taxonomy.** Someone else solved the enumerate-the-act-surface problem independently,
+  with different pressures. That makes it a comparison target for V6, which currently has only Aries
+  goal codes, schema.org and raw strings.
+
+### Why not now, and why not scientific
+
+**Not now**, because `coerce` is already identified and P1/P2 will establish it. Feeding military
+doctrine into derivation would spend the one corpus best suited to be held out, and would import a
+large body of domain jargon into a general vocabulary.
+
+**Scientific, probably not at all.** The gap E4 named was *"intervention designed to generate causal
+evidence."* Experimentation is `know` pursued by a particular method — intervening on the world to
+learn from it — and method is not telos. Peer review is `conform`, measurement is `know`, publication
+is `communicate`. I do not expect a scientific corpus to yield a root, and P9 already carries the
+science occupations. NASA budget documents would not help regardless; they are programmatic rather
+than act catalogues.
+
+One thing military *will* likely surface, and it is worth predicting in advance so the test is
+falsifiable: **deception** — feints, camouflage, military deception operations. My prediction is that
+it is **not** a new root: deception is `communicate` with false content, and falsity is a defect in a
+requisite, exactly as it is for fraud. If the held-out test shows deception resisting that treatment,
+the requisite-not-telos rule is weaker than four cases have so far suggested.
