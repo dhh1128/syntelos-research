@@ -222,3 +222,50 @@ the split is 5/15, which settles nothing. The case against separating: a marriag
 membership in a two-person group, making them one concept at different scales. The case for: the
 acts, the instruments and the law are all different, and the relational-delegation statutes regulate
 one and not the other. I lean toward separate, weakly, and would not defend it hard.
+
+### The two open rulings, settled by Daniel 2026-08-24
+
+**C13 — `unite` becomes a child of `belong`.** *"Unite and belong mean slightly different things;
+one makes a much stronger claim about alignment than the other."* That is a species relation, not a
+horizon one — a formal union is a **kind** of belonging that asserts more, and both ends are
+checkable at act time. So it is legitimate depth under [D-7NKQ]:
+
+    /belong              change who may enter, act, or be recognised within a bounded group
+    /belong/<unite>      …by establishing a formal, registered bond between named parties
+
+This also resolves the 5/15 evidence problem without needing more evidence. The split was weak as a
+*root* claim and is unremarkable as a *child* claim, because a child only needs to be a recognisable
+species of its parent, not an independently recurring cluster.
+
+**C10/C11 — `conform` and `judge` are separate roots.** Settled.
+
+### A naming hazard caught before naming started
+
+Daniel: *"we will probably choose 'judge' rather than 'adjudicate', anyway; it's terser and
+lower-register... Measuring scientific data is judging, but is not governance in any practical
+sense."*
+
+The semantics are already safe. The outward test for this node is *does the act resolve a contested
+claim through a procedure whose determination binds the parties* — scientific measurement binds
+nobody, so it falls to `know`, exactly as it should.
+
+The hazard is entirely in the label:
+
+  [ F-4TSW ]  **A terse, low-register name over-attracts.** `judge` will pull in measuring, grading,
+  assessing, and evaluating on the strength of the word alone, whatever the definition says. This is
+  criterion C6 (terseness) beating B3 (precision) — the tension `naming-criteria.md` predicted in the
+  abstract, now with a concrete instance before the naming pass has even run.
+
+It also marks a three-way boundary that will need care in T6, because the same everyday words scatter
+across all three nodes:
+
+| act | node | why |
+|---|---|---|
+| measure a sample | `know` | produces a representation of how things are |
+| peer-review a paper | `conform` | tests against a stated methodological standard |
+| grade against a rubric | `conform` | the rubric is the stated standard |
+| rule on a disputed claim | `judge` | a determination that binds the parties |
+
+Assess, evaluate, review and judge are natural-language synonyms that land on three different nodes.
+Whatever names win, the counter-examples on each node must include the neighbouring senses, or every
+annotator will scatter these three ways.
