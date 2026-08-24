@@ -247,3 +247,63 @@ procedure — and P1 and P2 were never drawn into the telos pool.
 Two independent confirmations of the same diagnosis raise the prior considerably that the
 supplementary legal pass will surface more. It should run before T5, not after: naming a partition
 that is about to gain two or more roots is the waste the phase ordering exists to avoid.
+
+---
+
+## 8. Back-testing v1's 47 leaves against the twelve roots
+
+2026-08-25. Every second-level category from `syntelos.md` §5, mapped onto the frozen ten plus
+`coerce` [F-9BKW] and `agree` [F-6WDN]. This is a coverage test the derivation could not perform on
+itself, because v1's leaves were deliberately kept out of the blind passes.
+
+**Both new roots are confirmed by leaves that had no home without them.** `/trade/deal` — *"reach an
+agreement on malleable terms"* — is `agree` and nothing else. `/govern/enforce` and `/govern/process`
+are `coerce`. Three of v1's forty-seven leaves were unplaceable an hour ago.
+
+**Thirty-eight leaves fit without strain.** All of `/care`, `/serve`, `/align`, `/operate`, most of
+`/share`, and most of `/trade` and `/govern` map cleanly, several to more than one root now that
+telos is multi-valued: `/trade/lend` is `transfer` + `agree`, `/govern/identify` is `know` +
+`conform`, `/govern/settle` is `judge` or `agree` depending on whether a third party determines it.
+
+### The failures cluster in one branch
+
+| v1 leaf | problem |
+|---|---|
+| `/relate/play` | **No root.** Recreation undertaken for its own sake. Not `care` (not wellbeing), not `communicate`, not `coordinate`. |
+| `/relate/celebrate` | **No root.** Marking an occasion by conventional observance — ceremony, ritual, commemoration. |
+| `/relate/seek` | **Awkward.** Seeking a connection is not `belong` (nothing changes), not `coordinate`, and only weakly `know`. |
+| `/relate/chat` | **F-6CTX.** Sustaining a connection. `communicate` fits structurally while missing the point, and `belong` only covers *changing* membership. |
+| `/govern/vote` | **F-6CTX, from the other direction.** Casting a ballot exercises membership; it does not change it. |
+
+Four of `/relate`'s four leaves are problematic, and it is the only branch where that happens.
+
+  [ F-3MKC ]  **`/relate` is where v1 covers ground the derived partition does not**, and this is a
+  second, independent confirmation of Daniel's judgment in [D-8MRC]. He retained the root against my
+  recommendation and against a 5/15 evidence count; the back-test now shows the derived partition is
+  weakest in exactly that branch, for the same reason it was weak in the corpora — play, ceremony and
+  companionship are not paid work, not protocol operations, and not statutory acts.
+
+  [ F-6CTX ]  **Confirmed twice more.** `/relate/chat` and `/govern/vote` are both participation
+  rather than membership-administration, and they arrive from entirely different branches of v1.
+  Whatever repairs `belong`, it must cover exercising a standing as well as conferring one.
+
+### Two candidate roots, both plausibly checkable
+
+- **play / recreate** — a rule-governed or expressive activity undertaken with no external product.
+  Checkable in the negative: is there a deliverable? Games, sport, and leisure have none.
+- **celebrate / observe** — marking a designated occasion by conventional form. Ceremony is
+  *unusually* observable, since public conventional form is what makes a ritual a ritual rather than
+  a private feeling. Pairs with the mourning gap [F-7CDW], which is the same family.
+
+Neither should be added by hand. They go into the supplementary pass as candidates to be tested, and
+that pass now has a clear brief: it must draw from **P1 and P2** for the coercion and agreement
+families, and from a corpus that actually contains leisure and ritual for these two — which P10
+touched only glancingly, at 5 play acts and 17 ceremony acts.
+
+### Marginal, and worth watching rather than acting on
+
+`/trade/hold` (escrow, custody, safekeeping) sits uneasily between `protect` and `provide`.
+`/share/perform` (broadcasting an artistic experience) satisfies the `communicate` test while
+"expression" surfaced as its own cluster in three T1 batches. `/govern/advocate` is `promote` only
+where sponsorship is present, and unsponsored advocacy falls to `communicate`, which may understate
+it.
