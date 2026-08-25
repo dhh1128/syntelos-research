@@ -16,17 +16,22 @@
 #   success       was inferred from exit status, which a seat can return 0 on while emitting
 #                 nothing. Every output is gated by degenerate.py and retried once.
 #
-# Usage:  run_batches.sh <batch-dir> <out-dir> <prompt-file>
+# Usage:  run_batches.sh <batch-dir> <out-dir> <prompt-file> [engine...]
+#
+# An engine is either `codex`, which bills against a separate quota from OpenRouter, or a panel
+# seat written seat:effort:max_tokens. With no engines named it runs the two panel seats the first
+# derivation used, so the original invocation still means what it meant.
 set -u
 
-BATCH_DIR="${1:?batch dir}"
-OUT_DIR="${2:?out dir}"
-PROMPT="${3:?prompt file}"
+BATCH_DIR="${1:?batch dir}"; shift
+OUT_DIR="${1:?out dir}"; shift
+PROMPT="${1:?prompt file}"; shift
 TOOLS="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # seat:effort:max_tokens -- max_tokens must cover reasoning AND output. 16k is comfortable for a
 # ~600-word answer from a reasoning model without reserving an absurd amount against the balance.
-SEATS=("ds:low:16000" "kimi:medium:16000")
+SEATS=("$@")
+[ "${#SEATS[@]}" -gt 0 ] || SEATS=("ds:low:16000" "kimi:medium:16000")
 
 export PANEL_TIMEOUT="${PANEL_TIMEOUT:-900}"
 mkdir -p "$OUT_DIR"
@@ -34,7 +39,7 @@ mkdir -p "$OUT_DIR"
 for batch in "$BATCH_DIR"/tb-*; do
   b="$(basename "$batch")"
   for spec in "${SEATS[@]}"; do
-    IFS=: read -r seat effort maxtok <<< "$spec"
+    seat="${spec%%:*}"
     out="$OUT_DIR/cl-$seat-${b#tb-}.md"
     err="${out%.md}.err"
 
@@ -45,9 +50,17 @@ for batch in "$BATCH_DIR"/tb-*; do
     fi
 
     for attempt in 1 2; do
-      nice -n 19 bash -c \
-        "cat '$batch' | panel -m $seat -o reasoning_effort $effort -o max_tokens $maxtok \"\$(cat '$PROMPT')\"" \
-        > "$out" 2>"$err"
+      if [ "$seat" = codex ]; then
+        # --skip-git-repo-check is required or it refuses to run outside a repo it trusts.
+        nice -n 19 bash -c \
+          "cat '$batch' | codex exec --skip-git-repo-check \"\$(cat '$PROMPT')\"" \
+          > "$out" 2>"$err"
+      else
+        IFS=: read -r _ effort maxtok <<< "$spec"
+        nice -n 19 bash -c \
+          "cat '$batch' | panel -m $seat -o reasoning_effort $effort -o max_tokens $maxtok \"\$(cat '$PROMPT')\"" \
+          > "$out" 2>"$err"
+      fi
 
       if python3 "$TOOLS/degenerate.py" --quiet "$out" 2>/dev/null; then
         echo "$(date +%H:%M:%S) OK    $(basename "$out") $(wc -w < "$out") words (attempt $attempt)"
