@@ -1,6 +1,7 @@
 # Syntelos 2.0 — current state and handoff
 
-Written 2026-08-25 at the end of the first working session, at a phase boundary. **Read this first.**
+Written 2026-08-25 at the end of the first working session and updated at the end of the second,
+both at phase boundaries. **Read this first.**
 
 ## If you are a new session
 
@@ -33,14 +34,21 @@ Do the next action in "The next action" below. Before you start:
 - **Gate every output with `tools/degenerate.py`.** Latency and word count are *inverted* quality
   signals: the fastest, longest run of one experiment was 1,730 words of collapsed repetition. Empty
   output fails the gate too — that is deliberate.
-- `tools/run_batches.sh` already encodes all of the above, retries once on a failed gate, and skips
-  work already passing.
+- **Gate JSONL with `tools/jsonl_gate.py`, not `degenerate.py`.** Repeated field names read as a
+  token loop to a trigram test. It also fails a file whose last line is an unterminated object,
+  which is what a run that hit its token cap looks like — full of good records, silently covering
+  a fraction of its batch.
+- `tools/run_batches.sh` (prose) and `tools/run_extract.sh` (JSONL) encode all of the above, retry
+  once on a failed gate, and skip work already passing. Both take engines as arguments; `codex` is
+  one of them.
 
 ## Where the project is
 
-Architecture settled, registry machinery working, ten corpora acquired, and the telos facet derived,
-stress-tested and frozen but **known incomplete**. Nothing has been named yet, and no evaluation has
-been run. Most commits are already on the public origin via nightly autopush — see above.
+Architecture settled, registry machinery working, ten corpora acquired and all ten now yielding acts,
+and the telos facet derived, stress-tested, frozen, and then probed a second time against material
+it had never seen. It is still **known incomplete** and now knows more precisely where and why.
+Nothing has been named yet, and no evaluation has been run. Most commits are already on the public
+origin via nightly autopush — see above.
 
 | phase | state |
 |---|---|
@@ -50,8 +58,8 @@ been run. Most commits are already on the public origin via nightly autopush —
 | 2.5 civil-law audit + corpus verification | done |
 | 3a corpora P1–P10 | done |
 | 3b sampling frame + rating protocol | done, seed pre-registered |
-| **T telos derivation** | T1–T4 done; **T-supp pending**; T5 naming not started |
-| 3c draw the gold sample | blocked on T |
+| **T telos derivation** | T1–T4 done; **T-supp done 2026-08-25**; T5 naming not started |
+| 3c draw the gold sample | blocked on T — but P1 and P2 now have act corpora, so half of it is built |
 | 4 gold standard (Daniel rates) | not started |
 | 5–8 reliability, repair, comparison, paper | not started |
 
@@ -61,47 +69,67 @@ been run. Most commits are already on the public origin via nightly autopush —
    programme and the civil-law audit, §7 registry discipline, §8 phases.
 2. **`telos-T4-frozen.md`** — the frozen partition. Ten roots, five children, each with an outward
    test. The semantic contract.
-3. **`telos-stress-cases.md`** — the most active document. Daniel's adversarial cases, the v1
-   back-test, and every open finding from them. §10 has the recommended next step.
-4. **`telos-T2-discriminators.md`** — how each outward test was arrived at, and the T3 rulings.
-5. **`naming-criteria.md`** — for T5, when it comes. Not yet applied.
-6. **`horizon-and-depth.md`** and **`adversarial-and-expressive-acts.md`** — the two conceptual
+3. **`telos-T-supp.md`** — the supplementary pass and its results. `govern`, the density floor, the
+   argument against the experiential family, four test defects. §7 is what needs Daniel.
+4. **`telos-stress-cases.md`** — Daniel's adversarial cases and the v1 back-test. Its §10
+   recommended the supplementary pass, which has now run.
+5. **`telos-T2-discriminators.md`** — how each outward test was arrived at, and the T3 rulings.
+6. **`naming-criteria.md`** — for T5, when it comes. Not yet applied.
+7. **`horizon-and-depth.md`** and **`adversarial-and-expressive-acts.md`** — the two conceptual
    detours, both containing retractions worth reading before re-deriving anything.
-7. `sources/` — raw analyses from delegated seats, plus every prompt used.
+8. `sources/` — raw analyses from delegated seats, plus every prompt used.
 
 ## The next action
 
-**A supplementary derivation pass**, before naming and before adversarial review. Reviewing a
-partition known to be incomplete would spend reviewers rediscovering what is already known.
+**A decision from Daniel, then T5 naming.** The supplementary pass is done and `design/telos-T-supp.md`
+is the write-up. It ran fifteen blind passes over a 670-act pool built from P1, P2, a P9 redraw and
+P10, and consolidated them against the frozen partition on three engines. Two things need his call
+before anything else moves — both are in §7 of that document — and nothing in the pass suggests
+reopening the derivation a third time.
 
-Three targeted draws into the existing blind batch pipeline (`tools/build_telos_sample.py`,
-`tools/run_batches.sh`, gated by `tools/degenerate.py`):
+  [ Q-CQC1 ]  **Does `govern` enter the partition?** 13/15 passes, three independent consolidations,
+  a clean discriminating question against all four neighbours. Stronger evidence than `belong` or
+  `judge` carry today. Check it against the modality facet first — "issues a rule that binds
+  members" is adjacent to what modality expresses, and this project's recurring failure mode is a
+  distinction that belongs on another facet.
 
-1. **P1 + P2** — never drawn from. Two missing roots trace to this.
-2. **P9 redraw over-weighting SOC 27, 39, 21** — arts, personal service, community service. The
-   material is already in the corpus; even-stratification thinned it to ~17 acts per group.
-3. **P10** — retained.
-
-Consolidate **against** the frozen partition rather than from scratch: *what does this corpus contain
-that the twelve roots cannot express?* Smaller question, preserves the recurrence evidence.
+  And whether to accept the four test repairs, which are cheap and well evidenced.
 
 ## Known missing from the frozen partition
 
-Three families, each found by a case rather than by the corpus:
+- **`govern`** [F-AC2S] — issue, amend or repeal a rule, office, budget, programme or binding
+  decision for a collective. **Found by the corpus, 13/15**, and the only new root any of the three
+  consolidations proposed. Missed the first time because the pool held no rule-making and because
+  the T1 question — `telos-T1-review.md:114`, "one root, two, or three?" — offered only `conform` and
+  `judge`, so nobody asked who makes the standard.
+- **`coerce`** [F-9BKW] — apply or threaten force against a non-consenting party. Found by a case.
+  **The supplementary pass had no power to confirm or refute it**: coercion is under 2% of the pool
+  even after P1 and P2 were drawn from at full strength, and the smallest group any pass emitted was
+  4% of a batch. See [F-MVTY].
+- **`agree`** [F-6WDN] — establish a mutual or unilateral binding undertaking. Found by a case. Same
+  density problem, worse — under 1%.
+- **ritual and commemoration** — all three consolidations name it as what the corpus cannot decide.
+  It is the surviving part of the experiential family.
 
-- **`coerce`** [F-9BKW] — apply or threaten force against a non-consenting party. Attack, arrest,
-  seize, punish, deter, enforce a judgment.
-- **`agree`** [F-6WDN] — establish a mutual or unilateral binding undertaking. Treaties, contracts,
-  promises, settlements. v1 had this as `/trade/deal`.
-- **the experiential family** [F-7HTQ] — play, ceremony, decoration, performance. One family, not
-  four gaps. Test works in the negative: no deliverable beyond the experience itself.
+  [ F-MMJT ]  **The rest of the experiential family [F-7HTQ] has a real argument against it.** At
+  adequate density, all three consolidations split play/performance/decoration between a widened
+  `provide` — an event is a deliverable — and the horizon screen. Not a failure to find it.
 
 ## Open defects in the frozen tests
 
-- [F-7PQD] `protect` covers barriers, not rescue or extraction.
-- [F-2NVJ] `communicate` does not distinguish authoring from relaying.
+Four are now well evidenced enough to just apply; the rest still need a call.
+
+- [F-7PQD] `protect` covers barriers, not rescue or extraction. **Third independent arrival** —
+  the supplementary consolidations found it from firefighting and post-breach response. Settled.
+- [F-8H3R] `judge`'s "contested claim" misses uncontested probate, name changes, adoption decrees
+  and administrative determinations. All three consolidations.
+- [F-5FY5] `provide`'s "artifact" misses events, services and operated capabilities. All three.
+- `communicate`'s "identified audience" misses publishing and broadcast. One consolidation, but
+  plain on inspection.
 - [F-6CTX] `belong` covers changing membership, not exercising it — **participation is uncovered**.
-  Found four separate times.
+  Found four separate times and **not resolved** by the supplementary pass, which mapped it into
+  `belong` without answering the objection.
+- [F-2NVJ] `communicate` does not distinguish authoring from relaying.
 - [F-8KMR] receptive acts (accept, receive, admit) fit awkwardly.
 - [F-2QLJ] `transfer`'s test excludes theft; it is drawn too narrowly.
 - [F-4RDM] some species distinctions (dowry: `trade` or `give`?) are contested by participants, not
@@ -125,12 +153,24 @@ on: `representing` (relation), causal horizon (constraints), `create`/`preserve`
 adversariality (requisite and modality). **When a candidate root looks compelling, test first whether
 it is another facet in disguise.**
 
+A second failure mode, found 2026-08-25 and distinct from the sampling ones below: **a consolidation
+can only choose among the options its adjudicating question admits** [P-GK0W]. `govern` was not
+rejected in T1, it was foreclosed — the question was framed as `conform` versus `judge` and no pass
+was ever asked about the third arm. When settling a contested boundary, check that the question
+being put is not a binary imposed on a wider set.
+
 And four times, a corpus's **selection principle** has produced a hole that looked like a finding:
 the v1 simulated scrape measured a model's priors; four instrumental corpora agreed about `/relate`
 because all four inventory instrumental activity; social APIs missed mourning because an API holds
 what someone found it profitable to build a button for; and the telos pool missed coercion because
 the legal corpora were acquired and then not drawn from. Agreement between corpora that share a
 selection principle is not independent corroboration.
+
+And a **density floor** underneath all of it [F-FPHH]: a family below ~4% of a pool is invisible to
+recurrence-across-blind-passes, whatever its importance. Drawing from the right corpus does not fix
+a family that corpus holds too little of — coercion went from 0% to under 2% and stayed invisible.
+Cases reach what density cannot, which is why the two instruments belong in the paper together
+rather than one being presented as the evidence base.
 
 ## What a new session loses
 
