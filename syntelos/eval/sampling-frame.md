@@ -116,6 +116,51 @@ Two caveats that bind on how it may be sampled.
   derivation with another taxonomy's categories. Reversible via `--include-gwa` if ever wanted for a
   comparison rather than a derivation.
 
+**P1 and P2 extracted 2026-08-25**, for the supplementary telos pass. Both had been acquired as raw
+law and never turned into acts, which is the traceable cause of two missing telos roots — see
+`design/telos-stress-cases.md` §6.1 and the rule immediately below. `tools/build_law_units.py`
+draws the units at the pre-registered seed, systematically on the book's native order: **493 of
+28,607 Utah sections at k=59, start 20**, and **294 of 3,523 CCQ articles at k=12, start 5**. The
+drawn units are written verbatim to `eval/corpora/sources/p{1,2}-units.txt`, which is the source of
+record every extracted quote is checked against.
+
+Extraction follows P5's method exactly — two independent engines (`kimi` and `codex`, whose quotas
+and failure modes are uncorrelated), unioned, every act carrying a verbatim quote that
+`tools/verify_quotes.py` checks character-for-character. **P1: 924 verified acts from 344 yielding
+units, 4 dropped. P2: 683 verified acts from 248 yielding units, 2 dropped.** The drop rate is far
+below P5's 125-of-301, which is what one would expect when the source shown to the extractor is a
+few hundred characters rather than a whole document.
+
+Three things about this draw are results rather than bookkeeping.
+
+- **The screen-out rate is 31% for P1 and 16% for P2**, against E4's estimate that only 35–45% of
+  Utah headings are act-shaped. E4 is not wrong about headings; it read catchlines, and a unit here
+  carries its catchline plus 260 characters of body. "Penalties" names no act and the sentence
+  under it does. The screened-out units are what E4 predicted they would be — 27 `Definitions`, 10
+  `Title`, 6 `General provisions`, and severability clauses.
+- **Only 17% of acts were found by both engines**, in both populations. Read that as a floor rather
+  than a measurement: dedupe is on exact normalised text, so `revoke a licence` and `revoke a
+  license` count as disagreement. It says the union was the right call and says little else.
+- **The unit counts match this table.** 28,607 sections against the 28,606 recorded here, and 3,523
+  articles exactly. The populations are what §2 says they are.
+
+**Omission notes.** P1 is a state statute book: it names what Utah legislates about, so it is thick
+with licensing, filing, land, and public administration, and it holds almost nothing about leisure,
+ceremony, friendship, or craft except where those are regulated. P2 is a private-law code: it holds
+obligations, property, family, and succession, and by construction contains no criminal procedure
+and no administrative law at all. Neither is a sample of what people do; both are samples of what a
+legislature found it necessary to write down, which is a selection principle they share with each
+other and with nothing else in the frame.
+
+**Record which populations feed each derivation, and justify every omission at the point of
+drawing.** Added 2026-08-25 after the fourth occasion a selection principle produced a hole that
+looked like a finding — and the first where the fault was not in a population's contents but in
+which populations were *drawn from*. The telos derivation drew from P5, P8, P9 and P10; P1 and P2
+sat acquired and unused, and the pool consequently contained zero coercive acts, so no pass could
+have found `coerce` however it behaved. The rule above catches a corpus that omits something. This
+one catches a *draw* that omits a corpus, which the rule above cannot see. Any derivation must
+therefore name its populations and say why each excluded one was excluded, at draw time.
+
 **Every population must state what its selection principle omits.** Added 2026-08-20 after the
 third occasion this bit. A corpus is not neutral about what it contains: the v1 simulated scrape
 measured a model's priors; protocols, statutes, steward roles and O\*NET all miss social bonding
